@@ -1,0 +1,27 @@
+{
+	"index": {
+		"pageTitle": "Francisco Marinas",
+        "description": "Francisco Marinas, Diseñador Web"
+	},
+	"cv": {
+		"pageTitle": "CV",
+        "description": "Francisco Marinas, cv"
+	},
+	"marcado": {
+		"pageTitle": "Marcado HTML",
+        "description": "Francisco Marinas, Marcado HTML"
+	},
+	"rendimiento": {
+		"pageTitle": "Rendimiento de las aplicaciones web",
+        "description": "Introducción al rendimiento de las aplicaciones web"
+	},
+	"francisco": {
+		"pageTitle": "Acerca de mí",
+        "description": "Saber más acerca de mí"
+	},
+	"roadmap": {
+		"pageTitle": "Mapa de Ruta",
+        "description": "Itinerario de desarrollo"
+	}
+    
+}

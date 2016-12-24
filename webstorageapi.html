@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Your page title here :)</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+     
+      <div class="twelve column" style="margin-top: 25%">
+       
+
+
+       
+        <!-- CONTENIDO -->
+        
+           
+   <h4><strong>Usar WebStorage API para la persistencia de datos de usuario</strong></h4>
+    <p>las aplicaciones web necesitan almacenar datos. Con LocalStorage de HTML5 y  SessionStorage APIs se tiene una forma sencilla de alamcenar datos.</p>
+    
+                            <h4>Lo básico</h4>
+                            <p>LocalStorage es un conjunto de pares nombre-valor, como con las cookies, pero a diferencia de estas los datos no se envían al servidor en cada solicitud. En su lugar JavaScript tiene acceso para leer, asignar o eliminar esos valores cuando sea necesario.</p>
+                            
+                            <p>LocalStorage es almacenada por dominio. Es salvado a un archivo físico en la máquina del usuario. Esto tiene dos implicaciones. Primero, hay un límite a la cantidad total de datos que sepueden almacenar en LocalStorage. Segundo, leer y escribir es una operación simple de I/O. </p>
+                            
+                            <p>LocalStorage es soportado por los navegadores de ordenadores y móviles.</p>
+                            
+                            <h4>API LocalStorage</h4>
+                            <p>Hay dos principales opciones para trabajar con LocalStorage:</p>
+                            
+                            <p>Escribir y asignar valores usando directamene el acceso a <code>window</code>.</p>
+                            
+                            <pre>
+window.localStorage.favoriteBeer = "Abita";
+
+window.localStorage["favoriteBeer"] = "Abita";
+                            </pre>
+                            
+                            <p>O utilizando los siguientes métodos:</p>
+                            
+                            <ul>
+                                <li><code>setItem(key, value);</code></li>
+                                <li><code>getItem(key);</code></li>
+                                <li><code>removeItem(key);</code></li>
+                                <li><code>clear();</code></li>
+                            </ul>
+                                                   
+                            <p data-height="265" data-theme-id="0" data-slug-hash="yJvEYv" data-default-tab="result" data-user="franciscomarinas" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/franciscomarinas/pen/yJvEYv/">LocalStorage</a> by Francisco (<a href="http://codepen.io/franciscomarinas">@franciscomarinas</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+                                                   
+                            
+                            <h4>LocalStorage y datos complejos</h4>                     
+                            <p></p>
+
+							
+
+							<iframe width="100%" height="300" src="//jsfiddle.net/reactjs/5vjqabv3/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
+
+
+
+						
+						
+						
+						
+        
+        <!-- FIN CONTENIDO -->
+           
+           
+           
+         
+             
+      </div><!-- FIN TWELVE COLUMN -->
+      
+    </div><!-- FIN ROW -->
+  </div><!-- FIN CONTAINER -->
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

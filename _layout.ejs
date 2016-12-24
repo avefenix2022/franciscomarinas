@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   
+    <title><%- pageTitle %> | <%- siteTitle %></title>
+    <meta name="description" content="<%= description %>" />
+    
+    <%- partial("_shared/head.ejs") %>
+    
+</head>
+
+<body class="">
+    
+    <%- partial("_shared/ie8.ejs") %>
+	
+	<div class="page js-page ">
+		<!-- Header -->
+		
+		<%- partial("_shared/header.ejs") %>
+		
+		<!-- End of Header -->
+		
+		
+		<!-- yield -->
+		
+		<%- yield %>
+		
+		<!-- End of yield -->
+		
+		
+		<!-- Footer -->
+		
+		<%- partial("_shared/footer.ejs") %>
+		
+		<!-- End of Footer -->
+	</div>
+	
+	<%- partial("_shared/script.ejs") %>
+     
+</body>
+
+</html>

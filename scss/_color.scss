@@ -1,0 +1,105 @@
+/*------------------------------------*\
+    #COLOR
+\*------------------------------------*/
+
+/* BEM
+.block__element--modifier {}
+*/
+
+
+/* AJUSTES 
+* Global ................. Variables y configuraciones disponibles Globalmente.
+*/
+
+/* PALETA DE COLORES pleasant colors http://colrd.com/image-dna/27458/ en 
+COLRD http://colrd.com
+
+#fc6472    #f4b2a6    #eccdb3    
+#bcefd0    #a1e8e4    #23c8b2    
+#c3ecee         
+
+*/
+
+$color-salmon:             #fc6472;
+$color-salmon-claro:       #f4b2a6;
+$color-salmon-masclaro:    #eccdb3;
+
+$color-esmeralda:          #23c8b2;
+$color-esmeralda-claro:    #bcefd0;
+
+$color-cyan:               #a1e8e4;
+$color-cyan-claro:         #c3ecee;
+
+
+
+/* color de fondo */
+@mixin color_bg ($color-bg){
+    background-color:      $color-bg;
+}
+
+/* color de fuente */
+@mixin color_fuente ($color_fuente){
+    color:                 $color_fuente;
+}
+
+
+
+
+/* Para mostrar los colores se usan celdas de colores para aplicar a un span */
+
+.celda {
+    display:               inline-block; /* Por si aplica a otro elemento de tipo bloque */
+    width:                 20px;
+    height:                20px;
+}
+
+.color-salmon {
+    @include color_fuente ($color-salmon);
+}
+.color-salmon-claro {
+    @include color_fuente ($color-salmon-claro);
+}
+.color-salmon-masclaro {
+    @include color_fuente ($color-salmon-masclaro);
+}
+
+.color-esmeralda {
+    @include color_fuente ($color-esmeralda);
+}
+.color-esmeralda-claro {
+    @include color_fuente ($color-esmeralda-claro);
+}
+
+.color-cyan {
+    @include color_fuente ($color-cyan);
+}
+.color-cyan-claro {
+    @include color_fuente ($color-cyan-claro);
+}
+
+
+
+.celda--color-salmon {
+    @include color_bg ($color-salmon);
+}
+.celda--color-salmon-claro {
+    @include color_bg ($color-salmon-claro);
+}
+.celda--color-salmon-masclaro {
+    @include color_bg ($color-salmon-masclaro);
+}
+
+.celda--color-esmeralda {
+    @include color_bg ($color-esmeralda);
+}
+.celda--color-esmeralda-claro {
+    @include color_bg ($color-esmeralda-claro);
+}
+
+.celda--color-cyan {
+    @include color_bg ($color-cyan);
+}
+.celda--color-cyan-claro {
+    @include color_bg ($color-cyan-claro);
+}
+
