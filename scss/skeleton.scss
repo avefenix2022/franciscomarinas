@@ -1,0 +1,138 @@
+/*
+* 
+* Titanio.css Ligero y Resistente.
+*
+* Basado en: 
+* Skeleton V2.0.4 www.getskeleton.com
+* cssguidelin http://cssguidelin.es/
+*
+*/
+
+
+
+/**
+ 
+* TABLA DE CONTENIDO
+
+* VARIABLES
+* _color.scss  -> main.scss
+
+* COVER
+* _cover.sccss -> main.scss
+
+*
+* GRID
+* Grid ................... Regilla de maquetación de 12 columnas.
+*/
+  @import "grid";
+/*
+
+* AJUSTES
+* Global ................. Variables y configuraciones disponibles Globalmente.
+* Tipografías
+* Estilos Base
+*/
+  @import "estilos-base";
+/*
+*
+* BASE
+* Encabezamientos ........ H1-H6.
+*/
+  @import "tipografia";
+/*
+*
+* HERRAMIENTAS
+* Mixins ................. Mixins útiles.
+*
+* GENÉRICO
+* Normalize.css .......... Normalize.
+* Box-sizing ............. Box-sizing.
+*
+
+*
+* OBJETOS
+* Contenedores ........... Contenedores.
+
+*
+* COMPONENTES
+* Cabecera de las Página . Encabezado principal de la página.
+* Pies de las Página ..... El pie de página.
+* Botones ................ Elementos Button.
+*/
+  @import "botones";
+/*
+* Links .................. Etiquetas a.
+*/
+  @import "links";
+/*
+* Forms .................. Formularios.
+*/
+  @import "forms";
+/*
+* Lists .................. Listas ordenadas y no ordenadas.
+*/
+  @import "lists";
+/*
+* Code ................... Etiqueta pre y code.
+*/
+  @import "code";
+/*
+* Tables ................. Estilos de tablas.
+*/
+  @import "tables";
+/*
+* Spacing ................ Separaciones y espacios.
+*/
+  @import "spacing";
+/*
+* Utilities .............. Diferentes utilidades.
+*/
+  @import "utilities";
+/*
+* misc ................... hr.
+*/
+  @import "misc";
+/*
+* Clearing ............... Para limpiar float.
+*/
+  @import "clearing";
+/*
+* 
+* MEDIA QUERIES
+*
+* Para interfaces menores de 400px de ancho 
+* ...
+*
+* Mayor que 400px 
+* @media (min-width: 400px) {}
+*
+* Mayor que 550px (También el punto cuando empieza a activarse el grid) 
+* @media (min-width: 550px) {}
+*
+* Mayor que Tablet 
+* @media (min-width: 750px) {}
+*
+* Mayor que Ordenador 
+* @media (min-width: 1000px) {}
+*
+* Mayor que Ordenadorp HD 
+* @media (min-width: 1200px) {}
+
+*/
+  @import "media-queries";
+/*
+*
+*
+*
+*
+*
+*
+*
+* PARA MAQUETAR
+* Outline ................ Borde outline alrrededor de todos los elementos
+*/
+  /* @import "outline"; */
+/*
+*
+**/
+

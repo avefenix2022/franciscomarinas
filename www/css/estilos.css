@@ -1,0 +1,274 @@
+body {
+    font-family:         'Lato';
+    font-weight:         300;
+    margin: 0;
+    padding: 0;
+}
+
+#cover {
+    height:              100vh;
+    width:               100%;
+    background:          #ccc;
+    
+    background-image:    url(../images/bg.jpg);
+
+  
+    background-repeat:   no-repeat;
+    background-size:     cover;
+    background-position: center;
+    
+    display:             flex;
+    flex-direction:      column;
+    
+    position:            absolute;
+    z-index:             1000;
+    
+    transition:          all .4s;
+}
+
+#cover a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.arriba {
+    flex: 1;
+    height: 50vh;
+    
+    display:             flex;
+    flex-direction:      column;
+    align-items:         center;
+    justify-content:     flex-end;
+    box-sizing:          border-box;
+    padding-bottom:      30px;
+}
+
+.arriba h1 {
+    font-size: 60px;
+    font-weight: 100;
+}
+
+.abajo {
+    flex: 1;
+    height: 50vh;
+    
+    display:             flex;
+    flex-direction:      column;
+    align-items:         center;
+    justify-content:     flex-end;
+    box-sizing:          border-box;
+    padding-bottom:      30px;
+}
+
+.abajo span {
+    font-size:  60px;
+}
+
+#cover:target {
+    transform: translateY(-100vh);
+}
+
+
+
+
+
+
+
+
+
+#grid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: #eee;
+    margin: 0;
+    padding: 0;
+}
+#grid > nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: #eee;
+    margin: 0;
+    padding: 0;
+}
+#grid > nav > section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: #eee;
+    margin: 0;
+    padding: 0;
+}
+
+#grid ul {
+    list-style: none;
+    
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+#grid ul li {
+    flex: 1;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+#grid ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-size: 2.2em;
+    text-decoration: none;
+    color: #fff;
+    
+    text-shadow: 3px 3px 3px  rgba(255, 255, 255, 1);
+    background: rgba(0 ,0 ,0 ,.4 );
+    
+    font-weight: 300;
+}
+
+#grid ul li:first-child {
+    background-color: rgba(200, 100, 100, 1);
+}
+
+
+
+
+#grid ul li:nth-child(2) {
+    background-image: url(../images/cv.jpg);
+    
+    
+    transform: scale(.5);
+    transition: all .7s;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    color: #fff;
+    
+    
+}
+
+#cover:target + #grid ul li:nth-child(2) {
+    transform: scale(1);
+}
+
+#grid ul li:nth-child(3)  { background-image: url(../images/guiacss.jpeg); }
+#grid ul li:nth-child(4)  { background-image: url(../images/marcadohtml.jpeg); }
+#grid ul li:nth-child(5)  { background-image: url(../images/codepen.jpg); }
+#grid ul li:nth-child(6)  { background-image: url(../images/github.png); }
+#grid ul li:nth-child(7)  { background-image: url(../images/divulgacion.jpeg); }
+#grid ul li:nth-child(8)  { background-image: url(../images/adatabuy.jpg); }
+#grid ul li:nth-child(9)  { background-image: url(../images/contacto.jpg); }
+#grid ul li:nth-child(10) { background-image: url(../images/desarrollo.jpg); }  
+#grid ul li:last-child    { background-image: url(../images/titaniodigital.jpeg); }
+
+
+
+
+/* @media (min-width: 400px) Mayor que movil */
+@media (min-width: 400px) {
+   
+#grid ul {
+    list-style: none;
+}
+
+#grid ul li {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#grid ul li:first-child   { width: 25%; height: 25%; top:   0; left:   0; background-image: url(../images/rReturn_arrow.png); }
+#grid ul li:nth-child(2)  { width: 25%; height: 25%; top: 25%; left:   0; background-image: url(../images/cv.jpg); }
+#grid ul li:nth-child(3)  { width: 25%; height: 50%; top:   0; left: 25%; background-image: url(../images/guiacss.jpeg); }
+#grid ul li:nth-child(4)  { width: 50%; height: 25%; top:   0; left: 50%; background-image: url(../images/marcadohtml.jpeg); }
+#grid ul li:nth-child(5)  { width: 25%; height: 25%; top: 25%; left: 50%; background-image: url(../images/codepen.jpg); }
+#grid ul li:nth-child(6)  { width: 25%; height: 25%; top: 25%; left: 75%; background-image: url(../images/github.png); }
+#grid ul li:nth-child(7)  { width: 25%; height: 50%; top: 50%; left:  0%; background-image: url(../images/divulgacion.jpeg); }
+#grid ul li:nth-child(8)  { width: 50%; height: 25%; top: 50%; left: 25%; background-image: url(../images/adatabuy.jpg); }
+#grid ul li:nth-child(9)  { width: 25%; height: 25%; top: 75%; left: 25%; background-image: url(../images/contacto.jpg); }
+#grid ul li:nth-child(10) { width: 25%; height: 25%; top: 50%; left: 75%; background-image: url(../images/desarrollo.jpg);}      
+#grid ul li:last-child    { width: 50%; height: 25%; top: 75%; left: 50%; background-image: url(../images/titaniodigital.jpeg); }
+
+#grid ul li:nth-child(2) {   
+    transform: scale(.5);
+    transition: all .7s;
+}    
+
+#cover:target + #grid ul li:nth-child(2) {
+    transform: scale(1);
+}
+       
+
+}/* FIN @media (min-width: 400px)*/
+
+
+
+
+      nav > .desktop > ul {
+          list-style: none;
+          
+          height: 48;
+          background: rgba(200, 200, 200, 1);
+          
+          display: flex;
+          flex-direction: row;
+      }
+      
+       nav > .desktop > ul > li {
+          flex: 1;
+            height: 48px;
+           padding: 0 5px 0 5px;
+           border-left: 1px solid rgba(0, 0, 0, .2);
+           
+           margin-top: 10px;
+      }
+      
+       nav > .desktop > ul > li:first-child {
+           border-left: none;
+      }
+      
+       nav > .desktop > ul > li >a {
+           
+           position: absolute;
+           
+           text-decoration: none;
+           color: rgba(0, 0, 0, 1);
+           font-size: 30px;
+           
+           display: inline-block;
+           width: 100%;
+           height: 100%;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+      }
+      
+             nav > .desktop > ul > li >a:hover {
+           background: rgba(100, 100, 100, 1);
+                 color: #fff;
+      }

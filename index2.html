@@ -32,13 +32,151 @@
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
+  
+  <style>
+      
+#grid ul li:nth-child(2) {   
+    transform: scale(1);
+    transition: all .7s;
+} 
+
+#grid ul li:nth-child(3) {
+    transition: all .7s;
+}
+
+#grid ul li:nth-child(4) {
+    transition: all .7s;
+} 
+
+#grid ul li:nth-child(5) {
+    transition: all .7s;
+} 
+
+#grid ul li:nth-child(6) {
+    transition: all .7s;
+}  
+      
+#grid ul li:nth-child(2):target {
+    width: 75%;
+    height: 25%;
+    top: 25%;
+    left: 0;
+    z-index: 1001;
+}
+      
+#grid ul li:nth-child(2):target ~ li:nth-child(3) {
+    width: 25%;
+    height: 25%;
+    top: 0;
+    left: 25%;
+    z-index: 1002;
+}
+
+#grid ul li:nth-child(2):target ~ li:nth-child(4) {
+    width: 25%;
+    height: 25%;
+    top: 0;
+    left: 75%;
+    z-index: 1003;
+}
+
+#grid ul li:nth-child(2):target ~ li:nth-child(5) {
+    width: 25%;
+    height: 25%;
+    top: 0;
+    left: 50%;
+    z-index: 1003;
+}
+      
+#grid ul li:nth-child(2) a.dos{
+    visibility: hidden;
+    width: 0;
+}
+
+#grid ul li:nth-child(2):target a.uno{
+    visibility: hidden;
+    width: 0;
+}
+#grid ul li:nth-child(2):target a.dos{
+    visibility: visible;
+    width: 100%;
+}
+
+#grid ul li:nth-child(2):target a.dos::before {
+    content: "Ir a mi _";
+}
+
+/* -------------------------------------------------------------------------- */      
+#grid ul li:nth-child(3):target {
+    width: 75%;
+    height: 25%;
+    top: 0;
+    left: 25%;
+    z-index: 1004;
+    
+}      
+      
+      
+      
+#grid ul li:nth-child(3) a.dos{
+    visibility: hidden;
+    width: 0;
+    float: left;
+}
+
+#grid ul li:nth-child(3):target a.uno{
+    visibility: hidden;
+    width: 0;
+}
+#grid ul li:nth-child(3):target a.dos{
+    position: absolute;
+    visibility: visible;
+    width: 100%;
+    top: 0; 
+}
+
+#grid ul li:nth-child(3):target a.dos::before {
+    
+    content: "Ir a _";
+    
+}
+      
+
+     
+#grid ul li:nth-child(3):target ~ li:nth-child(4) {
+    width: 25%;
+    height: 25%;
+    top: 25%;
+    left: 75%;
+    z-index: 1004;
+}
+
+#grid ul li:nth-child(3):target ~ li:nth-child(5) {
+    width: 25%;
+    height: 25%;
+    top: 25;
+    left: 25%;
+    z-index: 1005;
+}
+
+#grid ul li:nth-child(3):target ~ li:nth-child(6) {
+    width: 25%;
+    height: 25%;
+    top: 25;
+    left: 50%;
+    z-index: 1006;
+}
+      
+  </style>
+  
+  
 
 </head>
 <body>
   
   
   
-  
+ <!-- 
   <section id="cover">
     <a href="#cover">
     
@@ -52,7 +190,7 @@
       
     </a>
   </section>
-  
+  -->
   
   
   
@@ -65,8 +203,17 @@
             <section>
                 <ul>
                     <li><a href="#">volver</a></li>
-                    <li><a href="cv.html">CV</a></li>
-                    <li><a href="guiacss.html">Guía CSS</a></li>
+                    
+                    <li id="cv">
+                    <a class="uno" href="#cv">CV</a>
+                    <a class="dos" href="cv.html">CV</a>
+                    </li>
+                    
+                    <li id="guiacss">
+                    <a class="uno"  href="#guiacss">Guía CSS</a>
+                    <a class="dos" href="guiacss.html">Guía CSS</a>
+                    </li>
+                    
                     <li><a href="marcado.html">Marcado HTML</a></li>
                     <li><a href="https://codepen.io/franciscomarinas/">Codepen</a></li>
                     <li><a href="https://github.com/franciscomarinas">GitHub</a></li>

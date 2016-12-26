@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Your page title here :)</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  
+  
+  <style>
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+      
+      
+ @font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Lato Hairline'), local('Lato-Hairline'), url(https://fonts.gstatic.com/s/lato/v11/Kom15zUm24dIPfIRiNogNuvvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v11/kcf5uOXucLcbFOydGU24WALUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v11/qIIYRU-oROkIk8vfvxw6QvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v11/qdgUG4U09HnJwhYI-uK18wLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Lato Black'), local('Lato-Black'), url(https://fonts.gstatic.com/s/lato/v11/G2uphNnNqGFMHLRsO_72ngLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 100;
+  src: local('Lato Hairline Italic'), local('Lato-HairlineItalic'), url(https://fonts.gstatic.com/s/lato/v11/CggrdU0t5c42NcNxN-VM33YhjbSpvc47ee6xR_80Hnw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Lato Light Italic'), local('Lato-LightItalic'), url(https://fonts.gstatic.com/s/lato/v11/2HG_tEPiQ4Z6795cGfdivLO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v11/RYyZNoeFgb0l7W3Vu1aSWOvvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v11/HkF_qI1x_noxlxhrhMQYELO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 900;
+  src: local('Lato Black Italic'), local('Lato-BlackItalic'), url(https://fonts.gstatic.com/s/lato/v11/VNUH7ZAcagYBWsAiBBCEY7O3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	font-family:           'Lato';
+    font-size:             16px;
+    font-weight:           300;
+}
+      
+      
+      
+      
+      
+ /*
+*{
+    outline:               1px solid red;
+}
+*/
+
+.toolbar {
+    height:                48px;
+    width:                 100%;
+    position:              fixed;
+    top:                   0;
+    left:                  0;
+    background:            #000;
+    
+    display:               flex;
+    flex-direction:        column;
+    align-items:           left;
+    justify-content:       center;
+    
+    z-index: 2000;
+}
+
+.toolbar span {
+    cursor:                pointer;
+    font-size:             38px;
+    width:                 40px;
+    height:                40px;
+    color:                 #fff;
+    margin-left:           10px;
+    text-align:            center;
+}
+
+.cubrir {
+    height:                100vh;
+    width:                 100vw;
+    background:            rgba(0, 0, 0, 1);
+    
+    position:              fixed;
+    top:                   0;
+    left:                  0;
+    z-index:               1000;
+    
+    left:                  -100vw;
+    opacity:               0;
+    transition:            all .5s;
+    
+    
+}
+
+.mostrar {
+    left:                  0;
+    opacity:               1;
+}
+
+.cubrir nav ul {
+    height:                100vh;
+    width:                 100vw;
+    padding-top:           48px;
+    box-sizing:            border-box;
+    display:               flex;
+    flex-direction:        column;
+    align-items:           center;
+    justify-content:       space-around;
+}
+
+
+.cubrir ul li{
+    width:                 100%;
+    height:                100%;
+    display:               block;  
+    cursor:                pointer;
+    margin:                5px 0px;
+    
+    display:               flex;
+    align-items:           center;
+    justify-content:       center;
+    font-size:             2.5em;
+}
+
+.cubrir ul li a{
+    text-decoration:       none; 
+    color:                 #fff;
+    
+    font-family:           'Lato';
+    font-weight:           100;
+}
+
+.cubrir ul li a span {
+    margin-right:           50px;
+}
+
+main {
+    height:                100vh;
+    width:                 100vw;
+    background:            rgba(100, 100, 100, .2);
+    
+    display:               flex;
+    flex-direction:        column;
+    justify-content:       space-between;
+    margin-top: 48px;
+}
+
+.fila {
+    flex:                  1;
+    
+    display:               flex;
+    flex-direction:        row;
+    
+    border-bottom:         1px solid rgba(255, 255, 255, .3);
+}
+
+.celda {
+    flex:                  1;
+    
+    text-align:            center;
+    
+    display:               flex;
+    align-items:           center;
+    justify-content:       center;
+    
+    border-right:          1px solid rgba(255, 255, 255, .3);;
+}
+
+.cabecera {
+    height:                40px;
+    display:               flex;
+    flex-direction:        row;
+    background:            #000;
+    color:                 #fff;
+    
+    text-align:            center;
+    
+    display:               flex;
+    align-items:           center;
+    justify-content:       center;
+    
+    
+}
+
+.semana {
+    width:                 110px;
+    background:            #000;
+    color:                 #fff;
+    
+    text-align:            center;
+    
+    display:               flex;
+    align-items:           center;
+    justify-content:       center;
+}
+
+.numero {
+    width:                 20px;
+    background:            #000;
+    color:                 #fff;
+    
+    text-align:            center;
+    
+    display:               flex;
+    align-items:           center;
+    justify-content:       center;
+}
+
+.descanso {
+    background:            #abcdef;
+}
+
+.competicion {
+    width:                 60px;
+    background:            #000;
+    color:                 #fff;
+    
+    text-align:            center;
+    
+    display:               flex;
+    align-items:           center;
+    justify-content:       center;
+}
+
+.controlados {
+    background:            #BCAAA4;
+}
+
+.larga {
+    background:            #FDD835;
+}
+
+.maslarga {
+    background:            #FFA000;
+}
+
+.seriescortas {
+    background:            #D50000;
+}
+
+.serieslargas {
+    background:            #7E57C2;
+}     
+      
+      
+    
+  </style>
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+       
+
+
+       
+        <!-- CONTENIDO -->
+        
+           
+   <main>
+       <div class="cabecera">
+           <div class="semana"><p>semana</p></div>
+           <div class="numero"><p>nº</p></div>
+           <div class="celda"><p>lunes</p></div>
+           <div class="celda"><p>martes</p></div>
+           <div class="celda"><p>miércoles</p></div>
+           <div class="celda"><p>jueves</p></div>
+           <div class="celda"><p>viernes</p></div>
+           <div class="celda"><p>sábado</p></div>
+           <div class="celda"><p>domingo</p></div>
+       </div>
+       
+       <div class="fila">
+           <div class="semana"><p>Ajuste</p></div>
+           <div class="numero"><p>1</p></div>
+           <div class="celda descanso"><p>descanso</p></div>
+           <div class="celda controlados"><p>10 a 4'35'' y Gimnasio</p></div>
+           <div class="celda"><p>6cal+15x200 r:60'' a 40''</p></div>
+           <div class="celda"><p>descanso</p></div>
+           <div class="celda"><p>7 por cuestas</p></div>
+           <div class="celda"><p>6cal+5x1000 r:3' a 4'05''</p></div>
+           <div class="celda"><p>14 a 4'50''</p></div>
+       </div>
+       
+       <div class="fila">
+           <div class="semana"><p>Ajuste</p></div>
+           <div class="numero"><p>2</p></div>
+           <div class="celda descanso"><p>descanso</p></div>
+           <div class="celda controlados"><p>10 a 4'35'' y Gimnasio</p></div>
+           <div class="celda"><p>6cal+15x200 r:60'' a 40''</p></div>
+           <div class="celda"><p>descanso</p></div>
+           <div class="celda"><p>7 por cuestas</p></div>
+           <div class="celda"><p>6cal+5x1000 r:3' a 4'05''</p></div>
+           <div class="celda"><p>14 a 4'50''</p></div>
+       </div>
+       
+       <div class="fila">
+           <div class="semana"><p>Ajuste</p></div>
+           <div class="numero"><p>3</p></div>
+           <div class="celda descanso"><p>descanso</p></div>
+           <div class="celda controlados"><p>10 a 4'35'' y Gimnasio</p></div>
+           <div class="celda"><p>6cal+15x200 r:60'' a 40''</p></div>
+           <div class="celda"><p>descanso</p></div>
+           <div class="celda"><p>7 por cuestas</p></div>
+           <div class="celda"><p>6cal+5x1000 r:3' a 4'05''</p></div>
+           <div class="celda"><p>14 a 4'50''</p></div>
+       </div>
+       
+       <div class="fila">
+           <div class="semana"><p>Ajuste</p></div>
+           <div class="numero"><p>4</p></div>
+           <div class="celda descanso"><p>descanso</p></div>
+           <div class="celda controlados"><p>10 a 4'35'' y Gimnasio</p></div>
+           <div class="celda"><p>6cal+15x200 r:60'' a 40''</p></div>
+           <div class="celda"><p>descanso</p></div>
+           <div class="celda"><p>7 por cuestas</p></div>
+           <div class="celda"><p>6cal+5x1000 r:3' a 4'05''</p></div>
+           <div class="celda"><p>14 a 4'50''</p></div>
+       </div>
+       
+       <div class="fila">
+           <div class="semana"><p>Ajuste</p></div>
+           <div class="numero"><p>5</p></div>
+           <div class="celda descanso"><p>descanso</p></div>
+           <div class="celda controlados"><p>10 a 4'35'' y Gimnasio</p></div>
+           <div class="celda"><p>6cal+15x200 r:60'' a 40''</p></div>
+           <div class="celda"><p>descanso</p></div>
+           <div class="celda"><p>7 por cuestas</p></div>
+           <div class="celda"><p>6cal+5x1000 r:3' a 4'05''</p></div>
+           <div class="celda"><p>14 a 4'50''</p></div>
+       </div>
+       
+       <div class="fila">
+           <div class="semana"><p>Ajuste</p></div>
+           <div class="numero"><p>6</p></div>
+           <div class="celda descanso"><p>descanso</p></div>
+           <div class="celda controlados"><p>10 a 4'35'' y Gimnasio</p></div>
+           <div class="celda"><p>6cal+15x200 r:60'' a 40''</p></div>
+           <div class="celda"><p>descanso</p></div>
+           <div class="celda"><p>7 por cuestas</p></div>
+           <div class="celda"><p>6cal+5x1000 r:3' a 4'05''</p></div>
+           <div class="celda"><p>14 a 4'50''</p></div>
+       </div>
+       
+       <div class="fila">
+           <div class="semana"><p>Ajuste</p></div>
+           <div class="numero"><p>7</p></div>
+           <div class="celda descanso"><p>descanso</p></div>
+           <div class="celda controlados"><p>10 a 4'35'' y Gimnasio</p></div>
+           <div class="celda"><p>6cal+15x200 r:60'' a 40''</p></div>
+           <div class="celda"><p>descanso</p></div>
+           <div class="celda"><p>7 por cuestas</p></div>
+           <div class="celda"><p>6cal+5x1000 r:3' a 4'05''</p></div>
+           <div class="celda maslarga"><p>16 a 4'40''</p></div>
+       </div>
+       
+       <div class="fila">
+           <div class="semana"><p>competición</p></div>
+           <div class="numero"><p>8</p></div>
+           <div class="celda descanso"><p>descanso</p></div>
+           <div class="celda controlados"><p>15 a 4'30''</p></div>
+           <div class="celda serieslargas"><p>6cal+4x1000 r:3' a 3'58''</p></div>
+           <div class="celda"><p>9 a 4'45''</p></div>
+           <div class="celda descanso"><p>descanso</p></div>
+           <div class="celda"><p>8 a 5'15''</p></div>
+           <div class="celda competicion"><p>5k competición a 20'30''</p></div>
+       </div>
+       
+       <div class="fila">
+           <div class="semana"><p>Ajuste</p></div>
+           <div class="numero"><p>9</p></div>
+           <div class="celda descanso"><p>descanso</p></div>
+           <div class="celda controlados"><p>8 controlados a 4' 20''</p></div>
+           <div class="celda seriescortas"><p>6cal+12x400 r:60'' a 1'23''</p></div>
+           <div class="celda descanso"><p>descanso</p></div>
+           <div class="celda larga"><p>12 a 4' 30'' y circuitos</p></div>
+           <div class="celda serieslargas"><p>6cal+3x2000 r:2' a 8'00''</p></div>
+           <div class="celda maslarga"><p>15 a 4'45''</p></div>
+       </div>
+       
+       <div class="fila">
+           <div class="semana"><p>carga</p></div>
+           <div class="numero"><p>10</p></div>
+           <div class="celda descanso"><p>descanso</p></div>
+           <div class="celda controlados"><p>8 controlados a 4' 15''</p></div>
+           <div class="celda seriescortas"><p>6cal+12x400 r:1' a 1'22''</p></div>
+           <div class="celda descanso"><p>descanso</p></div>
+           <div class="celda larga"><p>12 a 4' 30'' y circuitos</p></div>
+           <div class="celda serieslargas"><p>6cal+3000 a 12'00''</p></div>
+           <div class="celda maslarga"><p>16 a 4'40''</p></div>
+       </div>
+       
+       <div class="fila">
+           <div class="semana"><p>impacto</p></div>
+           <div class="numero"><p>11</p></div>
+           <div class="celda descanso"><p>descanso</p></div>
+           <div class="celda controlados"><p>9 controlados a 4' 15''</p></div>
+           <div class="celda serieslargas"><p>6cal+5x1000 r:2' a 3' 55''</p></div>
+           <div class="celda descanso"><p>descanso</p></div>
+           <div class="celda larga"><p>13 a 4' 25'' + circuitos</p></div>
+           <div class="celda seriescortas"><p>6cal+3x3x400 r:1'/3' a 1'34''-1'32''-1'28''</p></div>
+           <div class="celda maslarga"><p>16 a 4'40''</p></div>
+       </div>
+       
+       <div class="fila">
+           <div class="semana"><p>competición</p></div>
+           <div class="numero"><p>12</p></div>
+           <div class="celda descanso"><p>descanso</p></div>
+           <div class="celda controlados"><p>10 a 4'25''</p></div>
+           <div class="celda seriescortas"><p>6cal+3x200 r:1'/3' a 44''-42''-40''</p></div>
+           <div class="celda larga"><p>10 a 4' 45''</p></div>
+           <div class="celda descanso"><p>descanso</p></div>
+           <div class="celda"><p>8 a 5' 10''</p></div>
+           <div class="celda competicion"><p>competición a 20'</p></div>
+       </div>
+       
+       
+   </main>
+        
+        <!-- FIN CONTENIDO -->
+           
+           
+           
+         
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

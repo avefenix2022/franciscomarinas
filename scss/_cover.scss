@@ -1,0 +1,42 @@
+/*------------------------------------*\
+    #COVER
+\*------------------------------------*/
+
+/* mixin bg_fijo_scroll ($unsplash, $fijo_scroll) ... */
+
+@mixin bg_unsplash_fijo_scroll ($unsplash, $fijo_scroll){
+    
+    height:                100vh;
+    width:                 100%;
+    
+    background-image:      url("https://source.unsplash.com/" + $unsplash + "/4853x2730");
+    background-repeat:     no-repeat;
+    background-position:   center;
+    background-size:       cover;
+    background-attachment: $fijo_scroll;
+    
+    
+}
+
+
+
+@mixin centrar_contenido ($color) {
+    
+    display:               flex;
+    
+    flex-direction:        column;
+    justify-content:       center;
+    align-items:           center;
+    
+    color:                 $color;
+    
+}
+
+
+
+.cover {
+    
+    @include bg_unsplash_fijo_scroll (UhagOo7IOyc, scroll);
+    @include centrar_contenido (#fff);
+    
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Your page title here :)</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+     
+      <div class="twelve column" style="margin-top: 25%">
+       
+
+
+       
+        <!-- CONTENIDO -->
+        
+
+      <h1>Transformaciones, Transiciones y Animaciones</h1>
+
+      <p>Efectos visuales avanzados!</p>
+      
+      <h2>Transformaciones</h2>
+      <p>Existen 4 transformaciones básicas:</p>
+      <ul>
+          <li><code>rotate()</code></li>
+          <li><code>translate()</code></li>
+          <li><code>scale()</code></li>
+          <li><code>skew()</code></li>
+      </ul>
+      <p>la propiedad <code>transform</code> recibe como valor una lista de transformaciones separadas por espacios. Las reglas de transformación no son acumulativas, lo que significa que cada definición de una nueva regla de la propiedad <code>transform</code> limpiará la anterior.</p>
+      <p>Cada transformación es relativa a la posición y orientación de dicho elemento en el espacio.</p>
+      <p>Las transformaciones no se aplican una tras otra. El motor de renderizado las procesa para aplicar la matriz resultante. Esto posee la ventaja de ser muy eficaz, con el añadido de que las transformaciones se gestionan desde el hardware.</p>
+      
+      <p>Las transformaciones también modifican todas las reglas de estilo que afectan a los elementos transforados. Por consiguiente, las sombras proyectadas combinadas con una rotación semostrarán en relación al objeto al que están asociadas, el lugar de guardar una coherencia con los elementos que las rodean.</p>
+      
+      <p>Al igual que ocurre con los objetos con una posición relativa los elementos a los que se aplica <code>transform</code> no afecta al flujo del documento. Las transformaciones se aplican localmente.</p>
+      
+      <p>No obstante, si hay diferencias en lo que respecta al valor <code>overflow</code> de los elementos padre. Como ocurre con los posicionamientos relativos, los transformados no se enseñarán por fuera de los límites de un padre cuyo overflow tenga un valor <code>hidden</code>; sin embargo, con los primeros, un bloque transformado no mostrará barras de desplazamiento si el <code>overflow</code> del padre tiene un valor <code>auto</code>.</p>
+      
+      <p>Por último, las transformaciones no se pueden aplicar a los elementos en línea.</p>
+      
+      
+      
+      
+      
+      
+      
+      <h2>Comprobar el soporte para las transformaciones</h2>
+      <p>Para probar las transformcciones sólo en aquellos navegadores que las soporten, puede realizar una consulata al medio de destino con el siguiente código:</p>
+      
+      <p><code>@media all and (transform-2d) {...}</code></p>
+      
+      
+      <h2>Rotaciones</h2>
+      <p>Las rotaciones se definen en el sentido de las agujas del reloj por medio de la función <code>rotate()</code>. Como estamos trabajando en un área bidimensional, la función recibe sólo un parámetro, un ángulo en grados (<code>deg</code>) que se aplica por defecto desde el centro del elemento.</p>
+
+      <p>Los eleemntos en bloque ocupan todo el espacio disponible a menos que se especifique un <code>width</code>. Por tanto su centro puede ser el de la pantalla. Una solución para esto es cambiar el valor de <code>display</code> a <code>inline-block</code> para que de este modo sea relativo al centro del elemento.</p>
+      
+      <p data-height="265" data-theme-id="0" data-slug-hash="rLLyXR" data-default-tab="css,result" data-user="franciscomarinas" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/franciscomarinas/pen/rLLyXR/">Transformaciones</a> by Francisco (<a href="http://codepen.io/franciscomarinas">@franciscomarinas</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+        <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+        
+       
+
+       <h2>Translaciones</h2>
+       <code>translate(), translateX() y translateY()</code>
+       
+       
+       
+       <h2>Escalar</h2>
+       <code>scale(), scaleX() y scaleY()</code>
+       <p>Al escalar se redimensionan todos los estilos.</p>
+       
+       
+       <h2>Distorsionar</h2>
+       <code>skew(), skewX() y skewY().</code>
+    </div>
+
+        
+        <!-- FIN CONTENIDO -->
+           
+           
+           
+         
+             
+      </div><!-- FIN TWELVE COLUMN -->
+      
+    </div><!-- FIN ROW -->
+  </div><!-- FIN CONTAINER -->
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

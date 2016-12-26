@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Accesibilidad Si No</title>
+    
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize-dist.css">
+  
+    <link rel="stylesheet" href="css/skeleton-dist.css">
+  
+    <link rel="stylesheet" href="css/main-dist.css">
+    
+    <style>
+    
+        .una-fila {
+            background: #abcdef;
+            height: 100vh;
+            width: 100%;
+            
+            display: flex;
+            
+            flex-direction: row;
+        }
+        
+        .flex-1 {
+            background: #000;
+            
+            height: 100%;
+            flex: 1;
+            
+            margin: 10px;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            font-size: 30rem;
+        }
+        
+        .si {
+            background: #0f0;
+            color: #fff;
+            
+            cursor: pointer;
+            
+        }
+        
+        .no {
+            background: #f00;
+            color: #000;
+            
+            cursor: pointer;
+        }
+    
+    </style>
+    
+</head>
+<body>
+  
+  <main>
+      
+      <div class="fila una-fila">
+          
+          <div class="columna flex-1 si"><p>Si</p></div>
+          <div class="columna flex-1 no"><p>No</p></div>
+          
+
+      </div>
+      
+      
+  </main>
+   
+   
+    
+</body>
+</html>

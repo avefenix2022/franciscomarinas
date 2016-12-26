@@ -1,0 +1,1439 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Titanio CSS</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize-dist.css">
+  
+  <link rel="stylesheet" href="css/skeleton-dist.css">
+  
+  <link rel="stylesheet" href="css/main-dist.css">
+
+
+
+
+  <!-- FAVICON
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+
+
+
+
+<div class="cover">
+      
+    <h1 class="color-salmon">Titanio.css</h1>
+    <h2 class="color-esmeralda">Ligero y Resistente</h2>
+      
+</div>
+  
+
+
+
+
+<!-- --- CONTAINER–––––––––––––––––––––––––––––––––––--------––––––––––––––– -->
+<div class="container">
+        
+<!-- --- ROW --------------------------------------------------------------- -->    
+<div class="row">
+    <div class="twelve column" style="margin-top: 8rem">
+       
+    <h1 class="color-salmon">Proyecto Titanio CSS</h1>
+    
+    <a href="acce-1.html">acce-1</a>
+
+    <p>La Aplicación Web esta hospedada en <strong>Azure</strong> y está <strong>implementada de forma continua desde el repositorio <a href="https://github.com/franciscomarinas/adatabuy">GitHub</a></strong> como un <strong>servicio de control del código fuente</strong>.</p>
+
+    <p>Las <strong>ventajas de la implementación desde un servicio de control de código</strong> fuente basado en la nube son:</p>
+
+    <ul>
+        <li>Contar con un <strong>controlador de versiones</strong>.</li>
+        <li>Disponer de una <strong>implementación continua</strong> desde un repositorios Git.</li>
+        <li><strong>Implementación específica por ramas</strong>, pudiendo implementar ramas diferentes en aplicaciones distintas.<br>
+        Toda la funcionalidad del motor de implementación de <strong>Kudu</strong> está disponible (por ejemplo, control de versiones de implementación, reversión, restauración de paquetes, automatización).</li>
+        <li>La implementación continua representa una buena opción para los <strong>proyectos donde se integran contribuciones diversas y frecuentes</strong>.</li>
+    </ul>
+
+    <p><strong>Se crea una asociación con el repositorio, se extraen los archivos de la rama master y se mantiene un clon del repositorio para la aplicación</strong>. La integración usa el motor de implementación de <strong>Kudu</strong>, que ya automatiza las tareas de compilación e implementación con cada <strong>git push</strong>.</p>
+    
+    <p><strong>Referencias</strong>:</p>
+
+      <ul>
+          <li><a href="https://github.com/inuitcss/inuitcss">inuitcss</a></li>
+      </ul>
+      
+  
+    </div>
+      
+</div><!-- --- FIN ROW ------------------------------------------------- -->   
+</div>
+  <!-- --- FIN CONTAINER---------------------------------------------- -->
+  
+  
+  
+  
+  
+<!-- --- CONTAINER–––––––––––––––––––––––––––––––––––--------––––––––––––––– -->
+  <div class="container">
+        
+<!-- --- ROW --------------------------------------------------------------- -->    
+<div class="row">
+    <div class="twelve column" style="margin-top: 8rem">
+       
+    <h1 class="color-salmon">Framework Titanio CSS</h1>
+
+    <p>Nos basamos en el framework Skeleton: <a href="http://getskeleton.com">getskeleton.com</a>. Con una anchura para el contenido de <strong>960px</strong>.</p> 
+    <p>Por <strong>media queries</strong>:</p>
+    <ul>
+        <li>Por debajo de <strong>550px</strong> se apila el contenido, ocupando el <strong>100%</strong> del ancho de la ventana.</li>
+        <li>Entre <strong>400px y 500px</strong> ocupa <strong>85%</strong>.</li>
+        <li>Por encima de los <strong>550px</strong> el <strong>80%</strong>.</li>
+    </ul>
+    
+    <p>Utilizamos <strong>SCSS</strong> como preprocesador CSS. <strong>separamos el SCSS</strong> en: </p>
+    <ul>
+        <li>grid</li>
+        <li>estilos-base</li>
+        <li>tipografia</li>
+        <li>botones</li>
+        <li>links</li>
+        <li>forms</li>
+        <li>lists</li>
+        <li>code</li>
+        <li>tables</li>
+        <li>spacing</li>
+        <li>utilities</li>
+        <li>misc</li>
+        <li>clearing</li>
+        <li>media-queries</li>
+    </ul>
+    
+    <p>Se importan en skeleton.scss. Se procesan en <strong>skeleton.css y skeleton-dist.css</strong> que es el archivo minificado.</p> 
+    
+    <ul>
+        <li>color</li>
+        <li>cover</li>
+    </ul>
+    
+   <p>Se importan en main.scss. Se procesan en <strong>main.css y main-dist.css</strong> que es el archivo minificado.</p> 
+   
+                
+    </div>
+      
+</div><!-- --- FIN ROW ------------------------------------------------- -->   
+</div>
+  <!-- --- FIN CONTAINER---------------------------------------------- -->
+  
+
+   
+    
+     
+       
+<div class="container">
+    
+      <div class="row">
+      <div class="twelve column" style="margin-top: 8rem">
+      
+      <h1 class="color-salmon">BEM, OOCSS, y SMACSS</h1>
+      <p><strong>BEM, OOCSS, y SMACSS</strong> surgieron como soluciones a problemas de mantenimiento de hojas de estilos CSS en grandes proyectos web, pero el concepto es aplicable a todo tipo de proyectos. <br>El <strong>OOCSS</strong> de Nicole Sullivan es el más general y abstracto de los modelos. <br>La metodología <strong>BEM</strong> son reglas demasiado estrictas. <br>En el enfoque que plantea Jonathan Snook en <strong>SMACSS</strong>  la categorización de las reglas es intuitiva y la convención de nombres es sencilla.</p>
+      
+      
+      
+      
+      
+      <h2 class="color-esmeralda">OOCSS</h2>
+      <p><strong>OOCSS (CSS orientado a objetos)</strong> se basa en 2 principios:</p>
+      <ul>
+          <li><strong>Separación de estructura y estilo visual</strong>: definir los estilos visuales (por ejemplo color de fondo y estilo de borde) como “skins” que se pueden aplicar a diversos módulos.</li>
+          <li><strong>Separación de contenedor y contenido</strong>: evitar el selector descendiente, por ejemplo no usar .sidebar h3.</li>
+      </ul>
+      
+      <p><strong>OOCSS</strong> promueve la creación de una librería de <strong>componentes re-utilizables</strong> dentro del mismo sitio o entre proyectos. Los componentes son independientes de la ubicación en la página, se comportan en forma predecible, son por lo tanto portables y se pueden combinar para extenderlos. Para que la cascada se comporte de manera predecible <strong>se usan selectores de clase</strong>.</p>
+      <p>Aplica el principio DRY (no te repitas) y por lo tanto produce CSS:</p>
+      <ul>
+          <li><strong>Escalable</strong>: se aplica a proyectos de cualquier tamaño.</li>
+          <li><strong>Fácil de mantener</strong>: es una arquitectura transparente.</li>
+          <li><strong>Rápido</strong>: Menos CSS = más velocidad.</li>
+      </ul>
+      
+      
+      
+      
+      <h2 class="color-esmeralda">BEM</h2>
+      <p><strong>BEM (bloque, elemento, modificador)</strong> son una serie de principios desarrollados por la empresa de TI rusa Yandex para crear rápidamente sitios web fáciles de mantener en un período largo de tiempo.</p>
+      <ul>
+          <li><strong>Bloque</strong>: es una entidad independiente. Puede ser simple o compuesto por otros bloques. Ejemplo: buscador (simple) o cabezal (compuesto).</li>
+          <li><strong>Elemento</strong>: parte de un bloque que cumple una función. Ejemplo: input y botón.</li>
+          <li><strong>Modificador</strong>: con un modificador se crea un bloque similar a otro existente. Por ejemplo para indicar un elemento activo de un menú, se usa un modificador.</li>
+      </ul>
+      
+      
+      
+      
+      
+      <h2 class="color-esmeralda">SMACSS</h2>
+      <p><strong>SMACSS (Arquitectura modular y escalable para CSS)</strong> es una guía de estilo escrita por Jonathan Snook un diseñador, desarrollador web y autor de The Art and Science of CSS publicado por SitePoint.</p>
+      <ul>
+          <li><strong>Base</strong>: reglas básicas para elementos (o [atributos], pseudo-clases, etc.). Normalize.css es un ejemplo de reglas básicas.</li>
+          <li><strong>Maquetación</strong>: define las secciones de una página (regilla).</li>
+          <li><strong>Módulo</strong>: componentes re-usables y modulares.</li>
+          <li><strong>Estado</strong>: cómo luce un módulo a través de diferentes estados, o sea clases que se agregan vía JavaScript (oculto/expandido, activo/inactivo) y a través de distintas vistas (homepage, página interior).</li>
+          <li><strong>Tema</strong>: es lo que en OOCSS se le llama “skin”. En SMACSS es opcional, los estilos visuales pueden estar integrados a los módulos y estados o separados por tema para sitios en donde el usuario pueda elegir un tema, para sitios multi-lenguaje, etc.</li>
+      </ul>
+      <p>La convención es:</p>
+      <ul>
+          <li>Nombrar las clases con un prefijo que indica la categoría.</li>
+          <li>Los módulos no llevan prefijos.</li>
+          <li>Los sub-módulos llevan como prefijo el nombre del módulo padre.</li>
+      </ul>
+          
+      
+      
+      
+      
+      
+      <h2 class="color-esmeralda">Arquitectura CSS</h2>
+      <ul>
+          <li><strong>Semántico vs Genérico</strong>: La arquitectura CSS tiene que ver con encontrar <strong>un punto intermedio entre semántico y genérico</strong>. <br><strong>Los nombres de las clases deben ser lo suficientemente claros para entender qué son, pero no tan específicos que no se puedan re-utilizar</strong>.</li>
+          <li><strong>Diseño vs Refactorización</strong>: El diseño es un proceso creativo y cada sitio web es único. Se puede empezar desde el primer día con la arquitectura CSS en mente, pero generalmente es un proceso laborioso porque <strong>se necesita tener una cierta cantidad de elementos del diseño definidos para poder abstraer patrones que se repiten</strong>. <br>Una vez que <strong>el sitio web está online no deberías tener que refactorizar para agregar un nuevo componente</strong>.</li>
+          <li><strong>Único vs Re-usable</strong>: Que se diseñe sitios web a medida no significa que tengan que resolver los mismos problemas una y otra vez.</li>
+          <li><strong>Nombres vs Mantenimiento</strong>: Durante el desarrollo tener <strong>una guía de cómo nombrar objetos te sirve para no perder tiempo pensando en qué nombre de clase le pongo</strong> al título del formulario. Los nombres de clase con prefijos son útiles para el mantenimiento porque es muy obvio saber a qué van a afectar y se puede introducir un objeto nuevo con la seguridad de que no vas a alterar uno existente.</li>
+      </ul>
+      
+      
+      
+      
+      <h2 class="color-esmeralda">Frameworks basados en BEM, OOCSS y SMACSS</h2>
+      <p>Estos frameworks son ejemplos de aplicaciones de los conceptos de BEM, OOCSS y SMACSS. inuit no tiene diseño, es solamente una colección de objetos CSS. Pure y Topcoat soportan temas personalizados.</p>
+      <ul>
+          <li><strong>inuit.css</strong> es un framework open source que <strong>sigue la convención de nombres BEM y los principios OOCSS</strong> desarrollado Harry Roberts, un joven desarrollador web y arquitecto front-end. Es un framework modular que <strong>consiste en una serie de objetos y abstracciones</strong>, no de elementos de diseño como Bootstrap. <strong>"Generic"</strong> incluye normalize.css, el clearfix, etc. <strong>"Base"</strong> son reglas básicas para títulos, tablas y otros elementos. Finalmente <strong>"Objects"</strong> es la parte más interesante, con los objetos CSS con código profusamente comentado. inuit está <strong>desarrollado en Sass</strong>, se pueden modificar las variables y extenderlo con tu propia UI.</li>
+          
+          <li><strong>Pure</strong>: de Yahoo! consiste en una serie de <strong>módulos según se definen en SMACSS</strong>. Así como en otros frameworks se puede modificar variables, en Puere se puede construir una skin en un editor visual.</li>
+          
+          <li><strong>Topcoat</strong> de Adobe es un framework CSS para aplicaciones web <strong>basada en la arquitectura BEM</strong> y enfocada en el rendimiento. <strong>Automáticamente genera una guía de estilos, incluye archivos PSD, una colección de iconos en formato SVG y la fuente Adobe Source Sans Pro</strong>.</li>
+      </ul>
+      
+      
+      
+      
+      
+      
+      <!------------------------------------------------------------------------->
+      
+    <h1 class="color-salmon">Guía de Estilo para el CSS</h1>
+    <p>Las guías de estilo se deben:</p>
+    <ul>
+        <li>comprender,</li>
+        <li>aprender, y</li>
+        <li>aplicar siempre</li>
+    </ul>
+     <p>y cualquier desviación debe ser justificada.</p>
+    <p><small>(Basado en <a href="http://cssguidelin.es/">http://cssguidelin.es/)</a></small></p>
+     
+      
+      
+      
+      
+     
+      
+        
+      <h2 class="color-esmeralda">Sintaxis y formato del documento</h2>
+      <p><strong>El código debe de ser y parecer limpio</strong></p>
+      
+      
+      
+      
+      
+      
+      
+      
+      <h2 class="color-esmeralda">Reglas</h2>
+      <ul>
+           <li><strong>(4) espacios</strong> para indentar, <strong>no tabular</strong>.</li>
+           <li>Columna de <strong>80 caracteres</strong> de ancho.</li>
+           <li><strong>CSS multilínea</strong>.</li>
+           <li><strong>Orden alfabético.</strong></li>
+           <li><strong>Dos columnas</strong> una para la <strong>propiedad</strong> y otra para el <strong>valor</strong>.</li>
+           <li>Uso de espacios en blanco para facilitar la lectura.</li>
+      </ul>
+      <pre>
+      
+.baz {
+    background-color:      green;
+    color:                 red;
+    display:               block;
+}
+     </pre>
+     
+     
+     
+     
+     
+     
+     
+     
+     <h2 class="color-esmeralda">Varios archivos Css/Scss</h2>
+     <p>Es una buena idea dividir <strong>trozos discretos de código</strong> css/scss en archivos independientes para posteriormente <strong>procesarlos y concatenarlos</strong> en un archivo único.</p>
+
+    
+    
+    
+    
+    
+     
+         
+     <h2 class="color-esmeralda">Tabla de contenido</h2>
+     <p>Una tabla de contenidos marca un esqueleto sobre el que asentar la estructura del documento. </p>
+     
+     <pre>
+         
+/*
+* 
+* Titanio.css Ligero y Resistente.
+*
+* Basado en: 
+* Skeleton V2.0.4 www.getskeleton.com
+* cssguidelin http://cssguidelin.es/
+*
+*/
+
+
+
+/**
+ 
+* TABLA DE CONTENIDO
+
+* VARIABLES
+* _color.scss  -> main.scss
+
+* COVER
+* _cover.sccss -> main.scss
+
+*
+* GRID
+* Grid ................... Regilla de maquetación de 12 columnas.
+*/
+  @import "grid";
+/*
+
+* AJUSTES
+* Global ................. Variables y configuraciones disponibles Globalmente.
+* Tipografías
+* Estilos Base
+*/
+  @import "estilos-base";
+/*
+*
+* BASE
+* Encabezamientos ........ H1-H6.
+*/
+  @import "tipografia";
+/*
+*
+* HERRAMIENTAS
+* Mixins ................. Mixins útiles.
+*
+* GENÉRICO
+* Normalize.css .......... Normalize.
+* Box-sizing ............. Box-sizing.
+*
+
+*
+* OBJETOS
+* Contenedores ........... Contenedores.
+
+*
+* COMPONENTES
+* Cabecera de las Página . Encabezado principal de la página.
+* Pies de las Página ..... El pie de página.
+* Botones ................ Elementos Button.
+*/
+  @import "botones";
+/*
+* Links .................. Etiquetas a.
+*/
+  @import "links";
+/*
+* Forms .................. Formularios.
+*/
+  @import "forms";
+/*
+* Lists .................. Listas ordenadas y no ordenadas.
+*/
+  @import "lists";
+/*
+* Code ................... Etiqueta pre y code.
+*/
+  @import "code";
+/*
+* Tables ................. Estilos de tablas.
+*/
+  @import "tables";
+/*
+* Spacing ................ Separaciones y espacios.
+*/
+  @import "spacing";
+/*
+* Utilities .............. Diferentes utilidades.
+*/
+  @import "utilities";
+/*
+* misc ................... hr.
+*/
+  @import "misc";
+/*
+* Clearing ............... Para limpiar float.
+*/
+  @import "clearing";
+/*
+* 
+* MEDIA QUERIES
+*
+* Para interfaces menores de 400px de ancho 
+* ...
+*
+* Mayor que 400px 
+* @media (min-width: 400px) {}
+*
+* Mayor que 550px (También el punto cuando empieza a activarse el grid) 
+* @media (min-width: 550px) {}
+*
+* Mayor que Tablet 
+* @media (min-width: 750px) {}
+*
+* Mayor que Ordenador 
+* @media (min-width: 1000px) {}
+*
+* Mayor que Ordenadorp HD 
+* @media (min-width: 1200px) {}
+
+*/
+  @import "media-queries";
+/*
+*
+*
+*
+*
+*
+*
+*
+* PARA MAQUETAR
+* Outline ................ Borde outline alrrededor de todos los elementos
+*/
+  /* @import "outline"; */
+/*
+*
+**/
+     </pre>
+
+     
+     
+     
+
+     
+          
+                    
+     <h2 class="color-esmeralda">Ancho de 80 caracteres</h2>
+     <p>Siempre que sea posible, la anchura de los archivos css se limitará a 80 caracteres. Las razones para esto incluyen:
+     </p>
+     <ul>
+         <li>Capacidad para <strong>abrir varios documentos uno al lado del otro</strong>.</li>
+         <li>Visualizar los archivos css en sitios como <strong>GitHub y ventanas de terminal</strong>.</li>
+         <li>Proporcionar una longitud de línea cómoda para comentarios.</li>
+     </ul>
+     <pre>
+         
+/ **
+* Este es el tamaño de un comentario con una longitud de 80 catacteres de ancho.
+*
+* Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam dignissimos 
+* facilis eveniet, incidunt voluptatem sit soluta maiores qui ducimus blanditiis
+* impedit autem dolorum, cum veritatis ratione ut. Debitis, hic repellendus.
+** /
+     </pre>
+     
+     
+     
+     
+
+     
+          
+     
+     <h2 class="color-esmeralda">Títulos</h2>
+     <p><strong>Comenzar cada nueva sección principal con un título</strong></p>
+     <pre>
+         
+/*------------------------------------*\
+    #SECCION-TITULO
+\*------------------------------------*/
+
+.selector {}
+     </pre>
+     
+     <p>El título de la sección está <strong>precedido de un símbolo de almohadilla (#) que nos permita realizar búsquedas más específicas</strong>. En lugar de buscar simplemente SECCION-TITULO que pueden producir muchos resultados que una búsqueda más restringida de <strong>#SECCION-TITULO</strong> la cual debería devolver solo la sección en cuestión.</p>
+     
+     <p><strong>Dejar un retorno de carro entre este título y la siguiente línea de código.</strong></p>
+     <p><strong>Si se está trabajando en un proyecto en el que cada sección es su propio archivo, este título debería aparecer en la parte superior de cada uno de ellos</strong>. Si está trabajando en un proyecto con varias secciones por archivo, <strong>cada título debe ir precedido de cinco (5) retornos de carro</strong>. Este espacio en blanco adicional junto con un título hace que las nuevas secciones sean mucho más fácil de detectar cuando uno se desplaza a través de archivos de gran tamaño:</p>
+     <pre>
+     
+/*------------------------------------*\
+    #A-SECTION
+\*------------------------------------*/
+
+.selector {}
+1
+2
+3
+4
+5
+/*------------------------------------*\
+    #ANOTHER-SECTION
+\*------------------------------------*/
+
+/**
+ * Comment
+ */
+
+.another-selector {}
+     </pre>
+      
+      
+      
+      
+      
+      <h2 class="color-esmeralda">Anatomía de un conjunto de reglas</h2>
+      <p>Antes de discutir la forma en que escribimos conjuntos de reglas, primero vamos a familiarizarnos con la <strong>terminología</strong>:</p>
+      
+      <pre>
+      
+[selector] {
+    [propiedad]: [valor];
+    [----declaración---]
+}
+      </pre>
+      
+      <p>Por ejemplo:</p>
+      
+      <pre>    
+.foo, .foo--bar, 
+.baz {
+    display:               block;
+    background-color:      green;
+    color:                 red;
+}
+      </pre>
+      
+      
+
+      
+      <ul>
+          <li><strong>Selectores relacionados en la misma línea; no relacionados en nuevas líneas</strong>.</li>
+          <li><strong>Un espacio antes de abrir unas llaves ' {'</strong></li>
+          <li><strong>Propiedades y valores en la misma línea</strong>.</li>
+          <li><strong>Al menos un espacio después de lo dos punto (:)</strong></li>
+          <li><strong>Propiedades y valores en dos columnas</strong>.</li>
+          <li><strong>Cada declaración en una nueva línea</strong>.</li>
+          <li><strong>La llave de apertura ({) en la misma línea que el último selector</strong>.</li>
+          <li><strong>La primera declaración en una nueva línea después de nuestra llave de apertura ({)</strong></li>
+          <li><strong>La llave de cierre (}) en su propia línea nueva</strong>.</li>
+          <li>Cada declaración con <strong>sangría de cuatro (4)</strong> espacios;</li>
+          <li><strong>Un punto y coma (;) al fina de nuestra última declaración (aunque no sea obligatoria)</strong>.</li>
+          <li>Los valores <strong>siempre con unidades</strong> incluso los de valor '0'.</li>
+      </ul>
+      
+  
+      
+      
+      
+      <h2 class="color-esmeralda">CSS Multi-línea</h2>
+      <p>El CSS debe ser escrito en <strong>múltiples líneas</strong></p>
+       <p>Excepto en circunstancias muy específicas <strong> como conjuntos de reglas similares, que solo llevan una declaración, por ejemplo</strong>:</p>
+      
+      <pre>
+
+.icon {
+    display: inline-block;
+    width:  16px;
+    height: 16px;
+    background-image: url(/img/sprite.svg);
+}
+
+.icon--home     { background-position:   0     0  ; }
+.icon--person   { background-position: -16px   0  ; }
+.icon--files    { background-position:   0   -16px; }
+.icon--settings { background-position: -16px -16px; }
+      </pre>
+      
+      <p><strong>Cuando una sola línea proporciona mejor la información por simplicidad y comparación se puede codificar en una sola línea.</strong></p>
+      
+      
+      
+      
+      
+      <h2 class="color-esmeralda">Sangría</h2>
+      <p>Se pueden <strong>sangrar selectores con sus declaraciones para indicar relaciones entre ellos</strong>:</p>
+      
+      <pre>
+          
+.foo {}
+
+    .foo__bar {}
+
+        .foo__baz {}
+      </pre>
+      
+      <p>De esta manera, un desarrollador puede ver a simple vista que <code>.foo__baz {}</code> vive en el interior de <code>.foo__bar {}</code> y este vive dentro <code>.foo {}</code>.</p>
+      <p>Esta cuasi-replicación del DOM informa donde se espera que las clases van a ser utilizadas sin que tengan que hacer referencia a un fragmento de código HTML.</p>
+      
+      
+      
+      
+      
+      <h2 class="color-esmeralda">Sangría Sass</h2>
+      <p><strong>Scss</strong> proporciona una funcionalidad de anidación (<strong>nesting</strong>), como esta:</p>
+      
+      <pre>
+
+.foo {
+    color: red;
+
+    .bar {
+        color: blue;
+    }
+
+}
+      </pre>
+      
+      <p>Que se compilará a:</p>
+      
+      <pre>
+          
+.foo      { color: red; }
+.foo .bar { color: blue; }
+      </pre>
+      
+      <p>Cuando sangramos en Sass, nos ceñimos a los mismos <strong>cuatro (4) espacios</strong>, y también dejar <strong>una línea en blanco antes y después del conjunto de reglas anidadas</strong>.</p>
+      
+      <p><strong>La anidación en Sass debe evitarse siempre que sea posible, por especificidad!</strong></p>
+      
+      
+      
+      
+      
+      <h2 class="color-esmeralda">Alinear</h2>
+      <p>Intentar <strong>alinear cadenas idénticas y relacionadas</strong> en las declaraciones, por ejemplo:</p>
+      
+      <pre>
+          
+.foo {
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+}
+
+.bar {
+    position:              absolute;
+    top:                   0;
+    right:                 0;
+    bottom:                0;
+    left:                  0;
+    margin-right:          -10px;
+    margin-left:           -10px;
+    padding-right:         10px;
+    padding-left:          10px;
+}
+      </pre>
+      
+      
+      
+      
+      
+      <h2 class="color-esmeralda">Significado de los espacios en blanco</h2>
+      <p>Podemos proporcionar una gran cantidad de información mediante el uso libre y juicioso de espacios en blanco entre los conjuntos de reglas. <br> Utilizamos:</p>
+      <ul>
+          <li><strong>Una (1)</strong> línea vacía entre los conjuntos de reglas estrechamente relacionados.</li>
+          <li><strong>Dos (2)</strong> líneas vacías entre los conjuntos de reglas vagamente relacionados.</li>
+          <li><strong>Cinco (5)</strong> líneas vacías entre secciones.</li>
+      </ul>
+      <p>Por ejemplo:</p>
+      <pre>
+          
+/*------------------------------------*\
+    #FOO
+\*------------------------------------*/
+
+.foo {}
+
+    .foo__bar {}
+
+
+.foo--baz {}
+
+
+
+
+
+/*------------------------------------*\
+    #BAR
+\*------------------------------------*/
+
+.bar {}
+
+    .bar__baz {}
+
+    .bar__foo {}
+      </pre>
+      
+      
+      
+      
+      
+      <h2 class="color-esmeralda">Marcado HTML</h2>
+      <p>Con los <strong>atributos</strong>:</p>
+      
+      <pre>
+        
+&lt;div class="box"&gt;
+      </pre>
+      
+      <p>Al escribir varios valores en un <strong>atributo de clase</strong>, hay que separarlos con <strong>dos (2)</strong> espacios:</p>
+      
+      <pre>
+        
+&lt;div class="foo  bar"&gt;
+      </pre>
+      
+      <p>Cuando hay <strong>varias clases que están relacionadas entre sí, podrá agruparlas entre corchetes ([ y ])</strong>, así:</p>
+      
+      <pre>
+          
+&lt;div class="[ box  box--highlight ]  [ bio  bio--long ]"&gt;
+      </pre>
+      
+      <p>Al igual que con nuestros conjuntos de reglas CSS, es posible utilizar los espacios en blanco de forma significativa en el código HTML. Puede denotar <strong>descansos temáticos en el contenido</strong> con <strong>cinco (5)</strong> líneas vacías, por ejemplo:</p>
+      
+      <pre>         
+&lt;header class="page-head"&gt;
+    ...
+&lt;/header&gt;
+
+
+
+
+
+&lt;main class="page-content"&gt;
+    ...
+&lt;/main&gt;
+
+
+
+
+
+&lt;footer class="page-foot"&gt;
+    ...
+&lt;/footer&gt;
+      </pre>
+      
+      <p>Para <strong>fragmentos independientes</strong>, pero vagamente relacionados el marcado es con <strong>una sola línea</strong> en blanco, por ejemplo:</p>
+      
+      <pre>
+          
+&lt;ul class="primary-nav"&gt;
+
+    &lt;li class="primary-nav__item"&gt;
+        &lt;a href="/" class="primary-nav__link"&gt;Home&lt;/a&gt;
+    &lt;/li&gt;
+
+    &lt;li class="primary-nav__item  primary-nav__trigger"&gt;
+        &lt;a href="/about" class="primary-nav__link"&gt;About&lt;/a&gt;
+
+        &lt;ul class="primary-nav__sub-nav"&gt;
+            &lt;li&gt;&lt;a href="/about/products"&gt;Products&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="/about/company"&gt;Company&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+
+    &lt;/li&gt;
+
+    &lt;li class="primary-nav__item"&gt;
+        &lt;a href="/contact" class="primary-nav__link"&gt;Contact&lt;/a&gt;
+    &lt;/li&gt;
+
+&lt;/ul&gt;
+      </pre>
+      
+      <p>Esto permite a los desarrolladores detectar <strong>partes separadas del DOM de un vistazo</strong>.</p>
+      
+      
+      
+      
+      
+      <h2 class="color-esmeralda">Comentarios</h2>
+      <p>La sobrecarga cognitiva de trabajar con CSS y HTML es enorme. Con tantos matices que dificulta ser consciente de todos, y más de los específicos de cada proyecto, la peor situación que la mayoría de los desarrolladores se encuentran es que no son la persona que escribió el código. Estas pueden recordar sus propias clases, reglas,... que es manejable hasta cierto punto, pero cualquier persona que hereda CSS apenas tiene posibilidades.</p>
+      <p><strong>El CSS necesita más comentarios</strong>.</p>
+      <p>Como regla general, se debe <strong>comentar cualquier cosa que no sea evidente a partir solo del código</strong>. Es decir, no hay necesidad de decirle a alguien que color: red; colorea la fuente de rojo, pero si se está utilizando overflow: hidden; para borrar los desbordamientos -en contraste con un elemento con desbordamiento, esto es probablemente algo que vale la pena documentar.</p>
+      
+      <p>Para grandes comentarios que documentan secciones o componentes enteros, usamos un comentario de varias líneas de <strong>80</strong> columnas de ancho. Por ejemplo:</p>
+      
+      <pre>
+          
+/**
+ * La cabecera de la página principal tiene dos estados:
+ *
+ * 1) Cabecera de la página normal sin imagenes de fondo. Solo contiene el logo
+ * y el menu de navegación.
+ * 2) Cabecera de la página con imagen de fondo cover y etiquetas de cabecera.
+ *
+ */
+      </pre>
+      
+      <p>Este nivel de detalle debería ser la norma para todas las descripciones de códigos.</p>
+      
+      
+      
+      
+      
+      <h2 class="color-esmeralda">Extensión de reglas</h2>
+      <p>Cuando trabajamos con el patrón <strong>OOCSS</strong>, con reglas que pueden estar relacionadas incluso en archivos diferentes se deben de indicar estas extensiones.</p>
+      <p>En el archivo del objeto:</p>
+      
+      <pre>
+        
+/**
+ * Extiende '.btn {}' en _components.buttons.scss.
+ */
+
+.btn {}
+      </pre>
+      
+      <p>Y en el archivo del Tema:</p>
+      
+      <pre>
+          
+/**
+ * Estas reglas extienden '.btn {}' en _objects.buttons.scss.
+ */
+
+.btn--positive {}
+
+.btn--negative {}
+      </pre>
+      
+      <p>La existencia de este sencillo comentario que requiere poco esfuerzo,  puede proporcionar una ventaja para los desarrolladores que desconocen de dónde heredan los estilos.</p>
+
+      
+
+      
+  
+      <h2 class="color-esmeralda">Comentarios del preprocesador</h2>
+      <p>Con la mayoría, si no todos lo pre-procesadores, tenemos la opción de escribir comentarios que no serán compilados a nuestro fichero CSS resultante. Como regla general,  se debe de usar estos comentarios para <strong>documentar código que afecte al archivo precompilado y que no va a aparecer escrito en el archivo CSS porque allí no se aplica</strong>. Si se está documentando código que se compila, utilizar comentarios que se compilarán también. Por ejemplo, esto es correcto:</p>
+      
+      <pre>
+          
+// Dimensiones de imágenes @2x:
+$sprite-width:  920px;
+$sprite-height: 212px;
+
+/**
+ * 1. Tamaño por defecto de icono 16px.
+ * 2. Retina sprite se muestra en el tamaño correcto.
+ */
+.sprite {
+    width:  16px; /* [1] */
+    height: 16px; /* [1] */
+    background-image: url(/img/sprites/main.png);
+    background-size: ($sprite-width / 2 ) ($sprite-height / 2); /* [2] */
+}
+      </pre>
+      
+      <p>Hemos comentado las variables, las cuales no se muestran en nuestro archivo CSS junto con estos comentarios, mientras que nuestro código CSS que se compila en el archivo CSS se documenta el uso final del CSS compilado con comentarios. Esto significa que sólo tenemos la información correcta y relevante a nuestra disposición al depurar nuestras hojas de estilo compiladas.</p>
+      
+      
+      
+      
+      
+      <h2 class="color-esmeralda">Eliminar comentarios</h2>
+      <p>No hace falta decir que en el <strong>entorno de producciónno deben de aparecer estos comentarios</strong> . <strong>Todos los CSS deben de ser minificados</strong> lo que conlleva la pérdida de estos comentarios antes de ser desplegados los archivos.</p>
+      
+      
+      
+      
+      
+      <h2 class="color-esmeralda">Convenios de Nombres</h2>
+      <p>Tener una convención en los nombres en las denominaciones CSS son <strong>muy útilies para hacer el código más estricto, transparente e informativo</strong>.</p>
+      <p>Una buena convención de nombres debe de comunicarte a tí y tu euipo:</p>
+      <ul>
+          <li><strong>Qué tipo de cosa hace la clase</strong>.</li>
+          <li><strong>Dónde la clase debe de ser utilizada</strong>.</li>
+          <li><strong>Con qué una clase podría estar realcionada</strong>.</li>
+      </ul>
+      <p><strong>La convención de nombres: un guión (-) para delimitar cadenas, y con la denominación BEM para piezas más complejas de código</strong>.</p>
+      <p>Vale la pena señalar que una convención de nombres no es normalmente útil del lado del desarrollo CSS, <strong>son útilies cuando se ven con el HTML</strong>.</p>
+      
+      
+      
+      
+      
+      <h2 class="color-esmeralda">Delimitador guión</h2>
+      <p><strong>Todas las cadenas de las clases están delimitadas con un guión (-)</strong>, así:</p>
+      
+      <pre>
+          
+.page-head {}
+
+.sub-content {}
+      </pre>
+      
+      <p><strong>Camel case y guiones bajos no deben ser utilizados</strong>. Lo siguiente es incorrecto:</p>
+      
+      <pre>
+          
+.pageHead {}
+
+.sub_content {}
+      </pre>
+      
+      
+      
+      
+      
+      <h2 class="color-esmeralda">Nombrar como BEM</h2>
+      <p>A mayores para componentes interrelacionados de la interfaz de usuario que requiere un número mayor de clases, se utiliza la convención de nomenclatura similar a BEM.</p>
+      <p>BEM, bloque, elemento, modificador, es una metodología de front-end acuñada por los desarrolladores de <a href="https://www.yandex.com/">Yandex</a>. Mientras BEM es una metodología completa, aquí <strong>sólo nos interesa su convención de nombres</strong>. Además, la convención de nombres aquí solamente es como BEM; los principios son exactamente los mismos, pero la sintaxis real difiere ligeramente.</p>
+      <p>BEM divide clases de componentes en tres grupos:</p>
+      <ul>
+          <li><strong>Bloque</strong>: La única raíz del componente.</li>
+          <li><strong>Elemento</strong>: un componente del bloque.  <strong>Los elementos son delimitados con dos (2) guiones bajos (__) </strong>.</li>
+          <li><strong>Modificador</strong>: Una variante o extensión del bloque. <strong>Los modificadores con dos (2) guiones (--)</strong></li>
+      </ul>
+      
+      <pre>
+        
+.person {}
+.person__cabeza {}
+.person--alto {}
+      </pre>
+
+      <p>Aquí podemos ver que <code>.person {}</code> es el <strong>bloque</strong>; es la única raíz de una entidad discreta. <code>.person__cabeza {}</code> es un <strong>elemento</strong>; que es una parte más pequeña del <strong>bloque</strong> <code>.person {}</code>. <br>Por último, <code>.person--alto {}</code> es un <strong>modificador</strong>; se trata de una variante específica del <strong>bloque</strong> <code>.person {}</code>.</p>
+      
+      
+      
+      
+            
+      <h2 class="color-esmeralda">Convenciones de nombres en HTML</h2>
+      <p>Como comentamos previamente, <strong>las convenciones de nombres no son necesariamente útilies en el CSS. Donde la convención de nombres muestra su poder es en el marcado</strong>. Tomando el siguiente HTML con nombrado-no-convencional:</p>
+      
+      <pre>
+          
+&lt;div class="box  profile  pro-user"&gt;
+
+    &lt;img class="avatar  image" /&gt;
+
+    &lt;p class="bio"&gt;...&lt;/p&gt;
+
+&lt;/div&gt;
+      </pre>
+      
+      
+      <p>¿Cómo están box y profile relacionadas? ¿Cómo están las clases de profile y avatar relacionadas con otras? ¿Están relacionadas con todos? ¿La clase image y profile viven en la misma parte del CSS? ¿Se puede utilizar avatar en otro sitio?</p>
+      <p>Es muy difícil responder a cualquiera de estas preguntas. El uso de una convención de nombres, sin embargo, cambia todo eso:</p>
+      
+      <pre>
+          
+&lt;div class="box  profile  profile--is-pro-user"&gt;
+
+    &lt;img class="avatar  profile__image" /&gt;
+
+    &lt;p class="profile__bio"&gt;...&lt;/p&gt;
+
+&lt;/div&gt;
+      </pre>
+      
+      <p>Ahora podemos ver claramente que clases están y no relacionados entre sí y cómo; sabemos qué clases no se puede utilizar fuera del alcance de este componente; y sabemos qué clases pueden ser libres de reutilizar en otro lugar.</p>
+      
+      
+      
+      
+      
+      <h2 class="color-esmeralda">Selectores CSS</h2>
+      <p>Es importante a la hora de escribir CSS que tenemos <strong>fijado correctamente el alcance de nuestros selectores, y que estamos seleccionando las cosas correctas por las razones correctas</strong>.</p>
+      <p>Hay que <strong>decidir y definir lo que quiere el estilo y cómo va a seleccionarlo</strong>.</p>
+      <p>Por ejemplo, si estás interesado en el estilo de menú de navegación principal de su sitio web, un selector para esto que sería muy poco inteligente:</p>
+      
+      <pre>
+          
+header ul {}
+      </pre>
+      
+      <p>Este selector da estilo a cualquier <code>ul</code> dentro de cualquier elemento <code>header</code> mientras que nuestra intención era el estilo del navegación del sitio principal</p>
+      <p>Una mejor aproximación es:</p>
+      
+      <pre>
+          
+.site-nav {}
+      </pre>
+      
+      <p>Estamos <strong>seleccionando explícitamente lo correcto, exactamente por la razón correcta</strong>.</p>
+      <p><strong>Los selectores deben ser lo más explícitos posible y bien razonado como tu razón para querer seleccionar algo.</strong></p>
+      
+      
+      
+      
+      
+      <h2 class="color-esmeralda">Reutilización</h2>
+      <p>Con un movimiento hacia un enfoque basado más en componentes para la construcción de interfaces de usuario, <strong>la idea de reutilización es de suma importancia</strong>.</p>
+      <p>Por esta razón <strong>hecemos un uso intensivo de las <code>.clases</code></strong></p>
+      <p>Los IDs son demasiado específico, no se pueden utilizar más de una vez en una página.</p>
+      <p><strong>Todo lo que elija, desde el tipo de selector a su nombre, debería prestarse a ser reutilizado.</strong></p>
+      
+      
+      
+      
+      
+      
+      <h2 class="color-esmeralda">Ubicación independiente</h2>
+      <p>Dada la naturaleza siempre cambiante de la mayoría de los proyectos de interfaz de usuario, y el paso a más arquitecturas basadas en componentes, es de nuestro interés no el estilo de las cosas basadas en dónde están, sino en lo que son. Es decir, al diseñar nuestros componentes deberían permanecer completamente independiente de la ubicación.</p>
+      <p>Tomemos un ejemplo de un botón de llamada a la acción que hemos optado por el estilo a través de la siguiente selector:</p>
+      
+      <pre>
+          
+.promo a {}
+      </pre>
+      
+      <p>Este selector está demasiado ligado a su ubcación. Un mejor selector sería:</p>
+      
+      <pre>
+          
+.btn {}
+      </pre>
+      
+      <p>Esta clase puede ser reutilizada en cualquier lugar fuera de .promo y siempre llevar su estilo correcto. Como resultado de un selector mejor, esta pieza de la interfaz de usuario es más portátil, más reciclables, no tiene ninguna dependencia, y define mucho mejor la intención del selector.</p>
+      
+      
+      
+      
+      
+      <h2 class="color-esmeralda">Portabilidad</h2>
+      <p><strong>La reducción, o idealmente la eliminación de las dependencia de la ubicación significa que podemos mover los componentes con más libertad</strong>.</p>
+      
+      <pre>
+          
+input.btn {}
+      </pre>
+      
+      <p>Permite volver a utilizar la clase .btn sobre cualquier elemento que elegimos. Por supuesto, hay ocasiones en las que usted puede desear un selector que tenga que aplicar un estilo muy específico para un elemento en particular, por ejemplo:</p>
+      
+      <pre>
+          
+.error {
+    color:       red;
+    font-weight: bold;
+}
+
+div.error {
+    padding:     10px;
+    border:      1px solid;
+}
+      </pre>
+      
+      <p>Este es un ejemplo donde un selector cualificado podría ser justificable, pero aun así, recomendaría un enfoque más como:</p>
+      
+      <pre>
+          
+.error-text {
+    color: red;
+    font-weight: bold;
+}
+
+.error-box {
+    padding: 10px;
+    border: 1px solid;
+}
+      </pre>
+      
+      <p>Significa que podemos aplicar <code>.error-box</code> a cualquier elemento, y no sólo a un <code>div</code>, es más reutilizable que un selector cualificado.</p>
+      
+      
+      
+      
+      
+      
+      
+      <h2 class="color-esmeralda">Selectores cuasi-calificados</h2>
+      <p>Una cosa para la que los selectores calificados pueden ser útiles es para la señalización donde se podría esperar que una clase sea utilizada, por ejemplo:</p>
+      
+      <pre>
+          
+ul.nav {}
+      </pre>
+      
+      <p>Aquí podemos ver que la clase .nav está destinado a ser utilizado en un elemento ul, y no en un nav. Mediante el uso de selectores cuasi-calificado aún <strong>podemos proporcionar esa información sin tener que calificar el selector</strong>:</p>
+      
+      <pre>
+          
+<strong>/*ul*/.nav {}</strong>
+      </pre>
+      
+      <p><strong>Comentando el elemento que lo lleva, dejamos que se pueda leer, pero evite la calificación y el aumento de la especificidad del selector</strong>.</p>
+      
+      
+      
+      
+      
+      <h2 class="color-esmeralda">Naming</h2>
+          
+      <blockquote>"...sólo hay dos cosas duras en la Ciencias de la Computación: invalidación de caché y nombrar las cosas..."<cite> --Phil Karlton.</cite></blockquote>
+      
+      <p>Para nombrar en CSS es escoger un nombre sensible, pero que aspire a la máxima capacidad de reutilización. Por ejemplo, en lugar de una clase como <code>.site-nav</code>, elegir algo así como <code>.primary-nav</code> en lugar de <code>.footer-links</code>, favorecer a una clase como <code>.sub-links</code>.</p>
+      
+      <p>Las diferencias en estos nombres es que el primero de cada ejemplo está vinculado a un caso de uso muy específico: sólo se puede utilizar como la navegación del sitio o los enlaces de pie de página, respectivamente.</p>
+      
+      <p>Mediante el uso de nombres más ambiguas, podemos aumentar nuestra capacidad de reutilizar estos componentes en diferentes circunstancias.</p>
+          
+      <blockquote>"...Atar la semántica de las clase estrechamente a la naturaleza del contenido ha reducido la capacidad de arquitectura a escala o de ser fácilmente utilizada por otros desarrolladores..." <cite> --Nicolas Gallagher</cite></blockquote>
+      
+      <p>Es decir, debemos utilizar nombres coherentes de clases, pero hay que evitar el uso de clases que describen la naturaleza exacta de uso de contenido. <strong>El uso de un nombre de clase para describir el contenido es redundante ya que el contenido se describe a sí mismo.</strong></p>
+      
+      <p>El debate en torno a la semántica se ha prolongado durante años, pero es importante que adoptemos un enfoque más pragmático, sensible a nombrar las cosas con el fin de trabajar de manera más eficiente y eficaz. En lugar de centrarse en "semántica", mira más de cerca a la sensibilidad y la longevidad, <strong>elegir nombres basado en la facilidad de mantenimiento, no por el significado percibido</strong>.</p>
+      
+      <p><strong>Nombrar las cosas para la gente</strong>. Una vez más, es mejor luchar por clases reutilizables, reciclables en lugar de escribir para casos de uso específicos.
+      
+      <p>Es importante encontrar un equilibrio entre los nombres que no describen literalmente el estilo que trae la clase.</p>
+      
+      
+      
+      
+      <h2 class="color-esmeralda">Nombrando Componentes de la Interfaz de Usuario</h2>
+      <p>Nombrar componentes con la reutilización en mente realmente ayuda a los desarrolladores a construir y modificar las interfaces de usuario mucho más rápidamente.<br> 
+      Sin embargo, a veces puede ser beneficioso proporcionar denominación más específica o significativa junto a las clases más ambiguas, en particular cuando varias clases se unen para formar un componente más complejo y específico que podría beneficiarse de tener un nombre más significativo. En este escenario, aumentamos las clases con un atributo <strong>data-ui-component</strong> que alberga un nombre más específico, por ejemplo:</p>
+      
+      <pre>
+          
+&lt;ul class="tabbed-nav" data-ui-component="Main Nav"&gt;
+      </pre>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+       <h2 class="color-esmeralda">Eficacia del Selector</h2>
+    <p>
+    Un tema, que es, más interesantes queimportante, es el rendimiento del selector. Es decir, 
+    la rapidez con que un navegador puede identificar los selectores CSS con los nodos que encuentra en el DOM.
+    </p>
+    
+    <p>
+    Generalmente, cuanto más largo es un selector más lento es, por ejemplo:
+    </p>
+
+    <pre>
+    body.home div.header ul { }
+    </pre>
+ 
+    </p>
+    ... es mucho más lento que un selector como:
+    <p>
+
+    <pre>
+    .primary-nav { }
+    </pre>
+
+    <p>
+    Esto se debe a que los navegadores leen los selectores CSS de derecha a izquierda. Un navegador leerá el primer ejemplo de los dos anteriores selectores como:
+    </p>
+    
+    <ul>
+        <li>encontrar todos los elementos ul en el DOM,</li>
+        <li>ahora comprueba si conviven dentro de un elemento con una clase <code>.header</code>,</li>
+        <li>la siguiente comprobación es que existe la clase <code>.header</code> en un elemento <code>div</code>,</li>
+        <li>ahora comprobueba que conviven en cualquier lugar dentro de un elemento con una clase <code>.home</code>,</li>
+        <li>por último, comprueba que existe .home en un elemento <code>body</code>.</li>
+    </ul>
+
+    <p>
+    El segundo, por lo contrario, es simplemente un caso lectura del navegador.
+    </p>
+    
+    <ul>
+        <li>encontrar todos los elementos con una clase .primary-nav.</li>
+    </ul>
+
+    <p>
+    Para complicar aún más el problema, estamos utilizando los selectores descendientes 
+    (por ejemplo <code>.foo .bar {}</code>). El resultado de esto es que se requiere recorrer el DOM 
+    empezando con la parte más a la derecha del selector (es decir <code>.bar</code>) y seguir buscando 
+    en el DOM de forma indefinida hasta que encuentra la siguiente parte (es decir <code>.foo</code>). 
+    Esto podría significar intensificar muchas veces recorrer el DOM hasta que 
+    se encuentra una coincidencia.
+    </p>
+
+    <p>
+    Esta es sólo una razón por la que <strong>la anidación con preprocesadores es a menudo una falsa economía</strong>, al crear dependencia de la ubicación, 
+    y también crea más trabajo para el navegador.
+    </p>
+
+
+
+
+
+
+
+ <h2 class="color-esmeralda">El Selector Llave</h2>
+
+    <p>
+    Dado que los navegadores leen los selectores de derecha a izquierda, el selector de la derecha 
+    es a menudo crucial en la definición de la actuación de un selector: se llama el <strong>selector llave</strong>.
+    </p>
+
+    <pre>
+    #foo * { }
+    </pre>
+
+    <p>
+    El problema con este selector es que el selector de llave (*) tiene muy, muy largo alcance. Lo que realmente hace 
+    este selector es encontrar cada nodo individual en el DOM (incluso title, link, head y todo) y después mira para ver 
+    si vive en cualquier lugar en cualquier nivel dentro <code>#foo</code>. Este es un selector muy, muy caro, y debe muy probablemente evitar o reescrito.
+    </p>
+
+    <p>
+    Afortunadamente, escribiendo selectores con una buena intención de selección, es probable que estemos evitando selectores ineficientes de forma predeterminada; 
+    es muy poco probable que tenga selectores de llave codiciosos si focalizamos en lo correcto por la razón correcta.
+    </p>
+
+    <p>
+    Dicho esto, sin embargo, el rendimiento del selector CSS debe estar al final en su lista de cosas para optimizar; los navegadores son rápidos, y son siempre 
+    cada vez más rápido, y es sólo en casos extremos que los selectores ineficientes puedan llegar a suponer un problema.
+    </p>
+
+    <p>
+    Así como sus propios problemas específicos, la anidación, la calificación y la mala intención del selección, todo contribuye a selectores menos eficientes.
+    </p>
+
+
+
+
+     
+     
+      
+      <!------------------------------------------------------------------------->
+      
+
+      <h1 class="color-salmon">Resumen de la Guía de Estilos</h1>
+      
+      <ul>
+          <li>El código debe de ser y parecer limpio.</li>
+          <li>Hacer un uso intensivo de las .clases.</li>
+          <li>La idea de reutilización es de suma importancia.</li>
+          <li>Todo lo que elija, desde el tipo de selector a su nombre, debería prestarse a ser reutilizado.</li>
+          <li>La reducción, o idealmente la eliminación de las dependencia de la ubicación significa que podemos mover los componentes con más libertad.</li>
+          <li>Podemos proporcionar esa información sin tener que calificar el selector.</li>
+          <li>Comentando el elemento que lo lleva, dejamos que se pueda leer, pero evite la calificación y el aumento de la especificidad del selector.</li>
+          
+          <li>Elegir nombres basado en la facilidad de mantenimiento, no por el significado percibido.</li>
+          <li>Nombrar las cosas para la gente.</li>
+          
+          <li>(4) espacios para indentar, no tabular.</li>
+          <li>Columna de 80 caracteres de ancho.</li>
+          <li>CSS multilínea.</li>
+          <li>Se puede codificar en una sola línea cuando proporciona mejor información por simplicidad y comparación .</li>
+          <li>Orden alfabético.</li>
+          <li>Dos columnas una para la propiedad y otra para el valor.</li>
+          <li>Uso de espacios en blanco para facilitar la lectura.</li>
+          <li>Trozos discretos de código css/scss en archivos independientes.</li>
+          <li>Redactar una Tabla de contenido</li>
+          <li>Comenzar cada nueva sección principal con un título precedido de un símbolo de almohadilla (#) que nos permita realizar búsquedas más específicas.</li>
+          <li>Dejar un retorno de carro entre este título y la siguiente línea de código.</li>
+          <li>Si se está trabajando en un proyecto en el que cada sección es su propio archivo, este título debería aparecer en la parte superior de cada uno de ellos.</li>
+          <li>Cada título debe ir precedido de cinco (5) retornos de carro.</li>
+          
+          <li>Selectores relacionados en la misma línea; no relacionados en nuevas líneas.</li>
+          <li>Un espacio antes de abrir unas llaves ' {'</li>
+          <li>Propiedades y valores en la misma línea.</li>
+          <li>Al menos un espacio después de lo dos punto (:)</li>
+          <li>Propiedades y valores en dos columnas.</li>
+          <li>Cada declaración en una nueva línea.</li>
+          <li>La llave de apertura ({) en la misma línea que el último selector.</li>
+          <li>La primera declaración en una nueva línea después de nuestra llave de apertura ({)</li>
+          <li>La llave de cierre (}) en su propia línea nueva.</li>
+          <li>Cada declaración con sangría de cuatro (4) espacios;</li>
+          <li>Un punto y coma (;) al fina de nuestra última declaración (aunque no sea obligatoria).</li>
+          <li>Los valores siempre con unidades incluso los de valor '0'.</li>
+          
+          <li>Sangrar selectores con sus declaraciones para indicar relaciones entre ellos.</li>
+          <li>La anidación en Sass debe evitarse siempre que sea posible, por especificidad.</li>
+          <li>Cuando sangramos en Sass, nos ceñimos a los mismos cuatro (4) espacios, y también dejar una línea en blanco antes y después del conjunto de reglas anidadas.</li>
+          
+          <li>Alinear cadenas idénticas y relacionadas en las declaraciones.</li>
+          
+          <li>Una (1) línea vacía entre los conjuntos de reglas estrechamente relacionados.</li>
+          <li>Dos (2) líneas vacías entre los conjuntos de reglas vagamente relacionados.</li>
+          <li>Cinco (5) líneas vacías entre secciones.</li>
+          
+          <li>Al escribir varios valores en un atributo de clase, hay que separarlos con dos (2) espacios.</li>
+          <li>Cuando hay varias clases que están relacionadas entre sí, podrá agruparlas entre corchetes ([ y ]).</li>
+          <li>denotar descansos temáticos en el contenido con cinco (5) líneas vacías</li>
+          <li>Para fragmentos independientes, pero vagamente relacionados el marcado es con una sola línea en blanco</li>
+          
+          <li>Comentar cualquier cosa que no sea evidente a partir solo del código.</li>
+          <li>En el entorno de producciónno deben de aparecer estos comentarios.</li>
+          <li>Todos los CSS deben de ser minificados.</li>
+          
+          <li>Nombres muy útilies para hacer el código más estricto, transparente e informativo.</li>
+          <li>El nombre debe de comunicarqué tipo de cosa hace la clase, dónde la clase debe de ser utilizada. Con qué una clase podría estar realcionada.</li>
+          
+          <li>La convención de nombres: un guión (-) para delimitar cadenas, y con la denominación BEM para piezas más complejas de código.</li>
+          <li>Camel case y guiones bajos no deben ser utilizados</li>
+          <li>la metodología BEM sólo nos interesa su convención de nombres</li>
+          
+          <li>Fijado correctamente el alcance de nuestros selectores, y que estamos seleccionando las cosas correctas por las razones correctas.</li>
+          <li>Decidir y definir lo que quiere el estilo y cómo va a seleccionarlo.</li>
+          <li>Seleccionando explícitamente lo correcto, exactamente por la razón correcta.</li>
+          <li>Los selectores deben ser lo más explícitos posible y bien razonado como tu razón para querer seleccionar algo.</li>
+          
+          <li>Aumentamos las clases con un atributo data-ui-component que alberga un nombre más específico.</li>
+      </ul>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+       
+        <h1>Nuestro Framework</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus deleniti, laborum. Sint quidem id perferendis expedita ut at totam minus dicta, voluptas. Totam eius aliquid cum laudantium voluptatem provident maxime.</p>
+        
+        <ul>
+            <li>Colores</li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        
+</div>
+</div>   
+</div>
+  
+  
+  
+   <div class="container">
+    
+      <div class="row">
+      <div class="twelve column" style="margin-top: 8rem">
+       
+        <h1 class="color-salmon">Colores</h1>
+        <div><span class="celda celda--color-salmon"></span> <span>.celda--color-salmon</span></div>
+        <div><span class="celda celda--color-salmon-claro"></span> <span>.celda--color-salmon-claro</span></div>
+        <div><span class="celda celda--color-salmon-masclaro"></span> <span>.celda--color-salmon-masclaro</span></div>
+        
+        <div><span class="celda celda--color-esmeralda"></span> <span>.celda--color-esmeralda</span></div>
+        <div><span class="celda celda--color-esmeralda-claro"></span> <span>.celda--color-esmeralda-claro</span></div>
+        
+        <div><span class="celda celda--color-cyan"></span> <span>.celda--color-cyan</span></div>
+        <div><span class="celda celda--color-cyan-claro"></span> <span>.celda--color-cyan-claro</span></div>
+        
+      </div>
+      
+    </div> 
+  
+    </div>
+  
+
+
+
+<!-- --- CONTAINER–––––––––––––––––––––––––––––––––––--------––––––––––––––– -->
+  <div class="container">
+  
+<!-- --- ROW --------------------------------------------------------------- -->  
+<div class="row">
+     
+<!-- --- COLUMNA ----------------------------------------------------------- -->     
+      <div class="twelve column" style="margin-top: 25%">
+        <h4>Rápido y Ligero</h4>
+        <p>14 Reglas x Web Sites de Carga Veloz</p>
+        <ul>
+            <li>Mínimas peticiones Http</li>
+            <li>Usar CDNs</li>
+            <li>Añadir caducidad al encabezado</li>
+            <li>Gzip componentes</li>
+            <li>Poner las hojas de estilo en el header</li>
+            <li>Mover los scripts al final del archivo</li>
+            <li>Evitar expresiones Css</li>
+            <li>Hacer Js y Css externos</li>
+            <li>Reducir CDNs</li>
+            <li>Minificar Js</li>
+            <li>Evitar redirecciones</li>
+            <li>Eliminar scripts duplicados</li>
+            <li>Configurar ETags</li>
+            <li>Hacer AJAX cacheable</li>
+        </ul>
+        </div><!-- --- FIN COLUMNA  ---------------------------------------- --> 
+ 
+    </div><!-- --- FIN ROW ------------------------------------------------- --> 
+        
+</div>
+  <!-- --- FIN CONTAINER---------------------------------------------- -->
+
+
+
+
+
+
+
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
