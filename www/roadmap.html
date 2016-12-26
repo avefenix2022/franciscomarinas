@@ -3,8 +3,8 @@
 
 <head>
    
-    <title>CV | Francisco Marinas Site</title>
-    <meta name="description" content="Francisco Marinas, cv" />
+    <title>Mapa de Ruta | Francisco Marinas Site</title>
+    <meta name="description" content="Itinerario de desarrollo" />
     
         <!-- Page title en data.json -->
 
@@ -294,93 +294,223 @@
 		
 		<!-- yield -->
 		
-		<!-- yield -->
-        
+		<!-- Header Back -->
+		<div class="header-back header-back-simple header-back-small">
+			<div class="header-back-container">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<!-- Page Info -->
+							<div class="page-info page-info-simple">
+								<h1 class="page-title">Roadmap</h1>
+								<h2 class="page-description">Proceso de desarrollo de un proyecto web</h2>
+							</div>
+							<!-- End Page Info -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End of Header Back -->
 		<div id="content">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-12">    
-                    
-                    
-                    <!-- Category Info -->
-						<div class="category-info" id="code-highlight-mixed">
-							<h3 class="category-title"> CV
+					<div class="col-md-12">
+
+						<img src="img/cdn.png" class="helper mb30 panel-image" alt="Responsive devices">
+						
+						
+						
+						
+
+						
+						
+						
+						<!-- Category Info -->
+						<div class="category-info" id="expanded">
+							<h3 class="category-title"> Archivos
 								<!-- Fragment Identifier -->
-								<a class="fragment-identifier js-fragment-identifier fragment-identifier-scroll" href="#code-highlight-mixed">
+								<a class="fragment-identifier js-fragment-identifier fragment-identifier-scroll" href="#expanded">
 									<i class="fa fa-link"></i>
 								</a>
 								<!-- End of Fragment Identifier -->
 							</h3>
-							<h4 class="category-description">"Siempre estoy haciendo lo que no puedo hacer, para poder aprender cómo hacerlo."</h4>
+							<h4 class="category-description">Un esquema del árbol de archivos es:</h4>
 						</div>
 						<!-- End of Caregory Info -->
-						<!-- Mixed Code Highlight -->
-						<div class="code-highlight">
-							<span class="js-copy-to-clipboard copy-code">copy</span>
-                            <pre><code class="language-css js-code">
-   
-
-   /**
-    *  Description: CV - Francisco Marinas Site
-    *  Version: 1.0.0 (2017)
-    *  Author: Francisco Marinas.
-    *  
-    *
-    *  Arquitectura Front-end, diseñador y desarrollador HTML y CSS.
-    *
-    *  1. Acerca de mí.
-    *  2. Timeline.
-    */
-   
-   
-   
-   
-   /**
-    *  1. Acerca de mí.
-    */
-      
-    .yo {
-      nombre:        "Francisco Marinas";
-      perfil:        "Front-end";
-      habilidades:   "Front-end", "Diseño", "Desarrollo", "HTML5", "CSS3", "Sass", "jQuery",
-      "Photoshop";
-      conocimientos: "HTML5", "CSS3", "Sass", "jQuery", "Photoshop";
-      competencias:  "Gestión de Equipos", "Gestión de Proyectos", 
-      "Comunicación", "Liderazgo";
-      inquietudes:   "HTML", "EMMET", "Jade", "Markdown", "CSS", "SASS", "LESS",
-      "Gulp", "Grunt", "HarpJS", "JavaScript", "EJS", "jQuery", "Angular", 
-      "React", "Git", "Azure", "Amazon";    
-      }
-    
-      
-    .yo__contacto {
-      email:         francisco.marinas@gmail.com;
-      web:           www.titaniodigital.com;
-      codepen:
-      twitter:
-      }
-      
-
-
-  
-   /**
-    *  2. Timeline.
-    */
-    
-    @empresa Intergrupo {
-      from {ano: 2001;}
-      to   {ano: "actualidad"}
-    }
-    
-    .trabajo {
-      puesto: "Responsable Dpt. Tecnología"
-     
-                        </code></pre></div>
-    <!-- End of Mixed Code Highlight -->
-    
-   
-  
-                    </div></div></div></div>
+						<!-- File Tree -->
+						<div class="file-tree">
+							<div class="file-tree-title"> Árbol de Archivos (Orden alfabético)
+								<ul class="file-tree-buttons">
+									<li class="js-expand">
+										<i class="fa fa-plus"></i> Expandir Todo</li>
+									<li class="js-collapse">
+										<i class="fa fa-minus"></i> Colapsar Todo</li>
+								</ul>
+							</div>
+							
+							<ul class="file-tree-list js-file-tree" data-expanded="true">
+								<li class="is-folder">css -
+									<span class="file-tree-description">Hojas de estilo CSS</span>
+									<ul>
+										<li class="is-file">custom.css -
+											<span class="file-tree-description">Archivo CSS con los estilos personalizados para el proyecto</span>
+										</li>
+										<li class="is-file">custom.min.css -
+											<span class="file-tree-description">Archivo minificado con los estilos personalizados para el proyecto</span>
+										</li>
+										<li class="is-file">estilos.css -
+											<span class="file-tree-description">Hoja de estilos de nuestro framework</span>
+										</li>
+										<li class="is-file">estilos.min.css -
+											<span class="file-tree-description">Archivo minificado de nuestro framework</span>
+										</li>
+									</ul>
+								</li>
+								
+								<li class="is-folder">fonts -
+									<span class="file-tree-description">Fuentes</span>
+									<ul>
+										<li class="is-folder">ionicons
+											<span class="file-tree-description">Ionicons</span>
+											<ul>
+                                                <li class="is-file">ionicons.eot -
+                                                    <span class="file-tree-description">EOT</span>
+                                                </li>
+                                                <li class="is-file">ionicons.svg -
+                                                    <span class="file-tree-description">SVG</span>
+                                                </li>
+                                                <li class="is-file">ionicons.ttf -
+                                                    <span class="file-tree-description">TTF</span>
+                                                </li>
+                                                <li class="is-file">Pionicons.woff -
+                                                    <span class="file-tree-description">WOFF</span>
+                                                </li>
+											</ul>
+										</li>
+										<li class="is-folder">pe-7s
+											<span class="file-tree-description">Pe icon 7 stroke</span>
+											<ul>
+                                                <li class="is-file">Pe-icon-7-stroke.eot -
+                                                    <span class="file-tree-description">EOT</span>
+                                                </li>
+                                                <li class="is-file">Pe-icon-7-stroke.svg -
+                                                    <span class="file-tree-description">SVG</span>
+                                                </li>
+                                                <li class="is-file">Pe-icon-7-stroke.ttf -
+                                                    <span class="file-tree-description">TTF</span>
+                                                </li>
+                                                <li class="is-file">Pe-icon-7-stroke.woff -
+                                                    <span class="file-tree-description">WOFF</span>
+                                                </li>
+											</ul>
+										</li>
+										<li class="is-folder">fontawesome
+											<span class="file-tree-description">Fontawesome</span>
+											<ul>
+                                                <li class="is-file">fontawesome.otf -
+                                                    <span class="file-tree-description">OTF</span>
+                                                </li>
+                                                <li class="is-file">fontawesome-webfont.eot -
+                                                    <span class="file-tree-description">EOT</span>
+                                                </li>
+                                                <li class="is-file">fontawesome-webfont.svg -
+                                                    <span class="file-tree-description">SVG</span>
+                                                </li>
+                                                <li class="is-file">fontawesome-webfont.ttf -
+                                                    <span class="file-tree-description">TTF</span>
+                                                </li>
+                                                <li class="is-file">fontawesome-webfont.woff -
+                                                    <span class="file-tree-description">WOFF</span>
+                                                </li>
+                                                <li class="is-file">fontawesome-webfont.woff2 -
+                                                    <span class="file-tree-description">WOFF2</span>
+                                                </li>
+                                            </ul>
+											
+										</li>
+									</ul>
+								</li>
+								<li class="is-folder">img -
+									<span class="file-tree-description">Imágenes</span>
+									<ul>
+										<li class="is-folder">backgrounds
+											<span class="file-tree-description">Imágenes de fondo</span>
+										</li>
+										<li class="is-folder">favicons
+											<span class="file-tree-description">favicos para todas las resoluciones</span>
+										</li>
+										<li class="is-folder">logos
+											<span class="file-tree-description">Todos los logos</span>
+										</li>
+										<li class="is-file">img1.jpg -
+											<span class="file-tree-description">JPG</span>
+										</li>
+										<li class="is-file">img2.png -
+											<span class="file-tree-description">PNG</span>
+										</li>
+										<li class="is-file">img3.gif -
+											<span class="file-tree-description">GIF</span>
+										</li>
+									</ul>
+								</li>
+								<li class="is-folder">js -
+									<span class="file-tree-description">Archivos de javascript</span>
+									<ul>
+										<li class="is-file">all.js -
+											<span class="file-tree-description">Conjunto de todos los frameworks de JavaScript</span>
+										</li>
+										<li class="is-file">all.min.js -
+											<span class="file-tree-description">Archivo minificado de todos los frameworks de JavaScript</span>
+										</li>
+										<li class="is-file">custom.js -
+											<span class="file-tree-description">Archivo de JavaScript personalizado</span>
+										</li>
+										<li class="is-file">custom.min.js -
+											<span class="file-tree-description">Archivo minificado</span>
+										</li>
+									</ul>
+								</li>
+								<li class="is-folder">scss -
+									<span class="file-tree-description">quidem adipisci, laudantium, inventore ea totam vel temporibus labor</span>
+									<ul>
+										<li class="is-file">custom.scss -
+											<span class="file-tree-description">Archivo SASS que generará el custom.css</span>
+										</li>
+										<li class="is-file">estilos.scss -
+											<span class="file-tree-description">Archivo SASS que generará el estilos.css</span>
+										</li>
+									</ul>
+								</li>
+								
+								<li class="is-file">index-1.html -
+									<span class="file-tree-description">quis cum ratione laboriosam ducimus iure voluptates quaerat si</span>
+								</li>
+								<li class="is-file">index-2.ejs -
+									<span class="file-tree-description">omnis ipsa quas vel alias illum nostrum deleniti officiis</span>
+								</li>
+								<li class="is-file">index-3.jade -
+									<span class="file-tree-description">libero et id laborum laboriosam dignissimos a! cum molestia</span>
+								</li>
+								<li class="is-file">index-3.md -
+									<span class="file-tree-description">libero et id laborum laboriosam dignissimos a! cum molestia</span>
+								</li>
+								<li class="is-file">sitemap.xml
+									<span class="file-tree-description">quas provident minus, nisi excepturi culpa rerum voluptates e</span>
+								</li>
+								<li class="is-file">robot.txt
+									<span class="file-tree-description">quas provident minus, nisi excepturi culpa rerum voluptates e</span>
+								</li>
+								<li class="is-file">... -
+									<span class="file-tree-description">quas provident minus, nisi excepturi culpa rerum voluptates e</span>
+								</li>
+							</ul>
+						</div>
+						<!-- End of FIle Tree -->
+					</div>
+				</div>
+			</div>
+		</div>
 		
 		<!-- End of yield -->
 		
