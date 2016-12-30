@@ -238,7 +238,15 @@ body {
     background-attachment: fixed;}
     
     
-#grid ul li:nth-child(5)  { width: 25%; height: 25%; top: 25%; left: 50%; background-image: url(../images/codepen.jpg); }
+#grid ul li:nth-child(5)  { 
+    width: 25%; 
+    height: 25%;
+    left: 50%; 
+    top: 25%;  
+    background-image: url(../images/bg_css_francisco.jpg);
+    background-position: 50% 25%; 
+    background-attachment: fixed;}
+    
 #grid ul li:nth-child(6)  { width: 25%; height: 25%; top: 25%; left: 75%; background-image: url(../images/github.png); }
 #grid ul li:nth-child(7)  { width: 25%; height: 50%; top: 50%; left:  0%; background-image: url(../images/divulgacion.jpeg); }
 #grid ul li:nth-child(8)  { width: 50%; height: 25%; top: 50%; left: 25%; background-image: url(../images/adatabuy.jpg); }
