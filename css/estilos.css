@@ -184,9 +184,19 @@ body {
     background-image: url(../images/bg_css_francisco.jpg);
     background-position: 50% 0%; }
 
-#grid ul li:nth-child(5)  { background-image: url(../images/codepen.jpg); }
-#grid ul li:nth-child(6)  { background-image: url(../images/github.png); }
-#grid ul li:nth-child(7)  { background-image: url(../images/divulgacion.jpeg); }
+#grid ul li:nth-child(5)  { 
+    background-image: url(../images/bg_css_francisco.jpg);
+    background-position: 50% 25%;}
+
+#grid ul li:nth-child(6)  { 
+    background-image: url(../images/bg_css_francisco.jpg);
+    background-position: 75% 25%; }
+
+#grid ul li:nth-child(7)  { 
+    background-image: url(../images/bg_css_francisco.jpg);
+    background-position: 0% 50%;}
+
+
 #grid ul li:nth-child(8)  { background-image: url(../images/adatabuy.jpg); }
 #grid ul li:nth-child(9)  { background-image: url(../images/contacto.jpg); }
 #grid ul li:nth-child(10) { background-image: url(../images/desarrollo.jpg); }  
@@ -256,7 +266,15 @@ body {
     background-position: 75% 25%; 
     background-attachment: fixed;}
     
-#grid ul li:nth-child(7)  { width: 25%; height: 50%; top: 50%; left:  0%; background-image: url(../images/divulgacion.jpeg); }
+#grid ul li:nth-child(7)  { 
+    width: 25%; 
+    height: 50%; 
+    left:  0%;  
+    top: 50%;
+    background-image: url(../images/bg_css_francisco.jpg);
+    background-position: 0% 50%; 
+    background-attachment: fixed;}
+    
 #grid ul li:nth-child(8)  { width: 50%; height: 25%; top: 50%; left: 25%; background-image: url(../images/adatabuy.jpg); }
 #grid ul li:nth-child(9)  { width: 25%; height: 25%; top: 75%; left: 25%; background-image: url(../images/contacto.jpg); }
 #grid ul li:nth-child(10) { width: 25%; height: 25%; top: 50%; left: 75%; background-image: url(../images/desarrollo.jpg);}      
