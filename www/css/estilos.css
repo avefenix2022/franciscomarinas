@@ -175,9 +175,15 @@ body {
     transform: scale(1);
 }
 
-#grid ul li:nth-child(3)  { background-image: url(../images/bg_css_francisco.jpg);
-    background-position: 1280px 0px;}
-#grid ul li:nth-child(4)  { background-image: url(../images/marcadohtml.jpeg); }
+#grid ul li:nth-child(3)  { 
+    background-image: url(../images/bg_css_francisco.jpg);
+    background-position: 25% 0%; 
+}
+
+#grid ul li:nth-child(4)  {  
+    background-image: url(../images/bg_css_francisco.jpg);
+    background-position: 50% 0%; }
+
 #grid ul li:nth-child(5)  { background-image: url(../images/codepen.jpg); }
 #grid ul li:nth-child(6)  { background-image: url(../images/github.png); }
 #grid ul li:nth-child(7)  { background-image: url(../images/divulgacion.jpeg); }
@@ -199,16 +205,39 @@ body {
 #grid ul li {
     position: absolute;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 #grid ul li:first-child   { width: 25%; height: 25%; top:   0; left:   0; background-image: url(../images/rReturn_arrow.png); }
-#grid ul li:nth-child(2)  { width: 25%; height: 25%; top: 25%; left:   0; background-image: url(../images/cv.jpg); }
-#grid ul li:nth-child(3)  { width: 25%; height: 50%; top:   0; left: 25%; 
+    
+    
+#grid ul li:nth-child(2)  { 
+    width: 25%; 
+    height: 25%; 
+    top: 25%; 
+    left:   0; 
+    background-image: url(../images/bg_css_francisco.jpg); 
+    background-position: 25% 25%; 
+    background-attachment: fixed;}
+    
+#grid ul li:nth-child(3)  { 
+    width: 25%; 
+    height: 50%; 
+    left:   25%; 
+    top: 0%; 
     background-image: url(../images/bg_css_francisco.jpg);
-    background-position: 1280px 0px;}
-#grid ul li:nth-child(4)  { width: 50%; height: 25%; top:   0; left: 50%; background-image: url(../images/marcadohtml.jpeg); }
+    background-position: 25% 0%; 
+    background-attachment: fixed;}
+
+#grid ul li:nth-child(4)  { 
+    width: 50%; 
+    height: 25%; 
+    left:   50%; 
+    top: 0%; 
+    background-image: url(../images/bg_css_francisco.jpg);
+    background-position: 50% 0%; 
+    background-attachment: fixed;}
+    
+    
 #grid ul li:nth-child(5)  { width: 25%; height: 25%; top: 25%; left: 50%; background-image: url(../images/codepen.jpg); }
 #grid ul li:nth-child(6)  { width: 25%; height: 25%; top: 25%; left: 75%; background-image: url(../images/github.png); }
 #grid ul li:nth-child(7)  { width: 25%; height: 50%; top: 50%; left:  0%; background-image: url(../images/divulgacion.jpeg); }
