@@ -175,7 +175,8 @@ body {
     transform: scale(1);
 }
 
-#grid ul li:nth-child(3)  { background-image: url(../images/guiacss.jpeg); }
+#grid ul li:nth-child(3)  { background-image: url(../images/bg_css_francisco.jpg);
+    background-position: 1280px 0px;}
 #grid ul li:nth-child(4)  { background-image: url(../images/marcadohtml.jpeg); }
 #grid ul li:nth-child(5)  { background-image: url(../images/codepen.jpg); }
 #grid ul li:nth-child(6)  { background-image: url(../images/github.png); }
