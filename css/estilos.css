@@ -145,7 +145,7 @@ body {
     text-shadow: 3px 3px 3px  rgba(255, 255, 255, 1);
     background: rgba(0 ,0 ,0 ,.4 );
     
-    font-weight: 300;
+    font-weight: 100;
 }
 
 #grid ul li:first-child {
