@@ -217,7 +217,14 @@ body {
     background-repeat: no-repeat;
 }
 
-#grid ul li:first-child   { width: 25%; height: 25%; top:   0; left:   0; background-image: url(../images/rReturn_arrow.png); }
+#grid ul li:first-child   { 
+    width: 25%; 
+    height: 25%; 
+    left:   0; 
+    top:   0; 
+    background-image: url(../images/bg_css_francisco.jpg); 
+    background-position: 0% 0%; 
+    background-attachment: fixed;}
     
     
 #grid ul li:nth-child(2)  { 
