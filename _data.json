@@ -22,6 +22,10 @@
 	"roadmap": {
 		"pageTitle": "Mapa de Ruta",
         "description": "Itinerario de desarrollo"
+	},
+	"grid": {
+		"pageTitle": "Grid",
+        "description": "Modelo Grid"
 	}
     
 }
