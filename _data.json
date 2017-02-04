@@ -26,6 +26,14 @@
 	"grid": {
 		"pageTitle": "Grid",
         "description": "Modelo Grid"
-	}
+	},
+    "arquitectura-front-end": {
+        "pageTitle": "arquitectura-front-end",
+        "description": "arquitectura-front-end"
+    },
+    "modelo-multi-columnas-css3": {
+        "pageTitle": "modelo-multi-columnas-css3",
+        "description": "modelo-multi-columnas-css3"
+    }
     
 }
