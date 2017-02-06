@@ -351,12 +351,96 @@ if (column-width != auto) and (column-count != auto) then
        <p>Las reglas y condiciones son comparadas y actuadas en orden:</p>
        
        <ul>
-           <li>Si las propiedades del <code>column-count</code> y del <code>column-width</code> están desactivadas o establecidas en auto, no se renderizan columnas. Lo mismo es cierto si el recuento de columnas <code>column-count</code> se establece en auto y el ancho del elemento <code>multicol</code> no está restringido.</li>
-           <li></li>
-           <li></li>
-           <li></li>
-           <li></li>
+           <li>Si las propiedades del <code>column-count</code> y del <code>column-width</code> están desactivadas o establecidas en auto, no se renderizan columnas. Lo mismo si <code>column-count</code> se establece en auto y el ancho del elemento <code>multicol</code> no está restringido.</li>
+           <li>Si no se han especificado las propiedades del <code>column-count</code> y del <code>column-width</code> tanto para los valores como para el elemento multicol, utilice los valores exactamente como se especifican.</li>
+           <li>Si la propiedad <code>column-count</code> se ha establecido con un valor distinto de auto y la propiedad <code>column-width</code> se ha establecido en auto, divida el ancho disponible en el número de columnas especificado.</li>
+           <li>Si la propiedad column-width se ha establecido con un valor distinto de auto, la propiedad <code>column-count</code> se ha establecido en auto y el contenedor tiene un ancho especificado, establezca el número de columnas para que coincida con el espacio disponible dividido por el ancho especificado de cada columna. Esto puede significar que las columnas terminan más allá de lo especificado, si la anchura del elemento multicol no se divide perfectamente en el ancho especificado de cada columna.</li>
+           <li>Si las propiedades <code>column-count</code> y <code>column-width</code> se han establecido con un valor distinto de auto y se ha establecido el ancho del elemento multicol, compruebe si la combinación de ancho y recuento se ajustará dentro del elemento de contenedor. Si no es así, reduzca el número de columnas para que coincida con el número de veces que el ancho especificado de cada columna puede caber en el espacio disponible y, a continuación, expanda el ancho de columna para llenar el elemento multicol utilizando el <code>column-count</code> calculado.</li>
        </ul>
+       
+       <p>Este enfoque hace que el módulo CSS3 Multi-column Layout sea muy flexible. Está diseñado para responder automáticamente al intentar respetar los valores especificados para las propiedades <code>column-count</code> y <code>column-width</code> lo mejor posible.</p>
+        
+        
+        
+        
+        <h5>column-gap</h5>
+        
+        <p>column-gap se utiliza para definir el ancho de canal entre columnas.</p>
+        
+         <!-- Code Highlight Attached -->
+						<div class="code-highlight-attached">
+							<div class="code-highlight code-highlight-with-label" data-label="CSS">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-css js-code">
+.multicol {   
+    position:    relative;   
+    margin:    auto;   
+    max-width:    960px;   
+    columns:    4 12em;   
+    column-gap:    2em;   
+    column-rule:    1px solid red; 
+} 
+</code></pre></div>
+
+						</div>
+						<!-- End of Code Highlight Attached -->
+       <p>A diferencia de las propiedades <code>column-width</code> y <code>column-count</code>, la propiedad <strong><code>column-gap</code> es absoluta</strong>. Esto significa que <strong>si especifica un valor, el explorador respetará esa configuración, aunque signifique sacrificar columnas</strong>.</p>        
+        
+        
+        <h5>column-rule</h5>
+        <p>La propiedad <code>column-rule</code> controla si una línea divisoria se dibuja entre columnas renderizadas. Una <code>column-rule</code> siempre se dibuja en el centro exacto de la brecha de la columna (cuneta). <code>column-rule</code> funciona de la misma manera que la propiedad de <code>border</code>. De hecho, como con la propiedad <code>border</code>, <code>column-rule</code> es una propiedad abreviada para tres propiedades diferentes:</p>
+        
+        <ul>
+            <li><code>column-rule-width</code>: Como con border-width, esta propiedad toma un argumento con una unidad como 2px o la palabra clave none.</li>
+            <li><code>column-rule-style</code>: establece el estilo de línea que se va a mostrar. Las mismas opciones están disponibles como con borde-estilo, incluyendo punteado, punteado, sólido, y así sucesivamente.</li>
+            <li><code>column-rule-color</code>: Este atributo de color se puede establecer utilizando cualquiera de los modelos de color admitidos por el navegador, incluidos hex y rgb ()</li>
+        </ul>
+
+        <p><code>column-rule</code> muestra como si la columna estuviera completamente llena de contenido, independientemente de si esto es cierto. Esto es útil si su definición de hoja de estilos requiere algo más que un relleno equilibrado en sus columnas, ya que ayuda a definir visualmente el espacio que ocupa una columna, incluso si está vacía de contenido. ¡Piense en lo difícil que fue lograr este efecto simple usando elementos flotantes para generar columnas!</p>
+        
+        <img src="images/column-rule.jpg" alt="">
+        
+        
+        
+        
+        <h5>Column  Breaks</h5>
+        <p>Normalmente, el motor de renderizado del navegador decide cómo y dónde romper el contenido entre columnas dentro de un elemento <code>multicol</code>. Esto funciona bien en muchos casos, pero puede haber momentos en los que desee controlar la forma en que se rompe el contenido. Por ejemplo, es posible que desee obligar al contenido a comenzar a representar en una nueva columna antes de cada etiqueta &lt;h3&gt;. Tres propiedades están disponibles para proporcionar control sobre cómo y cuándo romper el contenido: <code>break-before</code>, <code>break-after</code> y <code>break-inside</code>.</p>
+        
+        <h6>break-before</h6>
+        <p>Esta propiedad especifica que debe aplicarse una ruptura <strong>antes del elemento al que se aplica</strong>. Acepta los siguientes valores:   auto  |  always  |  avoid  |  left  |  right  |  page  |  column  |  avoid-page  |  avoid-column. De particular interés son las opciones <code>column</code> y  <code>avoid-column</code>, que aseguran o impiden (donde sea posible) una ruptura en un elemento multicol.</p>
+        
+        <h6>break-after</h6>
+        <p>Esta propiedad especifica que debe aplicarse una ruptura <strong>después del elemento al que se aplica</strong>. Acepta los siguientes valores: auto  |  always  |  avoid  |  left  |  right  |  page  |  column  |  avoid-page  |  avoid-column. De particular interés son las opciones <code>column</code> y  <code>avoid-column</code>, que aseguran o impiden (donde sea posible) una ruptura en un elemento multicol.</p>
+        
+        <h6>break-inside</h6>
+        <p>A diferencia de las otras dos opciones, <code>break-inside</code> controla cómo el contenido se rompe <strong>dentro del elemento al que se aplica</strong>. Acepta los siguientes valores: auto  |  always  |  avoid  |  avoid-page  |  avoid-column. De particular interés son las opciones <code>column</code> y  <code>avoid-column</code>, que aseguran o impiden (donde sea posible) una ruptura en un elemento multicol.</p>
+        
+        <p>Cuando una ruptura de columna divide una caja, el margen, el borde y el relleno de esa caja no tienen efecto visual sobre dónde se produce esa división. El margen inmediatamente después de la división se mantiene, sin embargo.</p>
+        
+        
+        
+        <h4 class="category-description" id="">column-span</h4>
+        <p>La propiedad <code>column-span</code> permite que un elemento de nivel de bloque dentro de una columna rompa fuera de los límites de esa columna. En el futuro, puede ser posible especificar un número de columnas para abarcar, al igual que el atributo colspan que se puede aplicar a una celda de tabla, pero en la especificación CSS3 sólo hay dos valores posibles: ninguno y todos</p>
+        <p>De forma predeterminada, <code>column-span</code> se establece en <code>none</code>. Esto significa que el contenido se renderiza dentro de las restricciones de la columna. Si se establece en <code>all</code>, la columna se rompe en el punto que se representa el elemento. Esto crea un efecto donde un elemento multicol puede contener varias filas de columnas.</p>
+        
+    
+        
+        <h4 class="category-description" id="">Imágenes, capacidad de respuesta y recorte en columnas</h4>
+        <p>Las imágenes presentan un problema especial en un diseño en el que no puede estar absolutamente seguro de cuánto espacio se asignará a su pantalla. Hay dos maneras de enfocar las imágenes en un diseño de columnas:</p>
+        
+        <ul>
+            <li>Llene el ancho de la columna con una imagen, ampliando o reduciendo la imagen para que coincida con el espacio disponible.</li>
+            <li>Predeterminar el tamaño en el que una imagen debe mostrarse, y envolver el texto alrededor o recortar la imagen como sea necesario para llenar el espacio.</li>
+        </ul>
+        
+        <p>El uso de una regla CSS que asigna una anchura al 100% obliga a la imagen a renderizar con el ancho completo de la columna. Esto efectivamente hace que la imagen responda, ya que crece y se encoge para que coincida con el espacio disponible.</p>
+        
+        
+        
+        
+        <h4 class="category-description" id="">Controlar cómo se llenan las columnas de contenido</h4>
+        <p>Las columnas se pueden rellenar con contenido de dos maneras usando el diseño de columnas múltiples de CSS3: pueden tener contenido equilibrado entre ellas o se deben rellenar secuencialmente hasta que el contenido se agote. Si utiliza la última opción, existe la posibilidad de que una o más columnas se puedan renderizar sin ningún contenido.</p>
+        
+        <p>La propiedad <code>column-fill</code> proporciona control sobre qué enfoque utiliza el navegador. Acepta dos valores posibles: balance y auto. Como es de esperar, el equilibrio hace que el contenido sea igual en todas las columnas disponibles, y el auto utiliza el enfoque secuencial. El valor predeterminado (no especificado) es el balance; por lo tanto, si no se establece explícitamente el relleno de columna en automático, el navegador intenta representar un relleno de columna equilibrado.</p>
         
         
         
@@ -364,9 +448,62 @@ if (column-width != auto) and (column-count != auto) then
         
         
         
+                <!-- Category Info -->
+        <div class="category-info helper pt0" id="simple-highlight">
+        <h3 class="category-title" id="">Cómo usar el Módulo de CSS multi-columnas
+            <!-- Fragment Identifier -->
+            <a class="fragment-identifier js-fragment-identifier fragment-identifier-scroll" href="#simple-highlight">
+                <i class="fa fa-link"></i>
+            </a>
+            <!-- End of Fragment Identifier -->
+        </h3>
+        <p>Como puede ver, CSS Multi-column Layout proporciona una solución sensible y práctica al problema de organizar el contenido en columnas similares a un periódico. Quizás el mayor beneficio del módulo es las mejoras en el flujo de trabajo que aporta al proceso de diseño web. Además, el módulo responde de forma predeterminada, ofreciendo una opción realmente útil para una metodología de diseño móvil-first y reduciendo la cantidad de tiempo de desarrollo necesario para lograr una solución eficaz en todas las resoluciones de pantalla.</p>
+        <p>CSS Multi-column Layout es una gran herramienta de diseño general, pero también se puede utilizar para crear elementos de interfaz de usuario más pequeños en la página, como estos:</p>
+        <ul>
+            <li>Formularios en los que el contenido está organizado en columnas en pantallas más grandes, pero se reduce a una sola columna en dispositivos móviles</li>
+            <li>Menús horizontales de navegación en los que es importante que cada elemento ocupe la misma cantidad de espacio horizontal (aunque Flexbox obtiene una opción aún mejor para este propósito)</li>
+            <li>Renderización de contenido en áreas donde no se sabe de antemano cuánto contenido o espacio horizontal tendrá disponible</li>
+        </ul>
+        <p>Dicho esto, <strong>el propósito principal de CSS Multi-column Layout es como una herramienta general de diseño de página</strong>, y aquí es donde obtendrá el máximo beneficio de ella.</p>
+        
+
+        <h4 class="category-description" id="">Soporte del navegador</h4>
+        <p>El soporte de navegador para CSS Multi-column Layout ya es muy bueno. Cada navegador principal ha tenido soporte para al menos dos versiones. Actualmente, Internet Explorer tiene la implementación más completa, con la versión actual ofreciendo soporte completo y soporte parcial para la especificación desde la versión 10. Firefox, Chrome, Safari y Opera también cuentan con soporte parcial de trabajo para la especificación, con Navegadores WebKit que ofrecen soporte completo. En las plataformas móviles, es similar: todos los navegadores comunes tienen un buen soporte, con IE móvil ofreciendo la implementación más completa de todos.</p>
+        <p>El módulo CSS Multi-column Layout alcanzó el estado de Recomendación Candidate en abril de 2011, lo que significa que es un módulo completo que puede considerar estable. A pesar de esto, el CSSWG sigue trabajando para refinar y desarrollar el módulo. Puede comprobar la compatibilidad con el navegador más reciente para CSS Multi-column Layout</p>
+        <p>No asuma que cada navegador renderizará su elemento multicol en forma idéntica.</p>
+        
+        <p>Los navegadores que no entienden las propiedades de diseño de columnas múltiples de CSS vuelven a sus valores predeterminados para cada elemento. Esto significa que, en la mayoría de los casos, los elementos diseñados para que varias columnas se procesen en una sola columna. Para muchos diseños, esto no es una gran cuestión y es un resultado razonable para un enfoque de mejora progresiva en el diseño. Si es absolutamente necesario tener columnas en su diseño, independientemente del soporte del navegador para el diseño de columnas múltiples de CSS, el uso del marco <a href="http://modernizr.com">Modernizr</a> le permitirá identificar y manejar navegadores que no pueden procesar columnas CSS.</p>
+        
+        
+        </div><!-- End of Caregory Info -->
         
         
         
+        
+        
+        
+        
+                <!-- Category Info -->
+        <div class="category-info helper pt0" id="simple-highlight">
+        <h3 class="category-title" id="">Ejemplo Real
+            <!-- Fragment Identifier -->
+            <a class="fragment-identifier js-fragment-identifier fragment-identifier-scroll" href="#simple-highlight">
+                <i class="fa fa-link"></i>
+            </a>
+            <!-- End of Fragment Identifier -->
+        </h3>
+        
+        <p>Aunque los diseños de varias columnas no son nada nuevo, las mejoras en el flujo de trabajo que aporta el nuevo módulo son importantes para los diseñadores web. Como tal, vale la pena explorar un ejemplo del mundo real para ver cómo todo encaja. No te va a sorprender por un paradigma visual completamente nuevo, pero si has trabajado en la Web durante algún tiempo, ¡apreciarás la belleza del código!</p>
+        
+        <h4 class="category-description" id="">Marcado</h4>
+        <p>Para este ejemplo, una maqueta de un diseño de página para un periódico ficticio en línea. En este ejemplo, se utiliza el módulo CSS Multi-column Layout para representar todas las columnas que se muestran en el diseño, incluidas las columnas anidadas en la parte superior del diseño, donde hay tres menús en una fila. También utiliza varias de las características descritas en este capítulo, incluyendo la propiedad column-span para crear una pull-quote efectiva.</p>
+        
+        <p>El código HTML para esta página es muy simple. En su núcleo, hay un conjunto de elementos, cada uno de los cuales contiene un solo artículo. El marcado funciona independientemente de si el navegador del usuario admite el diseño de varias columnas de CSS.</p>
+        
+        
+     
+        
+        </div><!-- End of Caregory Info -->
         
         
         
