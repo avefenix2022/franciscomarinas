@@ -1,0 +1,202 @@
+<!-- LIBRERÍA VUEjs -->
+<script src='https://unpkg.com/vue'></script>
+    
+		<!-- Header Back -->
+		<div class="header-back header-back-simple header-back-small">
+			<div class="header-back-container">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<!-- Page Info -->
+							<div class="page-info page-info-simple">
+								<h1 class="page-title">VUEjs</h1>
+								<h2 class="page-description">VUEjs proporciona un marco reactivo para crear interfaces de usuario.</h2>
+							</div>
+							<!-- End Page Info -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End of Header Back -->
+        <!-- yield -->
+        
+        
+        
+        
+        
+        
+        
+        
+        
+		<div id="content">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+								<!-- Table of content -->
+								<div class="table-of-contents">
+									<ol>
+										<li>
+											<a href="#" class="js-scroll-to" data-target="#vuejs">VUEjs</a>
+										</li>
+									</ol>
+								</div>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+     
+     
+     
+     
+     
+     
+
+                                               
+        <!-- Category Info -->
+        <div class="category-info helper pt0" id="simple-highlight">
+        <h3 class="category-title" id="diseno-web">VUEjs
+            <!-- Fragment Identifier -->
+            <a class="fragment-identifier js-fragment-identifier fragment-identifier-scroll" href="#simple-highlight">
+                <i class="fa fa-link"></i>
+            </a>
+            <!-- End of Fragment Identifier -->
+        </h3>
+        <h4 class="category-description" id="">VUEjs</h4>
+        
+        <p>Vue (pronunciado /vjuː/, como view) es un marco progresivo para construir interfaces de usuario. A diferencia de otros marcos monolíticos, Vue se diseña de la base para ser escalable y adoptable.</p>
+        
+        <p>La biblioteca principal se centra únicamente en la capa de vista y es muy fácil de captar e integrar con otras bibliotecas o proyectos existentes. Por otro lado, Vue también es perfectamente capaz de alimentar sofisticadas SPAs,aplicaciones de página única, cuando se utiliza en combinación con herramientas modernas y bibliotecas de apoyo.</p>
+        
+        <p>La forma más fácil de probar Vue.js es crear un archivo .html e incluir Vue con:</p>
+        
+                 <!-- Code Highlight Attached -->
+						<div class="code-highlight-attached">
+							<div class="code-highlight code-highlight-with-label" data-label="HTML">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-markup js-code">
+
+  &lt;script src="https://unpkg.com/vue"&gt;&lt;/script&gt;
+
+</code></pre> </div>
+						</div>
+						<!-- End of Code Highlight Attached -->
+        
+        
+        <h4 class="category-description" id="">Renderización declarativa</h4>
+        
+        <p>El núcleo de Vue.js es un sistema que nos permite declarar datos al DOM usando una sintaxis simple de la plantilla:</p>
+        
+        <!-- Code Highlight Attached -->
+						<div class="code-highlight-attached">
+						
+							<div class="code-highlight code-highlight-with-label" data-label="HTML">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-markup js-code">
+
+&lt;div id="app"&gt;
+    {{ message }}
+&lt;/div&gt;</code></pre></div>                      
+
+							<div class="code-highlight  code-highlight-with-label" data-label="JavaScript">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-javascript js-code">
+								
+var app = new Vue({
+    el: '#app',
+        data: {
+            message: 'Hola Vue!'
+        }
+})</code></pre></div>
+						</div>
+						<!-- End of Code Highlight Attached -->
+<p>Que se renderizará como:</p>						
+<div id="app1">
+   <p> {{ message }} </p>
+</div>
+        
+<script>
+var app = new Vue({
+    el: '#app1',
+        data: {
+            message: 'Hola Vue!'
+        }
+})
+</script>      
+        
+        
+         
+         
+         <p>¡Ya hemos creado nuestra primera aplicación Vue! Los datos y el DOM están ahora enlazados.</p>
+         
+         <p>Además de la interpolación de texto, también podemos enlazar atributos de elementos como este:</p>
+         
+         
+        <!-- Code Highlight Attached -->
+						<div class="code-highlight-attached">
+						
+							<div class="code-highlight code-highlight-with-label" data-label="HTML">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-markup js-code">
+
+&lt;div id="app-2"&gt;
+  &lt;span v-bind:title="message"&gt;
+    Hover your mouse over me for a few seconds
+    to see my dynamically bound title!
+  &lt;/span&gt;
+&lt;/div&gt;</code></pre></div>                      
+
+							<div class="code-highlight  code-highlight-with-label" data-label="JavaScript">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-javascript js-code">
+								
+var app2 = new Vue({
+  el: '#app-2',
+  data: {
+    message: 'You loaded this page on ' + new Date()
+  }
+})</code></pre></div>
+						</div>
+						<!-- End of Code Highlight Attached -->
+<p>Que se renderizará como (al poner el cursor encima del párrafo aparece el tooltip):</p>						
+<div id="app2">
+  <span v-bind:title="message">
+    ¡Coloca tu ratón sobre mí unos segundo para ver mi título dinámico!
+  </span>
+</div>
+        
+<script>
+var app2 = new Vue({
+  el: '#app2',
+  data: {
+    message: 'Tu cargate esta página el ' + new Date()
+  }
+})
+</script>             
+         
+         
+                  		
+                  		
+         
+                  		
+                  		         		
+                  		         		         		
+                  		         		         		         		
+                  		         		         		         		         		
+                  		         		         		         		         		         		
+                  		         		         		         		         		         		         		
+                  		         		         		         		         		         		         		         		         		
+                  		
+
+                   
+</div></div></div></div>
+
+

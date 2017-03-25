@@ -38,5 +38,9 @@
     "modelo-regilla-css3": {
         "pageTitle": "modelo-regilla-css3",
         "description": "mmodelo-regilla-css3"
+    },
+    "vuejs": {
+        "pageTitle": "VUEjs",
+        "description": "VUEjs"
     }
 }
