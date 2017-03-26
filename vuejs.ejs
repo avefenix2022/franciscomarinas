@@ -325,14 +325,14 @@ var app5 = new Vue({
 <p>Que se renderizará como:</p>	                     
 <div id="app-5">
   <p>{{ message }}</p>
-  <button v-on:click="reverseMessage">Reverse Message</button>
+  <button v-on:click="reverseMessage">Invertir Mensaje</button>
 </div>
                          
 <script>
 var app5 = new Vue({
   el: '#app-5',
   data: {
-    message: 'Hello Vue.js!'
+    message: 'Hola Vue.js!'
   },
   methods: {
     reverseMessage: function () {
@@ -340,10 +340,52 @@ var app5 = new Vue({
     }
   }
 })
-</script>                  		
+</script>
+                         
                   		
+<p>El método simplemente actualizamos el estado de nuestra aplicación sin tocar el DOM - todas las manipulaciones de DOM son manejadas por Vue, y el código que escribimos se centra en la lógica subyacente.
+</p>
+<p>Vue también proporciona la directiva <code>v-model</code> que hace que la unión bidireccional entre la entrada de formularios y el estado de la aplicación sea sencilla:</p>                		
+
          
-                  		
+         
+        <!-- Code Highlight Attached -->
+						<div class="code-highlight-attached">
+						
+							<div class="code-highlight code-highlight-with-label" data-label="HTML">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-markup js-code">
+
+&lt;div id="app-6"&gt;
+  &lt;p&gt;{{ message }}&lt;/p&gt;
+  &lt;input v-model="message"&gt;
+&lt;/div&gt;</code></pre></div>                      
+
+							<div class="code-highlight  code-highlight-with-label" data-label="JavaScript">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-javascript js-code">
+								
+var app6 = new Vue({
+  el: '#app-6',
+  data: {
+    message: 'Hello Vue!'
+  }
+})</code></pre></div>
+						</div>
+						<!-- End of Code Highlight Attached -->
+<p>Que se renderizará como:</p>	                              
+<div id="app-6">
+  <p>{{ message }}</p>
+  <input v-model="message">
+</div>
+
+
+<script>
+ var app6 = new Vue({
+  el: '#app-6',
+  data: {
+    message: 'Hello Vue!'
+  }
+})   
+</script>                 		
                   		         		
                   		         		         		
                   		         		         		         		
