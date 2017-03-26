@@ -56,6 +56,9 @@
 										<li>
 											<a href="#" class="js-scroll-to" data-target="#manejarlaentradadelusuario">Manejar la entrada del usuario</a>
 										</li>
+										<li>
+											<a href="#" class="js-scroll-to" data-target="#componentes">Componentes/a>
+										</li>
 									</ol>
 								</div>
                         
@@ -395,7 +398,44 @@ var app6 = new Vue({
 <h4 class="category-description" id="componentes">Componentes</h4> 
 
 <p>El sistema de componentes es otro concepto importante en Vue, porque es una abstracción que nos permite construir aplicaciones a gran escala compuestas de componentes pequeños, autónomos y reutilizables. Si pensamos en ello, casi cualquier tipo de interfaz de aplicación puede ser abstraído en un árbol de componentes:</p>                  
-<img src="images/components.png" alt="" class="img-responsive">                                                      
+<img src="images/components.png" alt="" class="img-responsive">
+
+<p>En Vue, un componente es esencialmente una instancia Vue con opciones predefinidas. Registrar un componente en Vue es sencillo:</p>               		
+
+         
+         
+        <!-- Code Highlight Attached -->
+						<div class="code-highlight-attached">
+                   
+
+							<div class="code-highlight  code-highlight-with-label" data-label="JavaScript">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-javascript js-code">
+								
+// Define a new component called todo-item
+Vue.component('todo-item', {
+  template: '<li>This is a todo</li>'
+})</code></pre></div>
+						</div>
+						<!-- End of Code Highlight Attached -->
+<p>Ahora se puede componer en la plantilla de otro componente:</p>               		
+
+         
+         
+        <!-- Code Highlight Attached -->
+						<div class="code-highlight-attached">
+						
+							<div class="code-highlight code-highlight-with-label" data-label="HTML">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-markup js-code">
+
+&lt;ol&gt;
+  <!-- Create an instance of the todo-item component -->
+  &lt;todo-item&gt;&lt;/todo-item&gt;
+&lt;/ol&gt;</code></pre></div>                      
+
+						</div>
+						<!-- End of Code Highlight Attached -->                  
+                                                                        
+ <p>Pero esto haría el mismo texto para cada tarea, que no es muy interesante. Deberíamos ser capaces de pasar datos del ámbito padre a componentes secundarios. Modifiquemos la definición del componente para que acepte un <code>prop</code>:</p>                                                                                                                                                                                   
                    
 </div></div></div></div>
 
