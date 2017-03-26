@@ -252,14 +252,14 @@
 								<div class="table-of-contents">
 									<ol>
 										<li>
-											<a href="#" class="js-scroll-to" data-target="#vuejs">VUEjs</a>
+											<a href="#" class="js-scroll-to" data-target="#vuejs">Vue.js</a>
 										</li>
 										<li>
 											<a href="#" class="js-scroll-to" data-target="#renderizaciondeclarativa">Renderización declarativa</a>
 										</li>
 										<li>
 											<a href="#" class="js-scroll-to" data-target="#condicionalesyloops">Condicionales y Loops</a>
-										</li>condicionalesyloops
+										</li>
 									</ol>
 								</div>
                         
@@ -281,14 +281,14 @@
                                                
         <!-- Category Info -->
         <div class="category-info helper pt0" id="simple-highlight">
-        <h3 class="category-title" id="diseno-web">VUEjs
+        <h3 class="category-title" id="diseno-web">Vue.js
             <!-- Fragment Identifier -->
             <a class="fragment-identifier js-fragment-identifier fragment-identifier-scroll" href="#simple-highlight">
                 <i class="fa fa-link"></i>
             </a>
             <!-- End of Fragment Identifier -->
         </h3>
-        <h4 class="category-description" id="">VUEjs</h4>
+        <h4 class="category-description" id="">Vue.js</h4>
         
         <p>Vue (pronunciado /vjuː/, como view) es un marco progresivo para construir interfaces de usuario. A diferencia de otros marcos monolíticos, Vue está diseñado desde para ser escalable y adoptable.</p>
         
@@ -434,6 +434,61 @@ var app3 = new Vue({
   el: '#app-3',
   data: {
     seen: true
+  }
+})            
+</script>
+        
+            <p>Este ejemplo demuestra que podemos vincular datos no solo a texto y atributos, sino también a la estructura del DOM. Además, Vue también proporciona un potente sistema de efectos de transición que puede aplicar automáticamente <strong>efectos de transición</strong> cuando los elementos son insertados / actualizados / eliminados por Vue.</p>
+            <p>Existen bastantes otras directivas, cada una con su propia funcionalidad especial. Por ejemplo, la directiva <code>v-for</code> se puede utilizar para mostrar una lista de elementos que utilizan los datos de un Array:</p>
+         
+         
+        <!-- Code Highlight Attached -->
+						<div class="code-highlight-attached">
+						
+							<div class="code-highlight code-highlight-with-label" data-label="HTML">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-markup js-code">
+
+&lt;div id="app-4"&gt;
+  &lt;ol&gt;
+    &lt;li v-for="todo in todos"&gt;
+      {{ todo.text }}
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</code></pre></div>                      
+
+							<div class="code-highlight code-highlight-with-label" data-label="JavaScript">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-javascript js-code">
+								
+var app4 = new Vue({
+  el: '#app-4',
+  data: {
+    todos: [
+      { text: 'Learn JavaScript' },
+      { text: 'Learn Vue' },
+      { text: 'Build something awesome' }
+    ]
+  }
+})</code></pre></div>
+						</div>
+						<!-- End of Code Highlight Attached -->
+<p>Que se renderizará como:</p>	            
+<div id="app-4">
+  <ol>
+    <li v-for="todo in todos">
+      {{ todo.text }}
+    </li>
+  </ol>
+</div>
+    
+<script>
+var app4 = new Vue({
+  el: '#app-4',
+  data: {
+    todos: [
+      { text: 'Learn JavaScript' },
+      { text: 'Learn Vue' },
+      { text: 'Build something awesome' }
+    ]
   }
 })            
 </script>        
