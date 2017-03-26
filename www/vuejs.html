@@ -509,8 +509,8 @@ var app4 = new Vue({
 								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-markup js-code">
 
 &lt;div id="app-5"&gt;
-  &lt;p&gt;{{ message }}&lt;/p&gt;
   &lt;button v-on:click="reverseMessage"&gt;Reverse Message&lt;/button&gt;
+  &lt;p&gt;{{ message }}&lt;/p&gt;
 &lt;/div&gt;</code></pre></div>                      
 
 							<div class="code-highlight code-highlight-with-label" data-label="JavaScript">
@@ -531,8 +531,8 @@ var app5 = new Vue({
 						<!-- End of Code Highlight Attached -->
 <p>Que se renderizará como:</p>	                     
 <div id="app-5">
-  <p>{{ message }}</p>
   <button v-on:click="reverseMessage">Invertir Mensaje</button>
+  <p>{{ message }}</p>
 </div>
                          
 <script>
@@ -548,7 +548,8 @@ var app5 = new Vue({
   }
 })
 </script>
-                         
+
+                                                  
                   		
 <p>El método simplemente actualizamos el estado de nuestra aplicación sin tocar el DOM - todas las manipulaciones de DOM son manejadas por Vue, y el código que escribimos se centra en la lógica subyacente.
 </p>
