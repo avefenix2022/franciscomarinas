@@ -260,6 +260,9 @@
 										<li>
 											<a href="#" class="js-scroll-to" data-target="#condicionalesyloops">Condicionales y Loops</a>
 										</li>
+										<li>
+											<a href="#" class="js-scroll-to" data-target="#manejarlaentradadelusuario">Manejar la entrada del usuario</a>
+										</li>
 									</ol>
 								</div>
                         
@@ -491,9 +494,60 @@ var app4 = new Vue({
     ]
   }
 })            
-</script>        
+</script>
+            
+                         
+<h4 class="category-description" id="manejarlaentradadelusuario">Manejar la entrada del usuario</h4> 
+                    
+<p>Para permitir que los usuarios interactúen con la aplicación, podemos usar la directiva <code>v-on</code> para conectar a los oyentes de eventos que invocan métodos en nuestras instancias Vue:</p>
          
-                  		
+         
+        <!-- Code Highlight Attached -->
+						<div class="code-highlight-attached">
+						
+							<div class="code-highlight code-highlight-with-label" data-label="HTML">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-markup js-code">
+
+&lt;div id="app-5"&gt;
+  &lt;p&gt;{{ message }}&lt;/p&gt;
+  &lt;button v-on:click="reverseMessage"&gt;Reverse Message&lt;/button&gt;
+&lt;/div&gt;</code></pre></div>                      
+
+							<div class="code-highlight code-highlight-with-label" data-label="JavaScript">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-javascript js-code">
+								
+var app5 = new Vue({
+  el: '#app-5',
+  data: {
+    message: 'Hello Vue.js!'
+  },
+  methods: {
+    reverseMessage: function () {
+      this.message = this.message.split('').reverse().join('')
+    }
+  }
+})</code></pre></div>
+						</div>
+						<!-- End of Code Highlight Attached -->
+<p>Que se renderizará como:</p>	                     
+<div id="app-5">
+  <p>{{ message }}</p>
+  <button v-on:click="reverseMessage">Reverse Message</button>
+</div>
+                         
+<script>
+var app5 = new Vue({
+  el: '#app-5',
+  data: {
+    message: 'Hello Vue.js!'
+  },
+  methods: {
+    reverseMessage: function () {
+      this.message = this.message.split('').reverse().join('')
+    }
+  }
+})
+</script>                  		
                   		
          
                   		
