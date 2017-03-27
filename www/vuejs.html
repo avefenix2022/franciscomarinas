@@ -264,8 +264,8 @@
 											<a href="#" class="js-scroll-to" data-target="#manejarlaentradadelusuario">Manejar la entrada del usuario</a>
 										</li>
 										<li>
-											<a href="#" class="js-scroll-to" data-target="#componentes">Componentes/a>
-										</a></li>
+											<a href="#" class="js-scroll-to" data-target="#componentes">Componentes</a>
+										</li>
 									</ol>
 								</div>
                         
@@ -724,6 +724,29 @@ var app7 = new Vue({
   }
 })            
 </script>
+
+<p>Este es sólo un ejemplo, pero hemos logrado separar nuestra aplicación en dos unidades más pequeñas, y el hijo está razonablemente bien desacoplado de los padres a través de la interfaz de accesorios. Ahora podemos mejorar aún más nuestro componente &lt;todo-item&gt; con una plantilla y una lógica más complejas sin afectar la aplicación principal.</p>
+
+<p>En una aplicación grande, es necesario dividir toda la aplicación en componentes para que el desarrollo sea manejable. Aaquí hay un ejemplo (imaginario) del aspecto de la plantilla de una aplicación con los componentes:</p>              		
+
+         
+         
+        <!-- Code Highlight Attached -->
+						<div class="code-highlight-attached">
+						
+							<div class="code-highlight code-highlight-with-label" data-label="HTML">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-markup js-code">
+
+&lt;div id="app"&gt;
+  &lt;app-nav&gt;&lt;/app-nav&gt;
+  &lt;app-view&gt;
+    &lt;app-sidebar&gt;&lt;/app-sidebar&gt;
+    &lt;app-content&gt;&lt;/app-content&gt;
+  &lt;/app-view&gt;
+&lt;/div&gt;</code></pre></div>                      
+
+						</div>
+						<!-- End of Code Highlight Attached -->
 
 
 
