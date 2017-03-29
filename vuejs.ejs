@@ -59,6 +59,23 @@
 										<li>
 											<a href="#" class="js-scroll-to" data-target="#componentes">Componentes</a>
 										</li>
+										<li>
+											<a href="#" class="js-scroll-to" data-target="#nstanciarvue">nstanciar Vue</a>
+										
+										<ol>
+												<li>
+													<a href="#" class="js-scroll-to" data-target="#constructor">Constructor</a>
+												</li>
+												<li>
+													<a href="#" class="js-scroll-to" data-target="#propiedadesymetodos">Propiedades y Métodos</a>
+												</li>
+												<li>
+													<a href="#" class="js-scroll-to" data-target="#rendimiento-de-ejecución-Web">Rendimiento de ejecución Web</a>
+												</li>
+												
+												
+											</ol>
+								        </li>
 									</ol>
 								</div>
                         
@@ -548,6 +565,188 @@ var app7 = new Vue({
 
 
 
+<h4 class="category-description" id="relacionconelementospersonalizados">Relación con elementos personalizados </h4> 
+<p>Los componentes de Vue son muy similares a los elementos personalizados, que son parte de la especificación de componentes web.</p>
+<p>Esto se debe a que la sintaxis de los componentes de Vue se modela poco a poco según la especificación. Por ejemplo, los componentes Vue implementan la API Slot y el atributo especial is. Sin embargo, hay algunas diferencias clave:</p>
+<ol>
+    <li>La especificación de componentes Web todavía está en estado de borrador y no se implementa de forma nativa en todos los exploradores. En comparación, los componentes Vue no requieren ningún polyfills y funcionan de forma consistente en todos los navegadores compatibles (IE9 y superiores). Cuando es necesario, los componentes de Vue también se pueden envolver dentro de un elemento personalizado nativo.</li>
+    <li>Los componentes de Vue proporcionan características importantes que no están disponibles en elementos sencillos, especialmente el flujo de datos de componentes cruzados, la comunicación de eventos personalizados y las integraciones de herramientas de construcción.</li>
+</ol>
+
+
+
+
+
+
+<h4 class="category-description" id="instanciarvue">Instanciar Vue</h4>
+
+
+
+
+<h4 class="category-description" id="Constructor">Constructor</h4> 
+
+
+<p>Cada Vue vm se inicia mediante la creación de una instancia Vue de raíz con la función de constructor Vue:</p>               		
+
+         
+         
+        <!-- Code Highlight Attached -->
+						<div class="code-highlight-attached">                     
+
+							<div class="code-highlight  code-highlight-with-label" data-label="JavaScript">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-javascript js-code">
+								
+var vm = new Vue({
+  // options
+})</code></pre></div>
+						</div>
+						<!-- End of Code Highlight Attached -->
+
+<p>Aunque no está estrictamente asociado con el patrón MVVM, el diseño de Vue se inspiró parcialmente en él. Como convención, a menudo usamos la variable vm (abreviatura de VIstaModelo) para referirnos a nuestras instancias Vue.</p>
+
+<p>Cuando se instancia una instancia Vue, es necesario pasar un objeto de opciones que puede contener opciones de datos, plantilla, elemento para montar, métodos, callbacks del ciclo de vida y más. La lista completa de opciones se puede encontrar en la referencia de la API.</p>
+
+<p>El constructor Vue puede ampliarse para crear constructores de componentes reutilizables con opciones predefinidas:</p>               		
+
+         
+         
+        <!-- Code Highlight Attached -->
+						<div class="code-highlight-attached">                     
+
+							<div class="code-highlight  code-highlight-with-label" data-label="JavaScript">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-javascript js-code">
+								
+var MyComponent = Vue.extend({
+  // extension options
+})
+// all instances of `MyComponent` are created with
+// the pre-defined extension options
+var myComponentInstance = new MyComponent()</code></pre></div>
+						</div>
+						<!-- End of Code Highlight Attached -->
+
+
+<p>Aunque es posible crear instancias extendidas imperativamente, la mayoría de las veces se recomienda componerlas declarativamente en plantillas como elementos personalizados.</p>
+
+<p>Todos los componentes de Vue son esencialmente instancias Vue ampliadas.</p>
+
+
+
+
+
+
+<h4 class="category-description" id="propiedadesymetodos">Propiedades y Métodos</h4>
+
+<p>Cada instancia Vue proxies todas las propiedades encontradas en su objeto de datos:</p>               		
+
+         
+         
+        <!-- Code Highlight Attached -->
+						<div class="code-highlight-attached">                     
+
+							<div class="code-highlight  code-highlight-with-label" data-label="JavaScript">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-javascript js-code">
+								
+var data = { a: 1 }
+var vm = new Vue({
+  data: data
+})
+vm.a === data.a // -> true
+// setting the property also affects original data
+vm.a = 2
+data.a // -> 2
+// ... and vice-versa
+data.a = 3
+vm.a // -> 3</code></pre></div>
+						</div>
+						<!-- End of Code Highlight Attached -->
+						
+<p>Debe tenerse en cuenta que sólo estas propiedades aproximadas son reactivas. Si agrega una nueva propiedad a la instancia después de haberla creado, no activará ninguna actualización de vista. Discutiremos el sistema de reactividad en detalle más adelante.</p>
+
+<p>Además de las propiedades de los datos, las instancias de Vue exponen una serie de propiedades y métodos útiles de la instancia. Estas propiedades y métodos tienen el prefijo $ para diferenciarlos de las propiedades de los datos proxiados. Por ejemplo:</p>               		
+
+         
+         
+        <!-- Code Highlight Attached -->
+						<div class="code-highlight-attached">                     
+
+							<div class="code-highlight  code-highlight-with-label" data-label="JavaScript">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-javascript js-code">
+								
+var data = { a: 1 }
+var vm = new Vue({
+  el: '#example',
+  data: data
+})
+vm.$data === data // -> true
+vm.$el === document.getElementById('example') // -> true
+// $watch is an instance method
+vm.$watch('a', function (newVal, oldVal) {
+  // this callback will be called when `vm.a` changes
+})</code></pre></div>
+						</div>
+						<!-- End of Code Highlight Attached -->
+
+
+<p>No utilice funciones de flecha en una propiedad de instancia o devolución de llamada (por ejemplo, vm. $ Watch ('a', newVal => this.myMethod ())). Como las funciones de flecha están vinculadas al contexto padre, esta no será la instancia de Vue como se esperaría y this.myMethod será indefinido.</p>
+
+
+
+
+
+
+
+<h4 class="category-description" id="ciclodevidadelainstancia">Ciclo de vida de la instancia</h4>
+
+<p>Cada instancia de Vue pasa por una serie de pasos de inicialización cuando se crea - por ejemplo, necesita configurar la observación de datos, compilar la plantilla, montar la instancia en el DOM y actualizar el DOM cuando cambia de datos. A lo largo del camino, también invocará algunos ganchos del ciclo de vida, que nos dan la oportunidad de ejecutar lógica personalizada. Por ejemplo, se llama al gancho creado después de crear la instancia:</p>               		
+
+         
+         
+        <!-- Code Highlight Attached -->
+						<div class="code-highlight-attached">                     
+
+							<div class="code-highlight  code-highlight-with-label" data-label="JavaScript">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-javascript js-code">
+								
+var vm = new Vue({
+  data: {
+    a: 1
+  },
+  created: function () {
+    // `this` points to the vm instance
+    console.log('a is: ' + this.a)
+  }
+})
+// -> "a is: 1"</code></pre></div>
+						</div>
+						<!-- End of Code Highlight Attached -->
+
+
+<p>También hay otros ganchos que serán llamados en diferentes etapas del ciclo de vida de la instancia, por ejemplo montado, actualizado y destruido. </p>
+
+<p>Todos los ganchos del ciclo de vida se llaman con su contexto apuntando a la instancia de Vue invocándolo. Usted puede haber estado preguntándose dónde vive el concepto de "controladores" en el mundo Vue y la respuesta es: no hay controladores. Su lógica personalizada para un componente se dividiría entre estos ganchos del ciclo de vida.</p>
+
+
+
+
+
+
+
+<h4 class="category-description" id="diagramadelcliclodevida">Diagrama del cliclo de vida</h4>
+
+<p>Diagrama del ciclo de vida de la instancia. No es necesario comprender completamente todo lo que está pasando en este momento, pero este diagrama será útil en el futuro.</p>
+
+                 
+<img src="images/lifecycle.png" alt="" class="img-responsive">
+
+
+<p>Vue.js utiliza una sintaxis de plantilla basada en HTML que le permite declarativamente enlazar el DOM procesado con los datos de la instancia de Vue subyacente. </p>
+
+<p>Todas las plantillas de Vue.js son HTML válido que puede ser analizado por navegadores compatibles con especificaciones y analizadores de HTML.</p>
+
+<p>Bajo el capó, Vue compila las plantillas en funciones de renderización de DOM virtual. Combinado con el sistema de reactividad, Vue es capaz de calcular inteligentemente la cantidad mínima de componentes para volver a representar y aplicar la cantidad mínima de manipulaciones DOM cuando cambia el estado de la aplicación.</p>
+
+<p>Si está familiarizado con los conceptos de DOM virtual y prefiere la potencia bruta de JavaScript, también puede escribir directamente funciones de render en lugar de plantillas, con soporte opcional de JSX.</p>
 
 
 
@@ -557,12 +756,71 @@ var app7 = new Vue({
 
 
 
+ 
+ 
+<h4 class="category-description" id="interpolacion">Interpolación</h4>
+
+
+
+<h4 class="category-description" id="texto">Texto</h4>
+
+<p>La forma más básica de vinculación de datos es la interpolación de texto utilizando la sintaxis doble llaves:</p>
+
+        <!-- Code Highlight Attached -->
+						<div class="code-highlight-attached">
+						
+							<div class="code-highlight code-highlight-with-label" data-label="HTML">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-markup js-code">
+
+&lt;span&gt;Message: {{ msg }}&lt;/span&gt;</code></pre></div>                      
+
+						</div>
+						<!-- End of Code Highlight Attached -->
+
+
+<p>La etiqueta con las llaves dobles será reemplazada por el valor de la propiedad msg en el objeto de datos correspondiente. También se actualizará cada vez que cambie la propiedad msg del objeto de datos.</p>
+
+<p>También puede realizar interpolaciones únicas que no se actualizan en el cambio de datos mediante la directiva v-once, pero tenga en cuenta que esto también afectará a cualquier enlace en el mismo nodo:</p>
+
+        <!-- Code Highlight Attached -->
+						<div class="code-highlight-attached">
+						
+							<div class="code-highlight code-highlight-with-label" data-label="HTML">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-markup js-code">
+
+&lt;span v-oncegt;This will never change: {{ msg }}&lt;/span&gt;</code>code></pre></div>                      
+
+						</div>
+						<!-- End of Code Highlight Attached -->
 
 
 
 
 
 
+
+
+
+ 
+ 
+<h4 class="category-description" id="v-html">v-html</h4>
+
+<p>La doble llave interpreta los datos como texto sin formato, no HTML. Para poder imprimir HTML real, necesitará usar la directiva v-html:</p>
+
+        <!-- Code Highlight Attached -->
+						<div class="code-highlight-attached">
+						
+							<div class="code-highlight code-highlight-with-label" data-label="HTML">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-markup js-code">
+
+&lt;div v-html="rawHtml"&gt;&lt;/div&gt;</code>code></pre></div>                      
+
+						</div>
+						<!-- End of Code Highlight Attached -->
+						
+<p>El contenido se inserta como HTML simple - los enlaces de datos se ignoran. Tenga en cuenta que no puede utilizar v-html para componer particiones de plantilla, ya que Vue no es un motor de plantillas basado en cadenas. En su lugar, se prefieren los componentes como la unidad fundamental para la reutilización y composición de la UI.</p>
+
+<p>La renderización dinámica de HTML arbitrario en su sitio web puede ser muy peligrosa porque puede conducir fácilmente a vulnerabilidades XSS. Utilice únicamente la interpolación HTML en el contenido de confianza y nunca en el contenido proporcionado por el usuario.</p>
 
 
 
