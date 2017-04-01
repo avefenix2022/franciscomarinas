@@ -42,5 +42,9 @@
     "vuejs": {
         "pageTitle": "VUEjs",
         "description": "VUEjs"
+    },
+    "leanwebsites": {
+        "pageTitle": "Lean Websites",
+        "description": "Lean Websites"
     }
 }
