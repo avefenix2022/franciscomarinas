@@ -463,7 +463,6 @@ main {
         -ms-flex-direction:  row;
          -o-flex-direction:  row;
             flex-direction:  row;
-    position: relative;
 }
 
 .__elemento-inferior {
