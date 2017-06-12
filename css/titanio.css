@@ -382,13 +382,18 @@ main {
     height:                  300px;
     background:              #239F85;
     margin:                  70px auto ;
+    box-shadow:              4px 4px 5px 0px rgba(0,0,0,0.5);
+    position:                relative;
+}
+
+.pa-flex {
     display:                 flex;
     -webkit-flex-direction:  column;
        -moz-flex-direction:  column;
         -ms-flex-direction:  column;
          -o-flex-direction:  column;
             flex-direction:  column;
-    box-shadow:              4px 4px 5px 0px rgba(0,0,0,0.5);
+    
 }
 
 .bloque-tarjeta-horizontal {
@@ -419,10 +424,9 @@ main {
     border-right:          45px solid transparent;      /* base flecha y color*/
     font-size:             0;
     line-height:           0;
-  
- position: relative;
-  top: -45px;
-  left: 30px;
+    position:              absolute;
+    top: -45px;
+    left: 30px;
 }
 
 /*--------------------------\
