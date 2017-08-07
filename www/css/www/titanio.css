@@ -303,8 +303,6 @@ template {
     width:                   100%;
     height:                  100vh;
     
-    display:                 -webkit-box;
-    display:                 -ms-flexbox;
     display:                 flex;
     -ms-align-items:         center;
     align-items:             center;
@@ -343,9 +341,7 @@ main {
 .bloque-superior {
     width:                   100%;
     height:                  65px;
-    display:                 -webkit-box;
-    display:                 -ms-flexbox;
-    display:                 flex;
+    display:                 flex; 
 }
 
 /*--------------------------\
@@ -355,8 +351,6 @@ main {
     width:                   65px;
     height:                  65px;
     
-    display:                 -webkit-box;
-    display:                 -ms-flexbox;
     display:                 flex;
     justify-content:         center;
     -ms-align-items:         center;
@@ -393,11 +387,6 @@ main {
 }
 
 .pa-flex {
-    
-    display:                 -webkit-box;
-    display:                 -ms-flexbox;
-    display:                 -webkit-box;
-    display:                 -ms-flexbox;
     display:                 flex;
     -webkit-flex-direction:  column;
        -moz-flex-direction:  column;
@@ -413,8 +402,6 @@ main {
     height:                  300px;
     background:              #239F85;
     margin:                  70px auto ;
-    display:                 -webkit-box;
-    display:                 -ms-flexbox;
     display:                 flex;
     -webkit-flex-direction:  row;
        -moz-flex-direction:  row;
@@ -470,21 +457,18 @@ main {
 .__elemento-superior {
     width:                   100%;
     height:                  50%;
-    display:                 -webkit-box;
-    display:                 -ms-flexbox;
     display:                 flex;
     -webkit-flex-direction:  row;
        -moz-flex-direction:  row;
         -ms-flex-direction:  row;
          -o-flex-direction:  row;
             flex-direction:  row;
+    position: relative;
 }
 
 .__elemento-inferior {
     width:                   100%;
     height:                  50%;
-    display:                 -webkit-box;
-    display:                 -ms-flexbox;
     display:                 flex;
     -webkit-flex-direction:  row;
        -moz-flex-direction:  row;
@@ -517,8 +501,6 @@ main {
 }
 
 .__elemento-contenedor-arriba-derecha {
-    display:                 -webkit-box;
-    display:                 -ms-flexbox;
     display:                 flex;
     -ms-align-items:         center;
         align-items:         flex-start;
