@@ -271,29 +271,50 @@ body {
     width: 50%; 
     height: 25%; 
     left:   50%; 
-    top: 0%; 
+    top: 0%;
+    
+    background-image: linear-gradient(0deg, #45536F 0%, #232B3B 100%);
+    border: 1px solid #FFFFFF;
+    
+    /*
     background-image: url(../images/bg_css_francisco.jpg);
     background-position: 50% 0%; 
-    background-attachment: fixed;}
+    background-attachment: fixed;
+    */
+    }
     
     
 #grid ul li:nth-child(5)  { 
     width: 25%; 
     height: 25%;
     left: 50%; 
-    top: 25%;  
+    top: 25%;
+    
+    background-image: linear-gradient(-180deg, #7474BF 0%, #348AC7 100%);
+    border: 1px solid #FFFFFF;
+    
+    /*
     background-image: url(../images/bg_css_francisco.jpg);
     background-position: 50% 25%; 
-    background-attachment: fixed;}
+    background-attachment: fixed;
+    */
+    }
     
 #grid ul li:nth-child(6)  { 
     width: 25%; 
     height: 25%; 
     left: 75%;  
     top: 25%;
+    
+    background-image: linear-gradient(-179deg, #6ED6FF 0%, #20AEF5 41%, #0F8DE8 77%, #0070DC 100%);
+    border: 1px solid #FFFFFF;
+    
+    /*
     background-image: url(../images/bg_css_francisco.jpg);
     background-position: 75% 25%; 
-    background-attachment: fixed;}
+    background-attachment: fixed;
+    */
+    }
     
 #grid ul li:nth-child(7)  { 
     width: 25%; 
