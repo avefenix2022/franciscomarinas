@@ -225,11 +225,13 @@ body {
     
     background-image: linear-gradient(-180deg, #00396F 0%, #E5E9BF 100%);
     border: 1px solid #FFFFFF;
+    
     /*
     background-image: url(../images/bg_css_francisco.jpg); 
     background-position: 0% 0%; 
     background-attachment: fixed;
     */
+    
     }
     
     
