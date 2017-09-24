@@ -211,8 +211,10 @@ body {
 
 
 /* @media (min-width: 400px) Mayor que movil */
+/*
 @media (min-width: 400px) {
-   
+ */  
+    
 #grid ul {
     list-style: none;
 }
@@ -409,10 +411,9 @@ body {
     transform: scale(1);
 }
        
-
-}/* FIN @media (min-width: 400px)*/
-
-
+/*
+}
+*/
 
 
       nav > .desktop > ul {
