@@ -395,12 +395,12 @@ body {
     */
     }
 
-#grid ul li:nth-child(2) {   
+#grid ul li:nth-child(8) {   
     transform: scale(.5);
     transition: all .7s;
 }    
 
-#cover:target + #grid ul li:nth-child(2) {
+#cover:target + #grid ul li:nth-child(8) {
     transform: scale(1);
 }
        
