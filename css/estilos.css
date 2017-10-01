@@ -189,105 +189,6 @@ body {
 
 
 
-@media only screen 
-and (min-device-width : 376px) {
-    
-#grid ul li {
-    position: absolute;
-    background-repeat: no-repeat;
-}
-
-#grid ul li:first-child   { 
-    width: 25%; 
-    height: 25%; 
-    left:   0; 
-    top:   0;
-    }
-    
-    
-#grid ul li:nth-child(2)  { 
-    width: 25%; 
-    height: 25%; 
-    top: 25%; 
-    left:   0; 
-    }
-    
-#grid ul li:nth-child(3)  { 
-    width: 25%; 
-    height: 50%; 
-    left:   25%; 
-    top: 0%;
-    }
-
-#grid ul li:nth-child(4)  { 
-    width: 50%; 
-    height: 25%; 
-    left:   50%; 
-    top: 0%;
-    }
-    
-    
-#grid ul li:nth-child(5)  { 
-    width: 25%; 
-    height: 25%;
-    left: 50%; 
-    top: 25%;
-    }
-    
-#grid ul li:nth-child(6)  { 
-    width: 25%; 
-    height: 25%; 
-    left: 75%;  
-    top: 25%;
-    }
-    
-#grid ul li:nth-child(7)  { 
-    width: 25%; 
-    height: 50%; 
-    left:  0%;  
-    top: 50%;
-    }
-    
-#grid ul li:nth-child(8)  { 
-    width: 50%; 
-    height: 25%; 
-    left: 25%;  
-    top: 50%;
-    }
-    
-#grid ul li:nth-child(9)  { 
-    width: 25%; 
-    height: 25%; 
-    left: 25%; 
-    top: 75%;
-    }
-    
-#grid ul li:nth-child(10) { 
-    width: 25%; 
-    height: 25%; 
-    left: 75%; 
-    top: 50%;
-    }
-    
-#grid ul li:last-child    { 
-    width: 50%; 
-    height: 25%; 
-    left: 50%; 
-    top: 75%;
-    }
-
-#grid ul li:nth-child(8) {   
-    transform: scale(.5);
-    transition: all .7s;
-}    
-
-#cover:target + #grid ul li:nth-child(8) {
-    transform: scale(1);
-}
-
-
-
-}
 
 @media only screen 
 and (min-device-width : 375px) 
@@ -388,6 +289,111 @@ and (orientation : landscape) {
     transform: scale(1);
 }
 }
+
+
+
+
+@media only screen 
+and (min-device-width : 376px) {
+    
+#grid ul li {
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+#grid ul li:first-child   { 
+    width: 25%; 
+    height: 25%; 
+    left:   0; 
+    top:   0;
+    }
+    
+    
+#grid ul li:nth-child(2)  { 
+    width: 25%; 
+    height: 25%; 
+    top: 25%; 
+    left:   0; 
+    }
+    
+#grid ul li:nth-child(3)  { 
+    width: 25%; 
+    height: 50%; 
+    left:   25%; 
+    top: 0%;
+    }
+
+#grid ul li:nth-child(4)  { 
+    width: 50%; 
+    height: 25%; 
+    left:   50%; 
+    top: 0%;
+    }
+    
+    
+#grid ul li:nth-child(5)  { 
+    width: 25%; 
+    height: 25%;
+    left: 50%; 
+    top: 25%;
+    }
+    
+#grid ul li:nth-child(6)  { 
+    width: 25%; 
+    height: 25%; 
+    left: 75%;  
+    top: 25%;
+    }
+    
+#grid ul li:nth-child(7)  { 
+    width: 25%; 
+    height: 50%; 
+    left:  0%;  
+    top: 50%;
+    }
+    
+#grid ul li:nth-child(8)  { 
+    width: 50%; 
+    height: 25%; 
+    left: 25%;  
+    top: 50%;
+    }
+    
+#grid ul li:nth-child(9)  { 
+    width: 25%; 
+    height: 25%; 
+    left: 25%; 
+    top: 75%;
+    }
+    
+#grid ul li:nth-child(10) { 
+    width: 25%; 
+    height: 25%; 
+    left: 75%; 
+    top: 50%;
+    }
+    
+#grid ul li:last-child    { 
+    width: 50%; 
+    height: 25%; 
+    left: 50%; 
+    top: 75%;
+    }
+
+#grid ul li:nth-child(8) {   
+    transform: scale(.5);
+    transition: all .7s;
+}    
+
+#cover:target + #grid ul li:nth-child(8) {
+    transform: scale(1);
+}
+
+
+
+}
+
+
 
 @media only screen 
 and (min-device-width : 375px) 
