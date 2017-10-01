@@ -362,14 +362,13 @@ body {
 
 @media (max-width: 414px) {
     #grid ul li a {
-        font-size: 14px !important;
+        font-size: 10px !important;
     } 
 }
 
-/*
+
 @media (min-width: 415px) and (max-width: 736px) {
     #grid a {
-        font-size: 1.2em !important;
+        font-size: 14px !important;
     } 
 }
-*/
