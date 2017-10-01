@@ -181,15 +181,7 @@ body {
 #grid ul li:nth-child(9)  { background-image: url(../images/contacto.jpg); }
 #grid ul li:nth-child(10) { background-image: url(../images/desarrollo.jpg); }  
 #grid ul li:last-child    { background-image: url(../images/titaniodigital.jpeg); }
-
-
-
-
-/* @media (min-width: 400px) Mayor que movil */
-/*
-@media (min-width: 400px) {
- */  
-    
+   
 #grid ul {
     list-style: none;
 }
@@ -207,13 +199,6 @@ body {
     
     background-image: linear-gradient(-180deg, #00396F 0%, #E5E9BF 100%);
     border: 1px solid #FFFFFF;
-    
-    /*
-    background-image: url(../images/bg_css_francisco.jpg); 
-    background-position: 0% 0%; 
-    background-attachment: fixed;
-    */
-    
     }
     
     
@@ -225,12 +210,6 @@ body {
     
     background-image: linear-gradient(-180deg, #729197 0%, #013A6F 100%);
     border: 1px solid #FFFFFF;
-    
-    /*
-    background-image: url(../images/bg_css_francisco.jpg); 
-    background-position: 25% 25%; 
-    background-attachment: fixed;
-    */
     }
     
 #grid ul li:nth-child(3)  { 
@@ -241,12 +220,6 @@ body {
     
     background-image: linear-gradient(-180deg, #085078 0%, #4290A0 100%);
     border: 1px solid #FFFFFF;
-    
-    /*
-    background-image: url(../images/bg_css_francisco.jpg);
-    background-position: 25% 0%; 
-    background-attachment: fixed;
-    */
     }
 
 #grid ul li:nth-child(4)  { 
@@ -257,12 +230,6 @@ body {
     
     background-image: linear-gradient(0deg, #45536F 0%, #232B3B 100%);
     border: 1px solid #FFFFFF;
-    
-    /*
-    background-image: url(../images/bg_css_francisco.jpg);
-    background-position: 50% 0%; 
-    background-attachment: fixed;
-    */
     }
     
     
@@ -274,12 +241,6 @@ body {
     
     background-image: linear-gradient(-180deg, #7474BF 0%, #348AC7 100%);
     border: 1px solid #FFFFFF;
-    
-    /*
-    background-image: url(../images/bg_css_francisco.jpg);
-    background-position: 50% 25%; 
-    background-attachment: fixed;
-    */
     }
     
 #grid ul li:nth-child(6)  { 
@@ -290,12 +251,6 @@ body {
     
     background-image: linear-gradient(-179deg, #6ED6FF 0%, #20AEF5 41%, #0F8DE8 77%, #0070DC 100%);
     border: 1px solid #FFFFFF;
-    
-    /*
-    background-image: url(../images/bg_css_francisco.jpg);
-    background-position: 75% 25%; 
-    background-attachment: fixed;
-    */
     }
     
 #grid ul li:nth-child(7)  { 
@@ -306,12 +261,6 @@ body {
     
     background-image: linear-gradient(-180deg, #00396F 0%, #E5E9BF 100%);
     border: 1px solid #FFFFFF;
-    
-    /*
-    background-image: url(../images/bg_css_francisco.jpg);
-    background-position: 0% 50%; 
-    background-attachment: fixed;
-    */
     }
     
 #grid ul li:nth-child(8)  { 
@@ -322,12 +271,6 @@ body {
     
     background-image: linear-gradient(-180deg, #F5515F 0%, #9F041B 100%);
     border: 1px solid #FFFFFF;
-    
-    /*
-    background-image: url(../images/bg_css_francisco.jpg);
-    background-position: 25% 50%; 
-    background-attachment: fixed;
-    */
     }
     
 #grid ul li:nth-child(9)  { 
@@ -338,11 +281,6 @@ body {
     
     background-image: linear-gradient(-180deg, #A0051C 0%, #FBAD3F 100%);
     border: 1px solid #FFFFFF;
-    /*
-    background-image: url(../images/bg_css_francisco.jpg);
-    background-position: 25% 75%; 
-    background-attachment: fixed;
-    */
     }
     
 #grid ul li:nth-child(10) { 
@@ -353,12 +291,6 @@ body {
     
     background-image: linear-gradient(0deg, #3CD3AD 0%, #0B8BAD 100%);
     border: 1px solid #FFFFFF;
-    
-    /*
-    background-image: url(../images/bg_css_francisco.jpg);
-    background-position: 75% 50%; 
-    background-attachment: fixed;
-    */
     }
     
 #grid ul li:last-child    { 
@@ -369,12 +301,6 @@ body {
     
     background-image: linear-gradient(0deg, #FBAD3F 0%, #FF3727 100%);
     border: 1px solid #FFFFFF;
-    
-    /*
-    background-image: url(../images/bg_css_francisco.jpg);
-    background-position: 50% 75%; 
-    background-attachment: fixed;
-    */
     }
 
 #grid ul li:nth-child(8) {   
@@ -385,10 +311,7 @@ body {
 #cover:target + #grid ul li:nth-child(8) {
     transform: scale(1);
 }
-       
-/*
-}
-*/
+
 
 
       nav > .desktop > ul {
@@ -438,5 +361,8 @@ body {
 
 
 @media (max-width: 400px) {
-    font-size: 10px;
+    #grid a {
+       font-size: 8px; 
+    }
+    
 }
