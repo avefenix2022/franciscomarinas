@@ -130,61 +130,50 @@ body {
     font-weight: 100;
 }
 
-#grid ul li:first-child   {     
-    background-image: linear-gradient(-180deg, #00396F 0%, #E5E9BF 100%);
-    border: 1px solid #FFFFFF;
+#grid ul li:first-child   {
+    background: #00396F;
     }
     
     
-#grid ul li:nth-child(2)  {     
-    background-image: linear-gradient(-180deg, #729197 0%, #013A6F 100%);
-    border: 1px solid #FFFFFF;
+#grid ul li:nth-child(2)  { 
+    background: #729197;
     }
     
 #grid ul li:nth-child(3)  { 
-    background-image: linear-gradient(-180deg, #085078 0%, #4290A0 100%);
-    border: 1px solid #FFFFFF;
+    background: #085078;;
     }
 
 #grid ul li:nth-child(4)  {
-    background-image: linear-gradient(0deg, #45536F 0%, #232B3B 100%);
-    border: 1px solid #FFFFFF;
+    background: #45536F;
     }
     
     
 #grid ul li:nth-child(5)  {
-    background-image: linear-gradient(-180deg, #7474BF 0%, #348AC7 100%);
-    border: 1px solid #FFFFFF;
+    background: #7474BF;
     }
     
 #grid ul li:nth-child(6)  {
-    background-image: linear-gradient(-179deg, #6ED6FF 0%, #20AEF5 41%, #0F8DE8 77%, #0070DC 100%);
-    border: 1px solid #FFFFFF;
+    background: #6ED6FF;
     }
     
 #grid ul li:nth-child(7)  {
-    background-image: linear-gradient(-180deg, #00396F 0%, #E5E9BF 100%);
-    border: 1px solid #FFFFFF;
+    background: #00396F;
     }
     
 #grid ul li:nth-child(8)  { 
-    background-image: linear-gradient(-180deg, #F5515F 0%, #9F041B 100%);
-    border: 1px solid #FFFFFF;
+    background: #F5515F;
     }
     
 #grid ul li:nth-child(9)  {
-    background-image: linear-gradient(-180deg, #A0051C 0%, #FBAD3F 100%);
-    border: 1px solid #FFFFFF;
+    background: #A0051C;
     }
     
 #grid ul li:nth-child(10) {
-    background-image: linear-gradient(0deg, #3CD3AD 0%, #0B8BAD 100%);
-    border: 1px solid #FFFFFF;
+    background: #3CD3AD;
     }
     
 #grid ul li:last-child    {
-    background-image: linear-gradient(0deg, #FBAD3F 0%, #FF3727 100%);
-    border: 1px solid #FFFFFF;
+    background: #FBAD3F;
     }
 
 
@@ -411,7 +400,62 @@ and (min-device-width : 376px) {
     transform: scale(1);
 }
 
+#grid ul li:first-child   {     
+    background-image: linear-gradient(-180deg, #00396F 0%, #E5E9BF 100%);
+    border: 1px solid #FFFFFF;
+    }
+    
+    
+#grid ul li:nth-child(2)  {     
+    background-image: linear-gradient(-180deg, #729197 0%, #013A6F 100%);
+    border: 1px solid #FFFFFF;
+    }
+    
+#grid ul li:nth-child(3)  { 
+    background-image: linear-gradient(-180deg, #085078 0%, #4290A0 100%);
+    border: 1px solid #FFFFFF;
+    }
 
+#grid ul li:nth-child(4)  {
+    background-image: linear-gradient(0deg, #45536F 0%, #232B3B 100%);
+    border: 1px solid #FFFFFF;
+    }
+    
+    
+#grid ul li:nth-child(5)  {
+    background-image: linear-gradient(-180deg, #7474BF 0%, #348AC7 100%);
+    border: 1px solid #FFFFFF;
+    }
+    
+#grid ul li:nth-child(6)  {
+    background-image: linear-gradient(-179deg, #6ED6FF 0%, #20AEF5 41%, #0F8DE8 77%, #0070DC 100%);
+    border: 1px solid #FFFFFF;
+    }
+    
+#grid ul li:nth-child(7)  {
+    background-image: linear-gradient(-180deg, #00396F 0%, #E5E9BF 100%);
+    border: 1px solid #FFFFFF;
+    }
+    
+#grid ul li:nth-child(8)  { 
+    background-image: linear-gradient(-180deg, #F5515F 0%, #9F041B 100%);
+    border: 1px solid #FFFFFF;
+    }
+    
+#grid ul li:nth-child(9)  {
+    background-image: linear-gradient(-180deg, #A0051C 0%, #FBAD3F 100%);
+    border: 1px solid #FFFFFF;
+    }
+    
+#grid ul li:nth-child(10) {
+    background-image: linear-gradient(0deg, #3CD3AD 0%, #0B8BAD 100%);
+    border: 1px solid #FFFFFF;
+    }
+    
+#grid ul li:last-child    {
+    background-image: linear-gradient(0deg, #FBAD3F 0%, #FF3727 100%);
+    border: 1px solid #FFFFFF;
+    }
 
 }
 
