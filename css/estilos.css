@@ -118,7 +118,7 @@ body {
     align-items: center;
     justify-content: center;
     
-    font-size: 1.6em;
+    font-size: 22px;
     text-decoration: none;
     color: #fff;
     
@@ -313,50 +313,6 @@ body {
 }
 
 
-
-      nav > .desktop > ul {
-          list-style: none;
-          
-          height: 48;
-          background: rgba(200, 200, 200, 1);
-          
-          display: flex;
-          flex-direction: row;
-      }
-      
-       nav > .desktop > ul > li {
-          flex: 1;
-            height: 48px;
-           padding: 0 5px 0 5px;
-           border-left: 1px solid rgba(0, 0, 0, .2);
-           
-           margin-top: 10px;
-      }
-      
-       nav > .desktop > ul > li:first-child {
-           border-left: none;
-      }
-      
-       nav > .desktop > ul > li >a {
-           
-           position: absolute;
-           
-           text-decoration: none;
-           color: rgba(0, 0, 0, 1);
-           font-size: 30px;
-           
-           display: inline-block;
-           width: 100%;
-           height: 100%;
-           display: flex;
-           align-items: center;
-           justify-content: center;
-      }
-      
-             nav > .desktop > ul > li >a:hover {
-           background: rgba(100, 100, 100, 1);
-                 color: #fff;
-      }
 
 
 
