@@ -190,11 +190,8 @@ body {
 
 
 @media only screen 
-and (min-device-width : 600px) {
+and (min-device-width : 376px) {
     
-
-
-
 #grid ul li {
     position: absolute;
     background-repeat: no-repeat;
