@@ -366,6 +366,7 @@ body {
     } 
 }
 
+
 @media only screen and (min-width: 415px) and (max-width: 736px) {
     #grid a {
         font-size: 1.2em !important;
