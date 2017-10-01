@@ -205,7 +205,9 @@ and (orientation : landscape) {
     width: 25%; 
     height: 25%; 
     left:   0; 
-    top:   0;
+    top:   0;     
+    background-image: linear-gradient(-180deg, #00396F 0%, #E5E9BF 100%);
+    border: 1px solid #FFFFFF;
     }
     
     
@@ -213,14 +215,18 @@ and (orientation : landscape) {
     width: 25%; 
     height: 25%; 
     top: 25%; 
-    left:   0; 
+    left:   0;     
+    background-image: linear-gradient(-180deg, #729197 0%, #013A6F 100%);
+    border: 1px solid #FFFFFF; 
     }
     
 #grid ul li:nth-child(3)  { 
     width: 25%; 
     height: 50%; 
     left:   25%; 
-    top: 0%;
+    top: 0%; 
+    background-image: linear-gradient(-180deg, #085078 0%, #4290A0 100%);
+    border: 1px solid #FFFFFF;
     }
 
 #grid ul li:nth-child(4)  { 
@@ -228,6 +234,8 @@ and (orientation : landscape) {
     height: 25%; 
     left:   50%; 
     top: 0%;
+    background-image: linear-gradient(0deg, #45536F 0%, #232B3B 100%);
+    border: 1px solid #FFFFFF;
     }
     
     
@@ -236,6 +244,8 @@ and (orientation : landscape) {
     height: 25%;
     left: 50%; 
     top: 25%;
+    background-image: linear-gradient(-180deg, #7474BF 0%, #348AC7 100%);
+    border: 1px solid #FFFFFF;
     }
     
 #grid ul li:nth-child(6)  { 
@@ -243,6 +253,8 @@ and (orientation : landscape) {
     height: 25%; 
     left: 75%;  
     top: 25%;
+    background-image: linear-gradient(-179deg, #6ED6FF 0%, #20AEF5 41%, #0F8DE8 77%, #0070DC 100%);
+    border: 1px solid #FFFFFF;
     }
     
 #grid ul li:nth-child(7)  { 
@@ -250,13 +262,17 @@ and (orientation : landscape) {
     height: 50%; 
     left:  0%;  
     top: 50%;
+    background-image: linear-gradient(-180deg, #00396F 0%, #E5E9BF 100%);
+    border: 1px solid #FFFFFF;
     }
     
 #grid ul li:nth-child(8)  { 
     width: 50%; 
     height: 25%; 
     left: 25%;  
-    top: 50%;
+    top: 50%; 
+    background-image: linear-gradient(-180deg, #F5515F 0%, #9F041B 100%);
+    border: 1px solid #FFFFFF;
     }
     
 #grid ul li:nth-child(9)  { 
@@ -264,6 +280,8 @@ and (orientation : landscape) {
     height: 25%; 
     left: 25%; 
     top: 75%;
+    background-image: linear-gradient(-180deg, #A0051C 0%, #FBAD3F 100%);
+    border: 1px solid #FFFFFF;
     }
     
 #grid ul li:nth-child(10) { 
@@ -271,6 +289,8 @@ and (orientation : landscape) {
     height: 25%; 
     left: 75%; 
     top: 50%;
+    background-image: linear-gradient(0deg, #3CD3AD 0%, #0B8BAD 100%);
+    border: 1px solid #FFFFFF;
     }
     
 #grid ul li:last-child    { 
@@ -278,6 +298,8 @@ and (orientation : landscape) {
     height: 25%; 
     left: 50%; 
     top: 75%;
+    background-image: linear-gradient(0deg, #FBAD3F 0%, #FF3727 100%);
+    border: 1px solid #FFFFFF;
     }
 
 #grid ul li:nth-child(8) {   
