@@ -1,0 +1,413 @@
+/*3456789012345678901234567890123456789012345678901234567890123456789012345678*/
+/*       1         2         3         4         5         6         7        */
+
+
+/*----------------------------------------------------------------------------*/
+/* comentarios                                                                */
+/*                                                                            */
+/*                                                                            */
+/* BEM   |->  Bloque    Elemento    Modificador
+/*       |-> .b-bloque__e-elemento--m-modificador
+/*       |->  Un solo nivel de especifidad
+/* BEMIT |-> Varicación de BEM con la metodología ITCSS (Inverted Triangle CSS)
+/*       |-> c-       Components
+/*       |-> o-       Objects
+/*       |-> u-       Utilities
+/*       |-> is-/has- States
+/*
+/* Bloque      |-> BEM (bloque) OOCSS (componente) SMACSS (módulo)
+/*             |-> Pieza independinete de UI
+/*             |-> Pueden llevar guión medio como prefijos
+/*
+/* Elemento    |-> Cada elemento que conforma el bloque
+/*             |-> Se separa del bloque con doble guión bajo __
+/*
+/* Modificador |-> Variante del bloque
+/*             |-> Se separa de su elemento o bloque con doble guión medio --
+/*
+/*----------------------------------------------------------------------------*/
+*              { }     /* universal                                           */
+X              { }     /* elementos                                           */
+#identificador { }     /* id                                                  */
+.clase         { }     /* clase                                               */
+X Y            { }     /* descendiente                                        */
+X > Y          { }     /* hijos                                               */
+X ~ Y          { }     /* hermanos siguientes                                 */
+X + Y          { }     /* hermano inmediatamente siguiente                    */
+
+[atributo]        { }  /* que tenga el atributo                               */
+[atributo=valor]  { }  /* que tenga ese valor de atributo                     */
+[atributo~=valor] { }  /* que contenga la palabra valor                       */
+[atributo^=valor] { }  /* que comience por valor                              */
+[atributo$=valor] { }  /* que finalice por valor                              */
+[atributo*=valor] { }  /* que contenga la subcadena valor                     */
+
+:link    { }           /* cómo es el vínculo                                  */
+:hover   { }           /* al pasar el cursos por encima                       */
+:focus   { }           /* al acceder a él tabulando y pillar el foco          */
+:active  { }           /* al hacer clic sobre él                              */
+:visited { }           /* cuando se muestre visitado                          */
+
+:nth-of-type()      { }
+:nth-last-of-type() { }
+:first-of-type()    { }
+:last-of-type()     { }
+:only-of-type()     { }
+
+:firt-child() { }
+:last-child() { }
+:nth-child()  { }
+:only-child() { }
+
+::after        { }
+::before       { }
+::first-letter { }
+::first-line   { }
+::selection    { }
+
+:empty { }
+:not   { }
+:root  { }
+
+/*----------------------------------------------------------------------------*/
+/* PESO DEL SELECTOR                                                          */
+/*----------------------------------------------------------------------------*/
+/*
+enlinea                     *1000
+identificadores:            *100
+clase y pseudoclases        *10
+elementos y pseudoelementos *1
+*/
+
+.--initial /* 10 */ {
+    all:                     initial;
+}
+
+.--pa-maquetar {
+    outline:                 1px solid red;
+}
+
+.--pa-maquetar * {
+    outline:                 1px solid red;
+}
+
+.--ocultar {
+    display:                 none;
+    opacity:                 0;
+    visibility:              hidden;
+}
+
+.--overflow {
+    overflow:                ;
+    overflow-x:              ;
+    overflow-y:              ;
+}
+
+@keyframes ejemplo {
+    from {background-color:  red;}
+    to {background-color:    yellow;}
+}
+
+.--animation {
+    animation-name:            ejemplo;
+    animation-duration:        5s;
+    animation-timing-function: linear;
+    animation-delay:           2s;
+    animation-iteration-count: infinite;
+    animation-direction:       alternate;
+}
+
+.--transform {
+    transform:               rotate(7deg);
+    transform-origin:        20% 40%;
+    transform-style:         preserve-3d;
+}
+
+.--transition {
+    transition:                 width 2s;
+    transition-property:        left;
+    transition-delay:           2s;
+    transition-duration:        5s;
+    transition-property:        width;
+    transition-timing-function: linear;
+}
+
+.b-bloque--caja {
+    width:                   0px;
+    min-width:               0px;
+    max-width:               0px;
+
+    height:                  0px;
+    min-height:              0px;
+    max-height:              0px;
+
+    box-sizing:              border-box;
+    padding:                 0px;
+    border:                  0px;
+    border-radius:           0px;
+    border-collapse:         collapse;
+    border-style:            solid;
+    outline:                 0px;
+    margin:                  0px;
+
+    display:                 block;
+
+    position:                static;
+
+    box-shadow:              10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.b-bloque--float {
+    float:                   left;
+    clear:                   both
+}
+
+.b-bloque--position {
+    position:                relative;
+    top:                     0px;
+    left:                    0px;
+}
+
+.b-bloque--flex {
+    display:                 flex;
+    flex-wrap:               wrap;
+    flex-direction:          row;
+    justify-content:         space-around;
+    align-items:             center;
+}
+
+.b-bloque__e-elemento--flex {
+    align-self:              center;
+    order:                   ;
+}
+
+.b-bloque__e-elemento--animacion {
+    animation:                 mimovimiento 5s infinite;
+    animation-name:            ;
+    animation-duration:        ;
+    animation-timing-function: ;
+    animation-delay:           ;
+    animation-iteration-count: ;
+    animation-direction:       ;
+    animation-fill-mode:       ;
+    animation-play-state:      ;
+}
+
+.b-bloque__e-elemento--cursor {
+    cursor:                  pointer;
+}
+
+.b-bloque__e-imagenes {
+    filter:                  grayscale(100%);
+    vertical-align:          top;
+}
+
+.b-bloque__e-elemento--fuente {
+    font-family:             Serif;
+    font-size:               16px;
+    font-size-adjust:        ;
+    font-stretch:            ;
+    font-style:              normal;
+    font-variant:            small-caps;
+    font-weight:             900;
+
+    line-height:             16px;
+
+    letter-spacing:          2px;
+
+    text-align:              left;
+    text-decoration:         none;
+    text-indent:             ;
+    text-justify:            ;
+
+    word-break:              break-all;
+    word-spacing:            30px;
+    word-wrap:               break-word;
+
+    white-space:             nowrap;
+}
+
+.b-bloque__e-lista {
+    list-style:              ;
+    list-style-image:        ;
+    list-style-position:     ;
+    list-style-type:         ;
+    text-shadow:             4px 4px 2px rgba(150, 150, 150, 1);
+    text-transform:          uppercase;
+}
+
+.b-bloque--cover {
+  min-width:                 100%;
+  min-height:                100vh;
+  background-image:          url("https://source.unsplash.com/WLUHO9A_xik/1600x900");
+
+  background-size:           cover; /* contain */
+
+/*----------------------------------------------------------------------------*/
+/*  Fondos múltiples                                                          */
+/*----------------------------------------------------------------------------*/
+  background:
+    url() left top no-repeat,
+    url() right top no-repeat,
+    url() left bottom no-repeat,
+    url() right bottom no-repeat;
+    */
+  /*
+  background-image: linear-gradient(red 40px, orange 25%, green);
+  background-image: radial-gradient(red, orange);
+  */
+
+  background-repeat:         no-repat;
+  background-position:       center;
+
+  background-color:          #00f;
+  background-blend-mode:     color;
+  /* (color-burn; color-dodge; difference; exclusion; hard-light; hue; inherit; luminosity; multiply; normal; overlay; saturation; screen; soft-light; lighten;)
+
+  background-clip:       border-box;
+  background-origin:     border-box;
+
+  background-attachment: scroll;
+
+
+  background-clip:
+  border-box
+  padding-box
+  content-box
+
+  background-origin:
+  border-box
+  padding-box
+  content-box
+  */
+
+}
+
+    /*
+    Modelo de Tablas
+    • table    { display: table }
+    • tr       { display: table-row }
+    • thead    { display: table-header-group }
+    • tbody    { display: table-row-group }
+    • tfoot    { display: table-footer-group }
+    • col      { display: table-column }
+    • colgroup { display: table-column-group }
+    • td, th   { display: table-cell }
+    • caption  { display: table-caption }
+    */
+
+
+
+
+
+/*
+   reset.css
+   http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*3456789012345678901234567890123456789012345678901234567890123456789012345678*/
+/*       1         2         3         4         5         6         7        */
+
+/* GUIA DE ESTILOS */
+/* 1.- Principios generales.
+/* 2.- Espacios en blanco.
+/* 3.- Comentarios.
+/* 4.- Formato.
+/* 5.- Nomenclatura.
+/* 6.- Organización del código.
+/* 7.- Construcción y definición.
+/* 8.- Ejemplos prácticos.
+/* 9.- Preferencias del Editor.
+/*
+
+/* 9.- Preferencias del Editor.
+(Añadir plugin EditorConfig a brackets)
+
+En el archivo .editorconfig:
+# editorconfig.org
+root = true
+
+[*]
+indent_style = space
+indent_size = 4
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.md]
+trim_trailing_whitespace = false
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
