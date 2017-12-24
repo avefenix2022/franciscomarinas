@@ -54,7 +54,7 @@ X + Y          { }     /* hermano inmediatamente siguiente                    */
 :last-of-type()     { }
 :only-of-type()     { }
 
-:firt-child() { }
+:first-child() { }
 :last-child() { }
 :nth-child()  { }
 :only-child() { }
@@ -80,7 +80,7 @@ elementos y pseudoelementos *1
 */
 
 .--initial /* 10 */ {
-    all:                     initial;
+    all:                     initial; /* Fuerza la utilización del valor inicial de la propiedad */
 }
 
 .--pa-maquetar {
