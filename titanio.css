@@ -37,7 +37,7 @@ X + Y          { }     /* hermano inmediatamente siguiente                    */
 
 [atributo]        { }  /* que tenga el atributo                               */
 [atributo=valor]  { }  /* que tenga ese valor de atributo                     */
-[atributo~=valor] { }  /* que contenga la palabra valor                       */
+[atributo~=valor] { }  /* qu  contenga la palabra valor                       */
 [atributo^=valor] { }  /* que comience por valor                              */
 [atributo$=valor] { }  /* que finalice por valor                              */
 [atributo*=valor] { }  /* que contenga la subcadena valor                     */
