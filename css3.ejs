@@ -152,20 +152,33 @@
         <h3>1em igual a 10px con font-size: 62.5%</h3>
         <p>Hay un viejo método para no estar haciendo tanto cálculo, que consiste en bajar el porcentaje para que el valor en píxeles de 1em nos de 10.</p>
         
-        <pre>
-    html {
-      font-size:62.5%;
-      }
+        
+        
+        
+        
+                <!-- Code Highlight Attached -->
+						<div class="code-highlight-attached">
 
-   body{
-      font-family:georgia,serif;
-      font-size:10px;
-      }
+							<div class="code-highlight code-highlight-with-label" data-label="CSS">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-css js-code">
+html {
+    font-size:62.5%;
+}
 
-   p {
-      font-size:1.6em;/*16px*/
-      }            
-        </pre>
+body{
+    font-family:georgia,serif;
+    font-size:10px;
+}
+
+p {
+    font-size:1.6em;/*16px*/
+} 
+</code></pre></div>
+
+						</div>
+						<!-- End of Code Highlight Attached -->
+
+        
         
         <p>Con esto logramos que nuestro pixel base ya no es 16 sino 10 y entonces la operación es más sencilla</p>
         <p><code>1.6em * 10px = 16px</code></p>
@@ -175,19 +188,30 @@
         
         <h2>Selectores</h2>
         <h3>Universal *</h3>
-        
-        <pre>
+                 <!-- Code Highlight Attached -->
+						<div class="code-highlight-attached">
+
+							<div class="code-highlight code-highlight-with-label" data-label="CSS">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-css js-code">
  * {
- margin: 0;
- padding: 0;
-}           
-        </pre>
+    margin: 0;
+    padding: 0;
+} 
+</code></pre></div>
+
+						</div>
+						<!-- End of Code Highlight Attached -->       
+
         
         <p>El asterisco se centrará en cada uno de los elementos en la página. Muchos desarrolladores usarán éste truco para poner a cero el margin y padding. Mientras que esto está ciertamente bien para pruebas rápidas, se recomienda que nunca se use en el código final de producción. Esto añade mucho peso en el navegador y es innecesario.</p>
         
         <p>Se debe de usar soluciones del tipo:</p>
-        
-        <pre>
+
+                   <!-- Code Highlight Attached -->
+						<div class="code-highlight-attached">
+
+							<div class="code-highlight code-highlight-with-label" data-label="CSS">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-css js-code">
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -207,30 +231,49 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-}       
-        </pre>
+} 
+</code></pre></div>
+
+						</div>
+						<!-- End of Code Highlight Attached --> 
+                              
+
         
         
         
         <h3>Etiqueta X</h3>
         <p>El selector etiqueta se aplicara a todas las etiquetas del documento.</p>
-        
-        <pre>
+                   <!-- Code Highlight Attached -->
+						<div class="code-highlight-attached">
+
+							<div class="code-highlight code-highlight-with-label" data-label="CSS">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-css js-code">
  a { color: red; }
-ul { margin-left: 0; }           
-        </pre>
+ul { margin-left: 0; }  
+</code></pre></div>
+
+						</div>
+						<!-- End of Code Highlight Attached --> 
+
         
         
         
         <h3>Identificador #id</h3>
         <p>El selector #id se aplicará a la etiqueta que tenga ese valor en el atributo id.</p>
-        
-        <pre>
+                    <!-- Code Highlight Attached -->
+						<div class="code-highlight-attached">
+
+							<div class="code-highlight code-highlight-with-label" data-label="CSS">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-css js-code">
  #container {
- width: 960px;
- margin: auto;
-}       
-        </pre>
+    width: 960px;
+    margin: auto;
+}
+</code></pre></div>
+
+						</div>
+						<!-- End of Code Highlight Attached -->        
+
         
         <p>Antes de añadir un id a una etiqueta solamante para aplicarle un estilo específico debemos asegurarnos que no hay otra manera de seleccionar esa etiqueta ya que un id es demasiado específico y debemos crear reglas de estilo lo más generales y reutilizables.</p>
         
@@ -238,27 +281,40 @@ ul { margin-left: 0; }
         
         <h3>Clase .clase</h3>
         <p>El selector .clase se aplicara a la/s etiqueta/s que tienen ese valor en el atributo class.</p>
-        
-        <pre>
- p.error {
-color: red;
+                     <!-- Code Highlight Attached -->
+						<div class="code-highlight-attached">
+
+							<div class="code-highlight code-highlight-with-label" data-label="CSS">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-css js-code">
+p.error {
+    color: red;
 }
 
 .error {
-color: red;
-}   
-        </pre>
+    color: red;
+}  
+</code></pre></div>
+
+						</div>
+						<!-- End of Code Highlight Attached -->         
         
         
         
         <h3>Descendientes X Y</h3>
         <p>Se seleccionan todos los hijos, nietos, biznietos…</p>
-        
-        <pre>
- li a {
-text-decoration: none;
-}           
-        </pre>
+                      <!-- Code Highlight Attached -->
+						<div class="code-highlight-attached">
+
+							<div class="code-highlight code-highlight-with-label" data-label="CSS">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-css js-code">
+li a {
+    text-decoration: none;
+}   
+</code></pre></div>
+
+						</div>
+						<!-- End of Code Highlight Attached -->            
+
         
         <p>Nunca se debe de legar a tener algo del tipo: X Y Z A B.error</p>
         
@@ -266,12 +322,19 @@ text-decoration: none;
         
         <h3>Hijos X > X</h3>
         <p>Se seleccionan todos los hijos del elemento.</p>
-        
-        <pre>
+                      <!-- Code Highlight Attached -->
+						<div class="code-highlight-attached">
+
+							<div class="code-highlight code-highlight-with-label" data-label="CSS">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-css js-code">
 div#container > ul {
-border: 1px solid black;
-}            
-        </pre>
+    border: 1px solid black;
+} 
+</code></pre></div>
+
+						</div>
+						<!-- End of Code Highlight Attached -->          
+
         
         <p>Hay beneficios de desempeño por usar el elemento de hijo. De hecho, es recomendable particularmente cuando se trabaja con motores de selectores CSS basados en JavaScript.</p>
         
@@ -279,31 +342,47 @@ border: 1px solid black;
         
         <h3>Hermanos siguientes X ~ Y</h3>
         <p>Selecciona todos los hermanos siguientes.</p>
-        
-        <pre>
- ul ~ p {
- color: red;
-}           
-        </pre>
+                       <!-- Code Highlight Attached -->
+						<div class="code-highlight-attached">
+
+							<div class="code-highlight code-highlight-with-label" data-label="CSS">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-css js-code">
+ul ~ p {
+    color: red;
+} 
+</code></pre></div>
+
+						</div>
+						<!-- End of Code Highlight Attached -->         
         
         
         
         
         <h3>Hermano inmediatamente siguiente X + Y</h3>
         <p>Solo al inmediatamente siguiente.</p>
-        
-        <pre>
+                       <!-- Code Highlight Attached -->
+						<div class="code-highlight-attached">
+
+							<div class="code-highlight code-highlight-with-label" data-label="CSS">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-css js-code">
 ul + p {
- color: red;
-}            
-        </pre>
+    color: red;
+}  
+</code></pre></div>
+
+						</div>
+						<!-- End of Code Highlight Attached -->           
+
         
         
         
         
         <h3>Atributos</h3>
-        
-        <pre>
+                        <!-- Code Highlight Attached -->
+						<div class="code-highlight-attached">
+
+							<div class="code-highlight code-highlight-with-label" data-label="CSS">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-css js-code">
 h1[title]{ /*posee el atributo title*/
     color:#00f;
 }
@@ -318,9 +397,12 @@ h1[title$="$"]{ /*title finaliza por*/
 }
 h1[title*="j"]{ /*title contiene a*/
     color:#000;
-}
-         
-        </pre>
+} 
+</code></pre></div>
+
+						</div>
+						<!-- End of Code Highlight Attached -->         
+
         
         <ul>
             <li>[atributo] que tenga el atributo</li>
