@@ -1,0 +1,405 @@
+
+		<!-- Header Back -->
+		<div class="header-back header-back-simple header-back-small">
+			<div class="header-back-container">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<!-- Page Info -->
+							<div class="page-info page-info-simple">
+								<h1 class="page-title">CSS3</h1>
+								<h2 class="page-description">CSS3 define las hojas de estilo de los documentos html.</h2>
+							</div>
+							<!-- End Page Info -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End of Header Back -->
+        <!-- yield -->
+        
+        
+        
+        
+        
+        
+        
+        
+        
+		<div id="content">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+                        
+                        
+                        
+                        
+                                          
+                        
+								<!-- Table of content -->
+								<div class="table-of-contents">
+									<ol>
+										<li>
+											<a href="#" class="js-scroll-to" data-target="#arquitectura-front-end">CSS3</a>
+										</li>
+										
+									</ol>
+								</div>
+                        
+                        
+                        
+
+                                               
+          <!-- Category Info -->
+    <div class="category-info " id="arquitectura-front-end">
+							<h3 class="category-title">CSS3
+            <!-- Fragment Identifier -->
+            <a class="fragment-identifier js-fragment-identifier fragment-identifier-scroll" href="#simple-highlight">
+                <i class="fa fa-link"></i>
+            </a>
+            <!-- End of Fragment Identifier -->
+        </h3>
+        <h4 class="category-description" id="">CSS3 define las hojas de estilo de los documentos html.</h4>
+         
+        <img src="img/css.jpg" alt="">
+        
+        <dl>
+            <dt class="termino">Regla</dt>
+            <dd>Cada uno de los estilos que componen una hoja de estilos CSS. Cada regla está compuesta de una parte de "selectores", un símbolo de "llave de apertura" ({), otra parte denominada "declaración" y por último, un símbolo de "llave de cierre" (}).</dd>
+        </dl>
+        <dl>
+            <dt class="termino">Selector</dt>
+            <dd>Indica el elemento o elementos HTML a los que se aplica la regla CSS.</dd>
+        </dl>
+        <dl>
+            <dt class="termino">Declaración</dt>
+            <dd>Especifica los estilos que se aplican a los elementos. Está compuesta por una o más propiedades CSS.</dd>
+        </dl>
+        <dl>
+            <dt class="termino">Propiedad</dt>
+            <dd>Característica que se modifica en el elemento seleccionado, como por ejemplo su tamaño de letra, su color de fondo, etc.</dd>
+        </dl>
+        <dl>
+            <dt class="termino">Valor</dt>
+            <dd>Establece el nuevo valor de la característica modificada en el elemento.</dd>
+        </dl>
+        
+        
+        
+        
+        <h2>Unidades</h2>
+        
+        <p>Todas las medidas se indican como <strong>un valor numérico entero o decimal (indicado con punto) seguido de una unidad de medida</strong>.</p>
+        <p>Las <strong>unidades van pegadas al número</strong> (sin ningún espacio en blanco entre el número y la unidad de medida).</p>
+        <p><strong>Si el valor es 0, la unidad de medida es opcional</strong>. 0 funciona como alternativa a 0px. Pero con rotaciones se debe de especificar el sistema de unidades, por ejemplo transform: rotate(0deg) ya que transform: rotate(0) no funciona.</p>
+        <p><strong>Si el valor es distinto a 0 y no se indica ninguna unidad, la medida se ignora completamente</strong>.</p>
+        <p>Para algunas propiedades CSS, <strong>se permiten longitudes negativas</strong>.</p>
+        <p><strong>Si el valor decimal de una medida es inferior a 1, se puede omitir el 0 de la izquierda</strong> (0.5em es equivalente a .5em).</p>
+        <p>Hay dos tipos de unidades de longitud: relativa y absoluta.</p>
+        
+        <h3>Unidades relativas</h3>
+        <dl>
+            <dt class="termino">em</dt>
+            <dd>Relativo al valor font-size del elemento (la anchura en px de la letra mayúscula M), en un navegador, por defecto, <strong>1em es equivalente a 16px</strong>.</dd>
+            
+            <dt class="termino">ex</dt>
+            <dd>Relativo la altura de la x de la fuente del elemento. En fuentes que incluyen la letra 'x', es generalmente la altura de letras minúsculas en la fuente; 1ex es equivalente a 0.5em, 8px.</dd>
+            
+            <dt class="termino">ch</dt>
+            <dd>Relativo a la anchura del 0 (cero).</dd>
+            
+            <dt class="termino">rem</dt>
+            <dd>Esta unidad representa el tamaño (font-size) del elemento raíz (p.ej. el tamaño de fuente del elemento html). Cuando se aplica a font-size del elemento raíz, representa su valor inicial. Esta unidad es práctica para crear interfaces perfectamente escalables.</dd>
+            
+            <dt class="termino">vw</dt>
+            <dd>% de la anchura del viewport.</dd>
+            
+            <dt class="termino">vh</dt>
+            <dd>% de la altura del viewport.</dd>
+            
+            <dt class="termino">vmin</dt>
+            <dd>% del valor mínimo entre la altura y anchura del viewport.</dd>
+            
+            <dt class="termino">vmax</dt>
+            <dd>% del valor máximo entre la altura y anchura del viewport</dd>
+            
+            <dt class="termino">%</dt>
+            <dd>% relativo al contenedor del elemento</dd>
+        </dl>
+        
+        <p><strong>Los navegadores toman por defecto un tamaño de fuente de 16 pixeles</strong>.</p> 
+        <p><strong>16 pixeles equivalen a 12 puntos</strong>.</p>
+        <p>NOTA: El font-size global predeterminado de <strong>Bootstrap 3 es 14px, con una altura de línea line-height de 1.428</strong>. Esto se aplica al body y a todos los párrafos (para <strong>Bootstrap 4 es de 16px</strong>).</p>
+        
+        
+        
+        
+        <h3>Unidades absolutas</h3>
+        <p>Las unidades de longitud absoluta representan una medida física, útiles cuando las medidas del medio de salida son conocidas, como en diseño para impresión.</p>
+        <p>Unidades absolutas de css son: pixel px, milímetro mm, cuarto de milímetro q, centímetro cm, pulgada in (2.54cm), punto pt (1/72in), pica pc (12pt).</p>
+        
+        <p>En pantalla 1in son siempre 96px, independientemente del la densidad de píxeles de pantalla.</p>
+        
+        <h3>Recomendaciones</h3>
+        <p>En general, se recomienda el uso de unidades relativas siempre que sea posible, ya que mejora la accesibilidad de la página y permite que los documentos se adapten fácilmente a cualquier medio y dispositivo.</p>
+        <p>El documento Recomendaciones sobre técnicas CSS para la mejora de la accesibilidad de los contenidos HTML, elaborados por el organismo W3C, recomienda el uso de la unidad em para indicar el tamaño del texto y para todas las medidas que sean posibles.</p>
+        <p>Normalmente se utilizan píxel y porcentajes para definir el layout del documento (básicamente, la anchura de las columnas y de los elementos de las páginas) y em y porcentajes para el tamaño de letra de los textos.</p>
+        
+        
+        
+        
+        <h3>1em igual a 10px con font-size: 62.5%</h3>
+        <p>Hay un viejo método para no estar haciendo tanto cálculo, que consiste en bajar el porcentaje para que el valor en píxeles de 1em nos de 10.</p>
+        
+        <pre>
+    html {
+      font-size:62.5%;
+      }
+
+   body{
+      font-family:georgia,serif;
+      font-size:10px;
+      }
+
+   p {
+      font-size:1.6em;/*16px*/
+      }            
+        </pre>
+        
+        <p>Con esto logramos que nuestro pixel base ya no es 16 sino 10 y entonces la operación es más sencilla</p>
+        <p><code>1.6em * 10px = 16px</code></p>
+        <p>Al igualar a 10px ya no tenemos que hacer operación alguna, ya que en base 62.5% 1.4em son 14px, o 25px son 2.5em.</p>
+        
+        
+        
+        <h2>Selectores</h2>
+        <h3>Universal *</h3>
+        
+        <pre>
+ * {
+ margin: 0;
+ padding: 0;
+}           
+        </pre>
+        
+        <p>El asterisco se centrará en cada uno de los elementos en la página. Muchos desarrolladores usarán éste truco para poner a cero el margin y padding. Mientras que esto está ciertamente bien para pruebas rápidas, se recomienda que nunca se use en el código final de producción. Esto añade mucho peso en el navegador y es innecesario.</p>
+        
+        <p>Se debe de usar soluciones del tipo:</p>
+        
+        <pre>
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}       
+        </pre>
+        
+        
+        
+        <h3>Etiqueta X</h3>
+        <p>El selector etiqueta se aplicara a todas las etiquetas del documento.</p>
+        
+        <pre>
+ a { color: red; }
+ul { margin-left: 0; }           
+        </pre>
+        
+        
+        
+        <h3>Identificador #id</h3>
+        <p>El selector #id se aplicará a la etiqueta que tenga ese valor en el atributo id.</p>
+        
+        <pre>
+ #container {
+ width: 960px;
+ margin: auto;
+}       
+        </pre>
+        
+        <p>Antes de añadir un id a una etiqueta solamante para aplicarle un estilo específico debemos asegurarnos que no hay otra manera de seleccionar esa etiqueta ya que un id es demasiado específico y debemos crear reglas de estilo lo más generales y reutilizables.</p>
+        
+        
+        
+        <h3>Clase .clase</h3>
+        <p>El selector .clase se aplicara a la/s etiqueta/s que tienen ese valor en el atributo class.</p>
+        
+        <pre>
+ p.error {
+color: red;
+}
+
+.error {
+color: red;
+}   
+        </pre>
+        
+        
+        
+        <h3>Descendientes X Y</h3>
+        <p>Se seleccionan todos los hijos, nietos, biznietos…</p>
+        
+        <pre>
+ li a {
+text-decoration: none;
+}           
+        </pre>
+        
+        <p>Nunca se debe de legar a tener algo del tipo: X Y Z A B.error</p>
+        
+        
+        
+        <h3>Hijos X > X</h3>
+        <p>Se seleccionan todos los hijos del elemento.</p>
+        
+        <pre>
+div#container > ul {
+border: 1px solid black;
+}            
+        </pre>
+        
+        <p>Hay beneficios de desempeño por usar el elemento de hijo. De hecho, es recomendable particularmente cuando se trabaja con motores de selectores CSS basados en JavaScript.</p>
+        
+        
+        
+        <h3>Hermanos siguientes X ~ Y</h3>
+        <p>Selecciona todos los hermanos siguientes.</p>
+        
+        <pre>
+ ul ~ p {
+ color: red;
+}           
+        </pre>
+        
+        
+        
+        
+        <h3>Hermano inmediatamente siguiente X + Y</h3>
+        <p>Solo al inmediatamente siguiente.</p>
+        
+        <pre>
+ul + p {
+ color: red;
+}            
+        </pre>
+        
+        
+        
+        
+        <h3>Atributos</h3>
+        
+        <pre>
+h1[title]{ /*posee el atributo title*/
+    color:#00f;
+}
+h1[title="titulo principal"]{ /*title es igual*/
+    color:#0ff;
+}
+h1[title^="el"]{ /*title empieza por*/
+    color:#f0f;
+}
+h1[title$="$"]{ /*title finaliza por*/
+    color:#000;
+}
+h1[title*="j"]{ /*title contiene a*/
+    color:#000;
+}
+         
+        </pre>
+        
+        <ul>
+            <li>[atributo] que tenga el atributo</li>
+            <li>[atributo=valor] que tenga ese valor de atributo</li>
+            <li>[atributo~=valor] que contenga la palabra valor</li>
+            <li>[atributo^=valor] que comience por valor</li>
+            <li>[atributo$=valor] que finalice por valor</li>
+            <li>[atributo*=valor] que contenga la subcadena valor</li>
+        </ul>
+        
+        
+        
+        
+        <h3>Pseudo clases</h3>
+        
+        <ul>
+            <li>:link cómo es el vínculo</li>
+            <li>:hover al pasar el cursos por encima (No afecta a dispositivos táctiles)</li>
+            <li>:focus al acceder a él tabulando y pillar el foco</li>
+            <li>:active al hacer clic sobre él</li>
+            <li>:visited cuando se muestre visitado</li>
+        </ul>
+        
+        
+        
+        
+        <h3>Selectores type() y child()</h3>
+        
+        <ul>
+            <li>nth-of-type()</li>
+            <li>nth-last-of-type()</li>
+            <li>first-of-type()</li>
+            <li>last-of-type()</li>
+            <li>only-of-type()</li>
+        </ul>
+        
+        <ul>
+            <li>firt-child()</li>
+            <li>last-child()</li>
+            <li>nth-child()</li>
+            <li>only-child()</li>
+        </ul>
+        
+        
+        
+        
+        <h3>Pseudo elementos ::</h3>
+        
+        <ul>
+            <li>::after</li>
+            <li>::before</li>
+            <li>::first-letter</li>
+            <li>::first-line</li>
+            <li>::selection</li>
+        </ul>
+        
+        
+        
+        
+        
+        <h3>Más selectores</h3>
+        
+        <ul>
+            <li>:empty</li>
+            <li>:not()</li>
+            <li>:root</li>
+        </ul>
+        
+        
+        
+        <h2>Preferencia de selectores e !important</h2>
+
+
+<!-- End of Caregory Info -->
+
+
+
+
+                  
+  
+                   
+</div></div></div></div>

@@ -46,6 +46,10 @@
     "leanwebsites": {
         "pageTitle": "Lean Websites",
         "description": "Lean Websites"
+    },
+    "css3": {
+        "pageTitle": "CSS3",
+        "description": "CSS3"
     }
 
 }
