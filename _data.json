@@ -50,6 +50,10 @@
     "css3": {
         "pageTitle": "CSS3",
         "description": "CSS3"
+    },
+    "cajas": {
+        "pageTitle": "Modelo de Cajas",
+        "description": "Modelo de Cajas"
     }
 
 }

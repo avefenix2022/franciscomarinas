@@ -1,0 +1,200 @@
+
+		<!-- Header Back -->
+		<div class="header-back header-back-simple header-back-small">
+			<div class="header-back-container">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<!-- Page Info -->
+							<div class="page-info page-info-simple">
+								<h1 class="page-title">Modelo de Cajas</h1>
+								<h2 class="page-description">Cuando los navegadores procesan el contenido Html y Css crean una caja para representar cada elemento.</h2>
+							</div>
+							<!-- End Page Info -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End of Header Back -->
+        <!-- yield -->
+        
+        
+        
+        
+        
+        
+        
+        
+        
+		<div id="content">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+                        
+                        
+                        
+                        
+                                          
+                        
+								<!-- Table of content -->
+								<div class="table-of-contents">
+									<ol>
+										<li>
+											<a href="#" class="js-scroll-to" data-target="#cajas">Modelo de cajas</a>
+										</li>
+										
+									</ol>
+								</div>
+                        
+                        
+                        
+
+                                               
+          <!-- Category Info -->
+    <div class="category-info " id="arquitectura-front-end">
+							<h3 class="category-title">Modelo de Cajas
+            <!-- Fragment Identifier -->
+            <a class="fragment-identifier js-fragment-identifier fragment-identifier-scroll" href="#cajas">
+                <i class="fa fa-link"></i>
+            </a>
+            <!-- End of Fragment Identifier -->
+        </h3>
+        
+        
+         <!-- CONTENIDO -->
+        <h4><strong>Modelo de Cajas</strong></h4>
+          
+		<p>Cuando los navegadores procesan el contenido Html y Css crean una caja para representar cada elemento. Los factores que se tienen en cuenta son:</p>
+       
+        <ul>
+            <li>El tipo de elemento: <strong>de bloque o en línea</strong>.</li>
+            <li>La propiedad <strong>width y height</strong> de la caja (si está establecida).</li>
+            <li><strong>Posicionamiento: normal, relativo, absoluto, fijo, flotante o flexible</strong>.</li>
+            <li><strong>Relación entre elementos</strong>, el DOM del documento, descendientes, hijos, hermanos…</li>
+        </ul>
+        
+        <h4><strong>Tipos de elementos</strong></h4>
+        <p>Los elementos de <strong>bloque</strong>:</p>
+        <ul>
+            <li><strong>Ocupan todo el espacio disponible en horizontal</strong> hasta el final del espacio disponible.</li>
+            <li><strong>En altura: la altura del contenido que encierran y si están vacios el del valor de la propiedad height.</strong></li>
+            <li><strong>Se sitúan:</strong>
+            
+                <ul>
+                <li><strong>Empiezan en una nueva línea</strong>.</li>
+                <li><strong>Fuerza un retorno de carro al final</strong>.</li>
+                </ul>
+            
+            </li>
+            <li><strong>Respeta los márgenes y padding</strong> derecho, izquierdo, top y bottom.</li>
+            <li><strong>Se le puede asignar width y height</strong>.</li>
+        </ul>
+        
+        <p>Los elementos en <strong>línea</strong>:</p>
+        <ul>
+            <li>Ocupan <strong>solo el espacio necesario para mostrar su contenido</strong>.</li>
+            <li><strong>Se sitúan:</strong>
+            
+                <ul>
+                <li><strong>a continuación del elemento anterior</strong>.</li>
+                </ul>
+            
+            </li>
+            <li>Respeta los márgenes derecho e izquierdo, <strong>pero no los márgenes top y bottom</strong>.</li>
+            <li>Respeta padding derecho, izquierdo, top y bottom</li>
+            <li><strong>No</strong> se les puede asignar <strong>width y height</strong>.</li>
+        </ul>
+        
+        <p data-height="265" data-theme-id="0" data-slug-hash="jrVgOO" data-default-tab="css,result" data-user="franciscomarinas" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/franciscomarinas/pen/jrVgOO/">jrVgOO</a> by Francisco (<a href="http://codepen.io/franciscomarinas">@franciscomarinas</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+        <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+        
+        <p>Por sus características, <strong>los elementos de bloque</strong> no pueden (no deben) insertarse dentro de elementos en línea y <strong>solo pueden aparecer dentro de otros elementos de bloque</strong>. En cambio, un <strong>elemento en línea puede aparecer tanto dentro de un elemento de bloque como dentro de otro elemento en línea</strong>.</p>
+        
+        <h4><strong>Elementos en línea</strong></h4>
+        <p>a, abbr, acronym, b, basefont, bdo, big, br, cite, code, dfn, em, font, i, img, input, kbd, label, q, s, samp, select, small, span, strike, strong, sub, sup,textarea,tt,u,var.</p>
+        
+        <h4><strong>Elementos en bloque</strong></h4>
+        <p>address, blockquote, center, dir, div, dl, fieldset, form, h1, h2, h3, h4, h5, h6, hr, isindex, menu, noframes, noscript, ol, p, pre, table, ul, dd, dt, frameset, li, tbody, td, tfoot, th, thead, tr.</p>
+        
+        <p>Los siguientes elementos pueden ser en línea y de bloque según las circunstancias: button, del, iframe, ins, map, object, script.</p>
+        
+        
+        
+        
+        <h4><strong>Tamaño de una caja en los elementos de bloque</strong></h4>
+        
+        <p>El tamaño de una caja en los elementos de bloque tiene en cuenta el valor de width y height, en donde se alojará el contenido que aniden, el padding asignado se añadirá a estos haciendo crecer la caja a un tamaño (width/height)+padding.  Lo mismo acurre con el border que se añade al tamaño que ocupan en el fluo normal de la págia web(width/height)+padding+border. A esto habría que añadir finalmente el margin que le asignemos al propio elemento.</p>
+        
+        <p>El padding del elemento padre no se debe de considerar en la definición del tamaño de la caja por no ser una propiedad de la caja sino de su padre.</p>
+        
+        <img src="images/Tamanodeunacaja.png" alt="Tamaño de una caja">
+        
+        <pre>
+<strong>HTML</strong>
+
+&lt;div id=&quot;caja1&quot;&gt;&lt;/div&gt;
+
+<strong>CSS</strong>
+
+#caja1{
+  margin: 200px;
+  border: 10px solid red;
+  padding: 30px;
+  height: 250px;
+  width: 500px;
+  background: rgba(33,33,33,.5);
+}
+
+        </pre>
+        
+        
+        
+        
+                   <h4><strong>Box-sizing</strong></h4>
+      <img src="images/box-sizing.png" alt="">
+      
+      <p>La propiedad box-sizing se usa para modificar las propiedades por defecto del CSS box model que calculan el alto y el ancho de los elementos.</p>
+      
+      <ul>
+          <li><strong>content-box</strong>: este es el estilo por defecto especificado en el estándar de CSS . Las propiedades width y height son las medidas incluídas solo en el contenido.</li>
+          <li><strong>border-box</strong>: el width y el height incluyen el padding y el border.</li>
+      </ul>
+   
+     
+     <p data-height="265" data-theme-id="0" data-slug-hash="Pzajzb" data-default-tab="css,result" data-user="franciscomarinas" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/franciscomarinas/pen/Pzajzb/">box-sizing</a> by Francisco (<a href="http://codepen.io/franciscomarinas">@franciscomarinas</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+     
+     
+     
+     
+     <p></p>
+      <h4><strong>Overflow</strong></h4>
+      
+      <img src="images/overflow.png" alt="">
+      
+      <p>La propiedad overflow  especifica si recortar contenido, se dibujan barras de desplazamiento o si se muestra el contenido excedente en un elemento de bloque.</p>
+      
+      <ul>
+          <li>overflow: visible</li>
+          <li>overflow: hidden</li>
+          <li>overflow: scroll</li>
+          <li>overflow: auto</li>
+          <li>overflow: inherit</li>
+      </ul>
+
+     
+     <p data-height="265" data-theme-id="0" data-slug-hash="PzajWW" data-default-tab="html,result" data-user="franciscomarinas" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/franciscomarinas/pen/PzajWW/">Overflow</a> by Francisco (<a href="http://codepen.io/franciscomarinas">@franciscomarinas</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+        
+        
+        
+<!-- End of Caregory Info -->
+
+
+
+
+                  
+  
+                   
+</div></div></div></div>
