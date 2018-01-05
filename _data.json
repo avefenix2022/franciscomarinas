@@ -66,6 +66,10 @@
     "flexible": {
         "pageTitle": "Modelo flexible de cajas",
         "description": "Modelo flexible de cajas"
+    },
+    "regiones": {
+        "pageTitle": "Modelo regiones",
+        "description": "Modelo regiones"
     }
 
 }
