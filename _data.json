@@ -54,6 +54,10 @@
     "cajas": {
         "pageTitle": "Modelo de Cajas",
         "description": "Modelo de Cajas"
+    },
+    "posicion": {
+        "pageTitle": "Posición en CSS",
+        "description": "Posición en CSS"
     }
 
 }
