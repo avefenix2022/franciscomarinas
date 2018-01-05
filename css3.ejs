@@ -474,6 +474,55 @@ h1[title*="j"]{ /*title contiene a*/
         
         
         <h2>Preferencia de selectores e !important</h2>
+        <!-- https://developer.mozilla.org/es/docs/Web/CSS/Especificidad -->
+        <p>
+            Cuando se emplea <strong>!important</strong> en una declaración de estilo, esta declaración sobrescribe a cualquier otra. 
+            <br>Aunque técnicamente <strong>!important</strong>  no tiene nada que ver con especificidad, interactúa directamente con esta. Sin embargo, <strong>el uso de !important es una mala práctica y debería evitarse porque hace que el código sea más difícil de depurar al romper la cascada natural de las hojas de estilo</strong>. Cuando <strong>dos declaraciones en conflicto con el !important</strong> son aplicadas al mismo elemento, <strong>se aplicará la declaración con mayor especificidad</strong>. 
+        </p>
+        
+        <p>
+            Algunas reglas:
+        </p>
+        <ul>
+            <li>Busca siempre una manera de emplear la especificidad, mejor y más específicas, antes de considerar el uso de !important</li>
+            <li>Usa !important solo en declaraciones específicas de CSS que sobrescriban CSS foráneo (de librerías externas como Bootstrap o normalize.css).</li>
+            <li>Nunca uses !important en todo el CSS.</li>
+        </ul>
+        
+        <p>
+            Con estilos inline en los propios elementos (considerado como una muy mala práctica) puedes establecer ciertos estilos en tu archivo CSS global como importantes, superando así los estilos en línea configurados directamente en los elementos.
+        </p>
+        
+        
+        
+        
+        <h2>Peso de lo selectores</h2>
+        <table class="table table-bordered"> 
+<thead>
+<tr> 
+<th>Selector</th> 
+<th>Peso</th> 
+</tr> 
+</thead>
+<tbody>
+<tr> 
+<td>En línea</td> 
+<td>x1000</td> 
+</tr> 
+<tr> 
+<td>Identificadores</td> 
+<td>x100</td> 
+</tr> 
+<tr> 
+<td>Clases y pseudoclases</td> 
+<td>x10</td> 
+</tr> 
+<tr> 
+<td>Elementos y pseudoelementos</td> 
+<td>x1</td>   
+</tr> 
+</tbody>
+</table> 
 
 
 <!-- End of Caregory Info -->

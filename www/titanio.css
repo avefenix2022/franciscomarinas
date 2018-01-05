@@ -128,7 +128,6 @@ elementos y pseudoelementos *1
     transition-property:        left;
     transition-delay:           2s;
     transition-duration:        5s;
-    transition-property:        width;
     transition-timing-function: linear;
 }
 
@@ -179,18 +178,6 @@ elementos y pseudoelementos *1
 .b-bloque__e-elemento--flex {
     align-self:              center;
     order:                   ;
-}
-
-.b-bloque__e-elemento--animacion {
-    animation:                 mimovimiento 5s infinite;
-    animation-name:            ;
-    animation-duration:        ;
-    animation-timing-function: ;
-    animation-delay:           ;
-    animation-iteration-count: ;
-    animation-direction:       ;
-    animation-fill-mode:       ;
-    animation-play-state:      ;
 }
 
 .b-bloque__e-elemento--cursor {
