@@ -3,8 +3,8 @@
 
 <head>
    
-    <title>Posición en CSS | Francisco Marinas Site</title>
-    <meta name="description" content="Posición en CSS" />
+    <title>Modelo flexible de cajas | Francisco Marinas Site</title>
+    <meta name="description" content="Modelo flexible de cajas" />
     
         <!-- Page title en data.json -->
 
@@ -185,8 +185,8 @@
 						<div class="col-md-12">
 							<!-- Page Info -->
 							<div class="page-info page-info-simple">
-								<h1 class="page-title">Posición en CSS</h1>
-								<h2 class="page-description">Cuando los navegadores procesan el contenido Html y Css crean una caja para representar cada elemento que se posiciona dentro del flujo del contenido html.</h2>
+								<h1 class="page-title">Modelo flexible de cajas</h1>
+								<h2 class="page-description">El modelo de cajas flexible resuelve los problemas del Modelo de caja tradicional de una manera elegante.</h2>
 							</div>
 							<!-- End Page Info -->
 						</div>
@@ -219,7 +219,7 @@
 								<div class="table-of-contents">
 									<ol>
 										<li>
-											<a href="#" class="js-scroll-to" data-target="#cajas">Posición en CSS</a>
+											<a href="#" class="js-scroll-to" data-target="#cajas">Modelo flexible de cajas</a>
 										</li>
 										
 									</ol>
@@ -231,7 +231,7 @@
                                                
           <!-- Category Info -->
     <div class="category-info" id="arquitectura-front-end">
-							<h3 class="category-title">Posición en CSS
+							<h3 class="category-title">Modelo flexible de cajas
             <!-- Fragment Identifier -->
             <a class="fragment-identifier js-fragment-identifier fragment-identifier-scroll" href="#cajas">
                 <i class="fa fa-link"></i>
@@ -240,40 +240,131 @@
         </h3>
         
         
-             <h4><strong>Position absolute</strong></h4>
+             <h4><strong>Modelo de cajas flexible</strong></h4>
+      <p>El propósito principal de un modelo de caja es hacer que sea posible dividir el espacio de la ventana en varias cajas y, así, crear las filas y columnas que formen un diseño web regular. Sin embargo, el Modelo de caja tradicional, aplicado desde la primera versión de CSS y ampliamente utilizado hasta hoy, fracasa en este sentido. No es posible definir de manera eficiente cómo se distribuyen las cajas y especificar su tamaño horizontal y vertical sin usar trucos y reglas intrincadas programadas por un tipo brillante en algún lugar del mundo.</p>
       
-      <img src="images/position-absolute.png" alt="">
+      <p>El modelo de cajas flexible resuelve los problemas del Modelo de caja tradicional de una manera elegante representando las filas y columnas que diseñadores y usuarios realmente ven en pantalla consiguiendo un control total sobre el diseño, la posición y el tamaño de las cajas, la distribución de unas cajas dentro de otras, y la forma en la que estas usan y comparten el espacio disponible.</p>
       
-      <p>El elemento se posiciona, respecto a su esquina superior izquierda, en coordenadas de top, left, bottom, right respecto, a la esquina superior izquierda, del elemento padre que tenga una propiedad  position asignada, y si no el body.</p>
-      <p>Pasan a situarse en otro nivel y el espacio que acupaban es remplazado por el flujo normal del documento html.</p>
+     <h4><strong>Contenedor flexible</strong></h4>
+      <p>Un contenedor flexible es un elemento que permite que su contenido se adapte.</p>
+      
+      <p>Características importantes de este modelo, como la orientación vertical y horizontal, se declaran en los contenedores.</p>
+      
+      <p>Los elementos flexibles deben tener un elemento padre común dentro del cual puedan ser organizados, es decir, en este modelo cada conjunto de cajas tiene que estar anidado dentro de otra caja.</p>
+      
+     <h4><strong>Display</strong></h4>
+      <p>Un contenedor flexible se define con la propiedad <strong>display</strong> y puede ser descrito como un elemento de bloque con el valor <strong>flex</strong> o como un elemento en línea con el valor <strong>inline-flex</strong>.</p>
+      
+      <h4><strong>Ejes</strong></h4>
+      <p>Un contenedor flex utiliza ejes para describir la <strong>orientación de su contenido</strong>.</p>
+      
+      <p>La especificación declara dos ejes que son independientes de la orientación: <strong>el eje principal y el eje transversal</strong>. En el eje principal es distribuido el contenido y por lo general equivale a la orientación horizontal, mientras que el transversal equivale a la orientación vertical. Si la orientación es modificada, los ejes se desplazan junto con el contenido.</p>
+      
+      <h4><strong>Propiedad flex</strong></h4>
+      <p>Para que un elemento dentro de un contenedor flexible sea también flexible tiene que ser declarado como <strong>flex</strong>.</p>    
+      
+      <ul>
+          <li>flex: flex-grow</li>
+          <li>flex-shrink</li>
+          <li>flex-basis</li>
+      </ul>
+      
+      <p>Para declarar una caja como flexible deberá dar como mínimo un valor de 1 al primer parámetro <strong>flex-grow</strong>. Este parámetro declara la relación de expansión del elemento, qué tanto crecerá el elemento dependiendo de la configuración de los elementos hermanos.</p>
+      
+      <p><strong>flex-shrink</strong> declara la relación de reducción o qué tanto se podrá ser reducido por el elemento según la configuración de sus hermanos.</p>
+      
+      <p><strong>flex-basis</strong> indica el tamaño inicial para el elemento que será considerado al distribuir el espacio libre entre todos los elementos que se encuentren dentro del contenedor.</p>
+      
+      <img src="images/flex1.png" alt="Modelo de cajas flexible">
+      
+      <pre>
+<strong>HTML</strong>
+<!--http://www.web2generators.com/html-based-tools/online-html-entities-encoder-and-decoder-->
+&lt;section id=&quot;contenedor&quot;&gt; 
+    &lt;div id=&quot;caja1&quot;&gt;Caja1&lt;/div&gt; 
+    &lt;div id=&quot;caja2&quot;&gt;Caja2&lt;/div&gt; 
+    &lt;div id=&quot;caja3&quot;&gt;Caja3&lt;/div&gt; 
+    &lt;div id=&quot;caja4&quot;&gt;Caja4&lt;/div&gt; 
+&lt;/section&gt;
 
-      <p data-height="265" data-theme-id="0" data-slug-hash="oxxXZv" data-default-tab="css,result" data-user="franciscomarinas" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/franciscomarinas/pen/oxxXZv/">position: absolute;</a> by Francisco (<a href="http://codepen.io/franciscomarinas">@franciscomarinas</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-        <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
-        
-        
-        <p></p>
-      <h4><strong>Position relative</strong></h4>
+<strong>CSS</strong>
+
+#contenedor{
+	display: flex;
+	display: -webkit-flex;
+	width: 600px;
+}
+#caja1{
+	flex: 1;
+	-webkit-flex: 1;
+	background: #ccc;
+	height: 150px;
+	margin: 5px;
+}
+#caja2{
+	flex: 1;
+	-webkit-flex: 1;
+	background: #ccc;
+	height: 150px;
+	margin: 5px;
+}
+#caja3{
+	flex: 1;
+	-webkit-flex: 1;
+	background: #ccc;
+	height: 150px;
+	margin: 5px;
+}
+#caja4{
+	flex: 1;
+	-webkit-flex: 1;
+	background: #ccc;
+	height: 150px;
+	margin: 5px;
+}
+
+      </pre>
       
-      <img src="images/position-relative.png" alt="">
+      <p data-height="265" data-theme-id="0" data-slug-hash="YqWWeQ" data-default-tab="css,result" data-user="franciscomarinas" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/franciscomarinas/pen/YqWWeQ/">Modelo de cajas flexible</a> by Francisco (<a href="http://codepen.io/franciscomarinas">@franciscomarinas</a>) on <a href="http://codepen.io">CodePen</a>.</p>
       
-      <p>El elemento se posiciona respento a su propia coordenanda superior izquierda, aunque la posición original sigue formando parte del flujo del documento.</p>  
-        
-      <p data-height="265" data-theme-id="0" data-slug-hash="akKJjJ" data-default-tab="css,result" data-user="franciscomarinas" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/franciscomarinas/pen/akKJjJ/">position: relative;</a> by Francisco (<a href="http://codepen.io/franciscomarinas">@franciscomarinas</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>        
-        
-     
+      
+      
+      
+      
       
       
       <p></p>
-      <h4><strong>Position fixed</strong></h4>
+      <h4><strong>Modelo de cajas flexible flex direction</strong></h4>
+      <p data-height="265" data-theme-id="0" data-slug-hash="JXKWLp" data-default-tab="css,result" data-user="franciscomarinas" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/franciscomarinas/pen/JXKWLp/">Modelo de cajas flexible flex direction</a> by Francisco (<a href="http://codepen.io/franciscomarinas">@franciscomarinas</a>) on <a href="http://codepen.io">CodePen</a>.</p>
       
-      <img src="images/position-fixed.png" alt="">
       
-      <p>Se escapa del flujo normal del documento html y su espacio es ocupado por este flujo.</p>
       
-      <p data-height="265" data-theme-id="0" data-slug-hash="ONNLZj" data-default-tab="html,result" data-user="franciscomarinas" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/franciscomarinas/pen/ONNLZj/">position: fixed;</a> by Francisco (<a href="http://codepen.io/franciscomarinas">@franciscomarinas</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
-        
+      
+      
+      
+      
+      <p></p>
+      <h4><strong>Modelo de cajas flexible justify-content</strong></h4>
+      <p data-height="265" data-theme-id="0" data-slug-hash="GZqmjg" data-default-tab="css,result" data-user="franciscomarinas" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/franciscomarinas/pen/GZqmjg/">Modelo de cajas flexible justify-content</a> by Francisco (<a href="http://codepen.io/franciscomarinas">@franciscomarinas</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+      
+      
+      
+      
+      
+      
+      <p></p>
+      <h4><strong>Modelo de cajas flexible align-items</strong></h4>
+      <p data-height="265" data-theme-id="0" data-slug-hash="vGKmWY" data-default-tab="css,result" data-user="franciscomarinas" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/franciscomarinas/pen/vGKmWY/">Modelo de cajas flexible align-items</a> by Francisco (<a href="http://codepen.io/franciscomarinas">@franciscomarinas</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+      
+      
+      
+      
+      
+      
+      <p></p>
+      <h4><strong>Modelo de cajas flexible align-items: stretch</strong></h4>
+      <p data-height="265" data-theme-id="0" data-slug-hash="aNZWEP" data-default-tab="css,result" data-user="franciscomarinas" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/franciscomarinas/pen/aNZWEP/">Modelo de cajas flexible align-items: stretch</a> by Francisco (<a href="http://codepen.io/franciscomarinas">@franciscomarinas</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+      
         
 <!-- End of Caregory Info -->
 

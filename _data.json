@@ -62,6 +62,10 @@
     "flotante": {
         "pageTitle": "Flotar en CSS",
         "description": "Flotar en CSS"
+    },
+    "flexible": {
+        "pageTitle": "Modelo flexible de cajas",
+        "description": "Modelo flexible de cajas"
     }
 
 }
