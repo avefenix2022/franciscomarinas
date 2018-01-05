@@ -58,6 +58,10 @@
     "posicion": {
         "pageTitle": "Posición en CSS",
         "description": "Posición en CSS"
+    },
+    "flotante": {
+        "pageTitle": "Flotar en CSS",
+        "description": "Flotar en CSS"
     }
 
 }
