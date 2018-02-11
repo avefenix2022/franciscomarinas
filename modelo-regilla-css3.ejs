@@ -75,288 +75,6 @@
         </h3>
               
              
-         
-         
-         
-         <p>Para una plantilla de de columnas de la regilla de <code>grid-template-columns: 100px 200px 300px;</code></p>
-         
-         <!-- Code Highlight Attached -->
-						<div class="code-highlight-attached">
-							<div class="code-highlight code-highlight-with-label" data-label="HTML">
-								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-markup js-code">
-&lt;div class="wrapper"&gt;
-  &lt;div class="box a">A&lt;/div&gt;
-  &lt;div class="box b">B&lt;/div&gt;
-  &lt;div class="box c">C&lt;/div&gt;
-  &lt;div class="box d">D&lt;/div&gt;
-  &lt;div class="box e">E&lt;/div&gt;
-  &lt;div class="box f">F&lt;/div&gt;
-&lt;/div&gt;
-</code></pre> </div>
-							<div class="code-highlight code-highlight-with-label" data-label="CSS">
-								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-css js-code">
-body {
-    margin:                40px;
-}
-
-.wrapper {
-    display:               grid;
-    grid-template-columns: 100px 200px 300px;
-    grid-gap:              10px;
-    background-color:      #fff;
-    color:                 #444;
-}
-
-.box {
-    background-color:      #444;
-    color:                 #fff;
-    border-radius:         5px;
-    padding:               20px;
-    font-size:             150%;
-}
-</code></pre></div>
-
-						</div>
-						<!-- End of Code Highlight Attached -->
-         
-         
-<p data-height="265" data-theme-id="0" data-slug-hash="wgQMoe" data-default-tab="result" data-user="franciscomarinas" data-embed-version="2" data-pen-title="Regilla grid-template-columns: 100px 200px 300px;" class="codepen">See the Pen <a href="http://codepen.io/franciscomarinas/pen/wgQMoe/">Regilla grid-template-columns: 100px 200px 300px;</a> by Francisco (<a href="http://codepen.io/franciscomarinas">@franciscomarinas</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
-
-
-
-
-
-
-
-
- <hr><!-- ----------------------------------------------------------------- -->        
-         
-         
-         
-         <p>La unidad <code>fr</code> representa una fracción del espacio libre disponible.</p>
-         
-         <p>La unidad fr (o &lt;flex&gt;) se define como una fracción del espacio disponible. La cuota de cada columna o fila del espacio libre se puede calcular como: 
-         <br><code> &lt;flex&gt; * &lt;espacio libre&gt; / &lt;suma de todos los factores flex&gt; de la columna o de la fila </code>
-         <br>Eso es de acuerdo con el W3C.</p>
-         
-         <p>Es más fácil pensar en términos de agregar todas las unidades <code>fr</code> que utiliza a lo largo de un eje y luego dividir la cantidad de espacio libre que se asignará entre los elementos que utilizan estas unidades. Se podría tener un elemento con 3fr ocupando tres veces la cantidad de espacio que un hermano con 1fr asignado. Si sólo se definieran estos dos elementos con la unidad fr en ese eje, el espacio disponible total se calcularía dividiéndolo en cuatro, con tres partes iguales asignadas al primer elemento y la parte igual restante asignada al segundo.</p>
-         
-         <!-- Code Highlight Attached -->
-						<div class="code-highlight-attached">
-							<div class="code-highlight code-highlight-with-label" data-label="HTML">
-								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-markup js-code">
-&lt;div class="wrapper"&gt;
-  &lt;div class="box a">A&lt;/div&gt;
-  &lt;div class="box b">B&lt;/div&gt;
-  &lt;div class="box c">C&lt;/div&gt;
-  &lt;div class="box d">D&lt;/div&gt;
-  &lt;div class="box e">E&lt;/div&gt;
-  &lt;div class="box f">F&lt;/div&gt;
-  &lt;div class="box g">G&lt;/div&gt;
-  &lt;div class="box h">H&lt;/div&gt;
-&lt;/div&gt;
-</code></pre> </div>
-							<div class="code-highlight code-highlight-with-label" data-label="CSS">
-								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-css js-code">
-body {
-    margin:                40px;
-}
-
-.wrapper {
-    display:               grid;
-    grid-template-columns: 1fr 2fr 3fr 300px;
-    grid-gap:              10px;
-    background-color:      #fff;
-    color:                 #444;
-}
-
-.box {
-    background-color:      #444;
-    color:                 #fff;
-    border-radius:         5px;
-    padding:               20px;
-    font-size:             150%;
-}
-</code></pre></div>
-
-						</div>
-						<!-- End of Code Highlight Attached -->
-         
-         
-<p data-height="265" data-theme-id="0" data-slug-hash="qRQbod" data-default-tab="result" data-user="franciscomarinas" data-embed-version="2" data-pen-title="fr" class="codepen">See the Pen <a href="http://codepen.io/franciscomarinas/pen/qRQbod/">fr</a> by Francisco (<a href="http://codepen.io/franciscomarinas">@franciscomarinas</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
-
-
-
-
-
-
-
-
- <hr><!-- ----------------------------------------------------------------- -->        
-         
-         
-         
-         <p><code>grid-template-rows:    100px 100px 100px;</code></p>
-         
-         <!-- Code Highlight Attached -->
-						<div class="code-highlight-attached">
-							<div class="code-highlight code-highlight-with-label" data-label="HTML">
-								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-markup js-code">
-&lt;div class="wrapper"&gt;
-  &lt;div class="box a">A&lt;/div&gt;
-  &lt;div class="box b">B&lt;/div&gt;
-  &lt;div class="box c">C&lt;/div&gt;
-  &lt;div class="box d">D&lt;/div&gt;
-  &lt;div class="box e">E&lt;/div&gt;
-  &lt;div class="box f">F&lt;/div&gt;
-  &lt;div class="box g">G&lt;/div&gt;
-  &lt;div class="box h">H&lt;/div&gt;
-  &lt;div class="box g">G&lt;/div&gt;
-  &lt;div class="box h">H&lt;/div&gt;
-  &lt;div class="box i">I&lt;/div&gt;
-&lt;/div&gt;
-</code></pre> </div>
-							<div class="code-highlight code-highlight-with-label" data-label="CSS">
-								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-css js-code">
-body {
-    margin:                0px;
-}
-
-.wrapper {
-  
-    display:               grid;
-    grid-template-columns: 100px 100px 100px;
-  
-    grid-template-rows:    100px 100px 100px;
-  
-    grid-gap:              10px;
-    background-color:      #fff;
-    color:                 #444;
-}
-
-.box {
-    background-color:      #444;
-    color:                 #fff;
-    border-radius:         5px;
-    padding:               20px;
-    font-size:             150%;
-}
-
-@media(max-width:350px){
-  .wrapper {
-  
-    display:               grid;
-    
-    grid-template-columns: 1fr;
-    grid-template-rows:    none;
-  }
-}
-</code></pre></div>
-
-						</div>
-						<!-- End of Code Highlight Attached -->
-         
-         
-<p data-height="400" data-theme-id="0" data-slug-hash="oBQbRz" data-default-tab="result" data-user="franciscomarinas" data-embed-version="2" data-pen-title="grid-template-rows" class="codepen">See the Pen <a href="http://codepen.io/franciscomarinas/pen/oBQbRz/">grid-template-rows</a> by Francisco (<a href="http://codepen.io/franciscomarinas">@franciscomarinas</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
-
-
-
-
-
-
-
-
- <hr><!-- ----------------------------------------------------------------- -->        
-         
-         
-         
-         <p><code>grid-template-rows:    1fr 2fr 3fr 300px;</code></p>
-         
-         <!-- Code Highlight Attached -->
-						<div class="code-highlight-attached">
-							<div class="code-highlight code-highlight-with-label" data-label="HTML">
-								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-markup js-code">
-&lt;div class="wrapper"&gt;
-  &lt;div class="box a">1fr,1fr&lt;/div&gt;
-  &lt;div class="box b">2fr,1fr&lt;/div&gt;
-  &lt;div class="box c">3fr,1fr&lt;/div&gt;
-  &lt;div class="box d">300px,1fr&lt;/div&gt;
-  &lt;div class="box e">1fr,2fr&lt;/div&gt;
-  &lt;div class="box f">2fr,2fr&lt;/div&gt;
-  &lt;div class="box g">3fr,2fr&lt;/div&gt;
-  &lt;div class="box h">100px,2fr&lt;/div&gt;
-  &lt;div class="box a">1fr,3fr&lt;/div&gt;
-  &lt;div class="box b">2fr,3fr&lt;/div&gt;
-  &lt;div class="box c">3fr,3fr&lt;/div&gt;
-  &lt;div class="box d">100px,3fr&lt;/div&gt;
-  &lt;div class="box e">1fr,100px&lt;/div&gt;
-  &lt;div class="box f">2fr,100px&lt;/div&gt;
-  &lt;div class="box g">3fr,100px&lt;/div&gt;
-  &lt;div class="box h">100px,100px&lt;/div&gt;
-&lt;/div&gt;
-</code></pre> </div>
-							<div class="code-highlight code-highlight-with-label" data-label="CSS">
-								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-css js-code">
-body {
-    margin:                0px;
-}
-
-.wrapper {
-  
-    display:               grid;
-    grid-template-columns: 1fr 2fr 3fr 100px;
-  
-    height:                100vh;
-    grid-template-rows:    1fr 2fr 3fr 100px;
-  
-    grid-gap:              10px;
-    background-color:      #fff;
-    color:                 #444;
-}
-
-.box {
-    background-color:      #444;
-    color:                 #fff;
-    border-radius:         5px;
-    padding:               5px;
-    font-size:             1em;
-}
-</code></pre></div>
-
-						</div>
-						<!-- End of Code Highlight Attached -->
-         
-         
-<p data-height="600" data-theme-id="0" data-slug-hash="zNMqwq" data-default-tab="result" data-user="franciscomarinas" data-embed-version="2" data-pen-title="grid-template-rows y fr" class="codepen">See the Pen <a href="http://codepen.io/franciscomarinas/pen/zNMqwq/">grid-template-rows y fr</a> by Francisco (<a href="http://codepen.io/franciscomarinas">@franciscomarinas</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <h3 class="category-title" id="diseno-web">Conceptos básicos del Módulo de Regilla
@@ -559,13 +277,255 @@ body {
          
 <p data-height="400" data-theme-id="0" data-slug-hash="oBadMz" data-default-tab="result" data-user="franciscomarinas" data-embed-version="2" data-pen-title="Definiendo un gris" class="codepen">See the Pen <a href="http://codepen.io/franciscomarinas/pen/oBadMz/">Definiendo un gris</a> by Francisco (<a href="http://codepen.io/franciscomarinas">@franciscomarinas</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
-         
-         
-         
+                
  <hr><!-- ----------------------------------------------------------------- -->   
 
+<p>Para una plantilla de de columnas de la regilla de <code>grid-template-columns: 100px 200px 300px;</code></p>
+         
+         <!-- Code Highlight Attached -->
+						<div class="code-highlight-attached">
+							<div class="code-highlight code-highlight-with-label" data-label="HTML">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-markup js-code">
+&lt;div class="wrapper"&gt;
+  &lt;div class="box a">A&lt;/div&gt;
+  &lt;div class="box b">B&lt;/div&gt;
+  &lt;div class="box c">C&lt;/div&gt;
+  &lt;div class="box d">D&lt;/div&gt;
+  &lt;div class="box e">E&lt;/div&gt;
+  &lt;div class="box f">F&lt;/div&gt;
+&lt;/div&gt;
+</code></pre> </div>
+							<div class="code-highlight code-highlight-with-label" data-label="CSS">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-css js-code">
+body {
+    margin:                40px;
+}
+
+.wrapper {
+    display:               grid;
+    grid-template-columns: 100px 200px 300px;
+    grid-gap:              10px;
+    background-color:      #fff;
+    color:                 #444;
+}
+
+.box {
+    background-color:      #444;
+    color:                 #fff;
+    border-radius:         5px;
+    padding:               20px;
+    font-size:             150%;
+}
+</code></pre></div>
+
+						</div>
+						<!-- End of Code Highlight Attached -->
+         
+         
+<p data-height="265" data-theme-id="0" data-slug-hash="wgQMoe" data-default-tab="result" data-user="franciscomarinas" data-embed-version="2" data-pen-title="Regilla grid-template-columns: 100px 200px 300px;" class="codepen">See the Pen <a href="http://codepen.io/franciscomarinas/pen/wgQMoe/">Regilla grid-template-columns: 100px 200px 300px;</a> by Francisco (<a href="http://codepen.io/franciscomarinas">@franciscomarinas</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 
+ <hr><!-- ----------------------------------------------------------------- -->        
+              
+         <p>La unidad <code>fr</code> representa una fracción del espacio libre disponible.</p>
+         
+         <p>La unidad fr (o &lt;flex&gt;) se define como una fracción del espacio disponible. La cuota de cada columna o fila del espacio libre se puede calcular como: 
+         <br><code> &lt;flex&gt; * &lt;espacio libre&gt; / &lt;suma de todos los factores flex&gt; de la columna o de la fila </code>
+         <br>Eso es de acuerdo con el W3C.</p>
+         
+         <p>Es más fácil pensar en términos de agregar todas las unidades <code>fr</code> que utiliza a lo largo de un eje y luego dividir la cantidad de espacio libre que se asignará entre los elementos que utilizan estas unidades. Se podría tener un elemento con 3fr ocupando tres veces la cantidad de espacio que un hermano con 1fr asignado. Si sólo se definieran estos dos elementos con la unidad fr en ese eje, el espacio disponible total se calcularía dividiéndolo en cuatro, con tres partes iguales asignadas al primer elemento y la parte igual restante asignada al segundo.</p>
+         
+         <!-- Code Highlight Attached -->
+						<div class="code-highlight-attached">
+							<div class="code-highlight code-highlight-with-label" data-label="HTML">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-markup js-code">
+&lt;div class="wrapper"&gt;
+  &lt;div class="box a">A&lt;/div&gt;
+  &lt;div class="box b">B&lt;/div&gt;
+  &lt;div class="box c">C&lt;/div&gt;
+  &lt;div class="box d">D&lt;/div&gt;
+  &lt;div class="box e">E&lt;/div&gt;
+  &lt;div class="box f">F&lt;/div&gt;
+  &lt;div class="box g">G&lt;/div&gt;
+  &lt;div class="box h">H&lt;/div&gt;
+&lt;/div&gt;
+</code></pre> </div>
+							<div class="code-highlight code-highlight-with-label" data-label="CSS">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-css js-code">
+body {
+    margin:                40px;
+}
+
+.wrapper {
+    display:               grid;
+    grid-template-columns: 1fr 2fr 3fr 300px;
+    grid-gap:              10px;
+    background-color:      #fff;
+    color:                 #444;
+}
+
+.box {
+    background-color:      #444;
+    color:                 #fff;
+    border-radius:         5px;
+    padding:               20px;
+    font-size:             150%;
+}
+</code></pre></div>
+
+						</div>
+						<!-- End of Code Highlight Attached -->
+         
+         
+<p data-height="265" data-theme-id="0" data-slug-hash="qRQbod" data-default-tab="result" data-user="franciscomarinas" data-embed-version="2" data-pen-title="fr" class="codepen">See the Pen <a href="http://codepen.io/franciscomarinas/pen/qRQbod/">fr</a> by Francisco (<a href="http://codepen.io/franciscomarinas">@franciscomarinas</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+
+
+
+
+
+
+
+ <hr><!-- ----------------------------------------------------------------- -->        
+         
+         
+         
+         <p><code>grid-template-rows:    100px 100px 100px;</code></p>
+         
+         <!-- Code Highlight Attached -->
+						<div class="code-highlight-attached">
+							<div class="code-highlight code-highlight-with-label" data-label="HTML">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-markup js-code">
+&lt;div class="wrapper"&gt;
+  &lt;div class="box a">A&lt;/div&gt;
+  &lt;div class="box b">B&lt;/div&gt;
+  &lt;div class="box c">C&lt;/div&gt;
+  &lt;div class="box d">D&lt;/div&gt;
+  &lt;div class="box e">E&lt;/div&gt;
+  &lt;div class="box f">F&lt;/div&gt;
+  &lt;div class="box g">G&lt;/div&gt;
+  &lt;div class="box h">H&lt;/div&gt;
+  &lt;div class="box g">G&lt;/div&gt;
+  &lt;div class="box h">H&lt;/div&gt;
+  &lt;div class="box i">I&lt;/div&gt;
+&lt;/div&gt;
+</code></pre> </div>
+							<div class="code-highlight code-highlight-with-label" data-label="CSS">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-css js-code">
+body {
+    margin:                0px;
+}
+
+.wrapper {
+  
+    display:               grid;
+    grid-template-columns: 100px 100px 100px;
+  
+    grid-template-rows:    100px 100px 100px;
+  
+    grid-gap:              10px;
+    background-color:      #fff;
+    color:                 #444;
+}
+
+.box {
+    background-color:      #444;
+    color:                 #fff;
+    border-radius:         5px;
+    padding:               20px;
+    font-size:             150%;
+}
+
+@media(max-width:350px){
+  .wrapper {
+  
+    display:               grid;
+    
+    grid-template-columns: 1fr;
+    grid-template-rows:    none;
+  }
+}
+</code></pre></div>
+
+						</div>
+						<!-- End of Code Highlight Attached -->
+         
+         
+<p data-height="400" data-theme-id="0" data-slug-hash="oBQbRz" data-default-tab="result" data-user="franciscomarinas" data-embed-version="2" data-pen-title="grid-template-rows" class="codepen">See the Pen <a href="http://codepen.io/franciscomarinas/pen/oBQbRz/">grid-template-rows</a> by Francisco (<a href="http://codepen.io/franciscomarinas">@franciscomarinas</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+
+
+
+
+
+
+
+ <hr><!-- ----------------------------------------------------------------- -->        
+         
+         
+         
+         <p><code>grid-template-rows:    1fr 2fr 3fr 300px;</code></p>
+         
+         <!-- Code Highlight Attached -->
+						<div class="code-highlight-attached">
+							<div class="code-highlight code-highlight-with-label" data-label="HTML">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-markup js-code">
+&lt;div class="wrapper"&gt;
+  &lt;div class="box a">1fr,1fr&lt;/div&gt;
+  &lt;div class="box b">2fr,1fr&lt;/div&gt;
+  &lt;div class="box c">3fr,1fr&lt;/div&gt;
+  &lt;div class="box d">300px,1fr&lt;/div&gt;
+  &lt;div class="box e">1fr,2fr&lt;/div&gt;
+  &lt;div class="box f">2fr,2fr&lt;/div&gt;
+  &lt;div class="box g">3fr,2fr&lt;/div&gt;
+  &lt;div class="box h">100px,2fr&lt;/div&gt;
+  &lt;div class="box a">1fr,3fr&lt;/div&gt;
+  &lt;div class="box b">2fr,3fr&lt;/div&gt;
+  &lt;div class="box c">3fr,3fr&lt;/div&gt;
+  &lt;div class="box d">100px,3fr&lt;/div&gt;
+  &lt;div class="box e">1fr,100px&lt;/div&gt;
+  &lt;div class="box f">2fr,100px&lt;/div&gt;
+  &lt;div class="box g">3fr,100px&lt;/div&gt;
+  &lt;div class="box h">100px,100px&lt;/div&gt;
+&lt;/div&gt;
+</code></pre> </div>
+							<div class="code-highlight code-highlight-with-label" data-label="CSS">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-css js-code">
+body {
+    margin:                0px;
+}
+
+.wrapper {
+  
+    display:               grid;
+    grid-template-columns: 1fr 2fr 3fr 100px;
+  
+    height:                100vh;
+    grid-template-rows:    1fr 2fr 3fr 100px;
+  
+    grid-gap:              10px;
+    background-color:      #fff;
+    color:                 #444;
+}
+
+.box {
+    background-color:      #444;
+    color:                 #fff;
+    border-radius:         5px;
+    padding:               5px;
+    font-size:             1em;
+}
+</code></pre></div>
+
+						</div>
+						<!-- End of Code Highlight Attached -->
+         
+         
+<p data-height="600" data-theme-id="0" data-slug-hash="zNMqwq" data-default-tab="result" data-user="franciscomarinas" data-embed-version="2" data-pen-title="grid-template-rows y fr" class="codepen">See the Pen <a href="http://codepen.io/franciscomarinas/pen/zNMqwq/">grid-template-rows y fr</a> by Francisco (<a href="http://codepen.io/franciscomarinas">@franciscomarinas</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 
 
