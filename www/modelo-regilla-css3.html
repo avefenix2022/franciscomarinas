@@ -251,60 +251,8 @@
             </a>
             <!-- End of Fragment Identifier -->
         </h3>
-        <h4 class="category-description" id="">Definiendo un grid</h4>
-         
-         <p>Para definir una cuadrícula se utiliza <code>display: grid</code> o <code>display: inline-grid</code> en el elemento padre. A continuación, puede crear una cuadrícula utilizando las propiedades <code>grid-template-columns</code> y <code>grid-template-rows</code>.</p>
-         
-         <p>La propiedad <code>grid-gap</code> para crear una separación entre columnas y filas de 10px. Esta propiedad es una abreviatura para <code>grid-column-gap</code> y <code>grid-row-gap</code> para que pueda establecer estos valores individualmente.</p>
-         
-         <p>Todos los hijos directos del padre ahora se convierten en elementos de la cuadrícula y el algoritmo de colocación automática los establece uno en cada celda de la cuadrícula. Se crearán filas adicionales según sea necesario.</p>
-         
-         <!-- Code Highlight Attached -->
-						<div class="code-highlight-attached">
-							<div class="code-highlight code-highlight-with-label" data-label="HTML">
-								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-markup js-code">
-&lt;div class="wrapper"&gt;
-  &lt;div class="box a">A&lt;/div&gt;
-  &lt;div class="box b">B&lt;/div&gt;
-  &lt;div class="box c">C&lt;/div&gt;
-  &lt;div class="box d">D&lt;/div&gt;
-  &lt;div class="box e">E&lt;/div&gt;
-  &lt;div class="box f">F&lt;/div&gt;
-&lt;/div&gt;
-</code></pre> </div>
-							<div class="code-highlight code-highlight-with-label" data-label="CSS">
-								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-css js-code">
-body {
-    margin:                40px;
-}
-
-.wrapper {
-    display:               grid;
-    grid-template-columns: 100px 100px 100px;
-    grid-gap:              10px;
-    background-color:      #fff;
-    color:                 #444;
-}
-
-.box {
-    background-color:      #444;
-    color:                 #fff;
-    border-radius:         5px;
-    padding:               20px;
-    font-size:             150%;
-}
-</code></pre></div>
-
-						</div>
-						<!-- End of Code Highlight Attached -->
-         
-         
-<p data-height="400" data-theme-id="0" data-slug-hash="oBadMz" data-default-tab="result" data-user="franciscomarinas" data-embed-version="2" data-pen-title="Definiendo un gris" class="codepen">See the Pen <a href="http://codepen.io/franciscomarinas/pen/oBadMz/">Definiendo un gris</a> by Francisco (<a href="http://codepen.io/franciscomarinas">@franciscomarinas</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
-         
-         
-         
- <hr><!-- ----------------------------------------------------------------- -->        
+              
+             
          
          
          
@@ -655,6 +603,37 @@ body {
 
 <p>En el siguiente ejemplo, hay un div que contiene un contenedor y dentro cinco elementos secundarios.</p>
 
+         <!-- Code Highlight Attached -->
+						<div class="code-highlight-attached">
+							<div class="code-highlight code-highlight-with-label" data-label="HTML">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-markup js-code">
+&lt;div class="contenedor"&gt;
+  &lt;div class="celda">1&lt;/div&gt;
+  &lt;div class="celda">2&lt;/div&gt;
+  &lt;div class="celda">3&lt;/div&gt;
+  &lt;div class="celda">4&lt;/div&gt;
+  &lt;div class="celda">5&lt;/div&gt;
+&lt;/div&gt;
+</code></pre> </div>
+							<div class="code-highlight code-highlight-with-label" data-label="CSS">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-css js-code">
+/* Reset.css incluido */
+
+.contenedor {
+  display:    grid;
+}
+
+.celda {
+  background: #abcdef;
+  height:     2em;
+  margin:     .2em;
+  color:      #fff;;
+}
+</code></pre></div>
+
+						</div>
+						<!-- End of Code Highlight Attached -->
+
 <p data-height="265" data-theme-id="0" data-slug-hash="rJmYEB" data-default-tab="html,result" data-user="franciscomarinas" data-embed-version="2" data-pen-title="Contenedor cuadrícula" class="codepen">See the Pen <a href="https://codepen.io/franciscomarinas/pen/rJmYEB/">Contenedor cuadrícula</a> by Francisco (<a href="https://codepen.io/franciscomarinas">@franciscomarinas</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
@@ -679,10 +658,89 @@ body {
 
 <p>Se he creado una cuadrícula con tres pistas de columna de 200 píxeles de ancho. Los elementos secundarios se distribuirán en esta cuadrícula uno en cada celda de la cuadrícula.</p>
 
+         <!-- Code Highlight Attached -->
+						<div class="code-highlight-attached">
+							<div class="code-highlight code-highlight-with-label" data-label="HTML">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-markup js-code">
+&lt;div class="contenedor"&gt;
+  &lt;div class="celda">1&lt;/div&gt;
+  &lt;div class="celda">2&lt;/div&gt;
+  &lt;div class="celda">3&lt;/div&gt;
+  &lt;div class="celda">4&lt;/div&gt;
+  &lt;div class="celda">5&lt;/div&gt;
+&lt;/div&gt;
+</code></pre> </div>
+							<div class="code-highlight code-highlight-with-label" data-label="CSS">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-css js-code">
+/* Reset.css incluido */
+
+.contenedor {
+  display:               grid;
+  grid-template-columns: 200px 200px 200px;
+}
+
+.celda {
+  background:            #abcdef;
+  height:                2em;
+  margin:                .2em;
+  color:                 #fff;;
+}
+</code></pre></div>
+
+						</div>
+						<!-- End of Code Highlight Attached -->
+
 <p data-height="265" data-theme-id="0" data-slug-hash="bLWaLJ" data-default-tab="css,result" data-user="franciscomarinas" data-embed-version="2" data-pen-title="Pistas de cuadrícula" class="codepen">See the Pen <a href="https://codepen.io/franciscomarinas/pen/bLWaLJ/">Pistas de cuadrícula</a> by Francisco (<a href="https://codepen.io/franciscomarinas">@franciscomarinas</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
+ <p>La propiedad <code>grid-gap</code> para crear una separación entre columnas y filas de 10px. Esta propiedad es una abreviatura para <code>grid-column-gap</code> y <code>grid-row-gap</code> para que pueda establecer estos valores individualmente.</p>
+         
+         <!-- Code Highlight Attached -->
+						<div class="code-highlight-attached">
+							<div class="code-highlight code-highlight-with-label" data-label="HTML">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-markup js-code">
+&lt;div class="wrapper"&gt;
+  &lt;div class="box a">A&lt;/div&gt;
+  &lt;div class="box b">B&lt;/div&gt;
+  &lt;div class="box c">C&lt;/div&gt;
+  &lt;div class="box d">D&lt;/div&gt;
+  &lt;div class="box e">E&lt;/div&gt;
+  &lt;div class="box f">F&lt;/div&gt;
+&lt;/div&gt;
+</code></pre> </div>
+							<div class="code-highlight code-highlight-with-label" data-label="CSS">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-css js-code">
+body {
+    margin:                40px;
+}
 
+.wrapper {
+    display:               grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-gap:              10px;
+    background-color:      #fff;
+    color:                 #444;
+}
+
+.box {
+    background-color:      #444;
+    color:                 #fff;
+    border-radius:         5px;
+    padding:               20px;
+    font-size:             150%;
+}
+</code></pre></div>
+
+						</div>
+						<!-- End of Code Highlight Attached -->
+         
+         
+<p data-height="400" data-theme-id="0" data-slug-hash="oBadMz" data-default-tab="result" data-user="franciscomarinas" data-embed-version="2" data-pen-title="Definiendo un gris" class="codepen">See the Pen <a href="http://codepen.io/franciscomarinas/pen/oBadMz/">Definiendo un gris</a> by Francisco (<a href="http://codepen.io/franciscomarinas">@franciscomarinas</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+         
+         
+         
+ <hr><!-- ----------------------------------------------------------------- -->   
 
 
 
