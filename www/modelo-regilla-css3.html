@@ -617,22 +617,22 @@ body {
             <!-- End of Fragment Identifier -->
 </h3>
 
-<p>Una cuadrícula es un conjunto de intersección de líneas horizontales y verticales que definen un conjunto de columnas y filas. Los elementos se pueden colocar en la cuadrícula, respetando estas líneas de columna y fila. El diseño de la cuadrícula CSS tiene las siguientes características: </p>
+<p>Una cuadrícula es un conjunto de intersección de líneas horizontales y verticales que definen un conjunto de columnas y filas (pistas). Los elementos se pueden colocar en la cuadrícula, respetando estas líneas de columna y fila. El diseño de la cuadrícula CSS tiene las siguientes características: </p>
 
 <h4 class="category-description" id="">Tamaño de pista fijo y flexible</h4>
-<p>El tamaño de pista se puede establecer en tamaño fijo con px o tamaños flexibles utilizando % o la unidad fr.</p>
+<p>El tamaño de pista se puede establecer en <strong>tamaño fijo</strong> con <strong>px</strong> o <strong>tamaños flexibles</strong> utilizando <strong>%</strong> o la unidad <strong>fr (flex)</strong>.</p>
 
 <h4 class="category-description" id="">Colocación del elemento</h4>
-<p>Puede colocar elementos en una ubicación precisa en la cuadrícula usando números de línea, nombres o apuntando a un área de la cuadrícula. Hay un algoritmo para controlar la ubicación de los elementos que no tienen una posición explícita en la cuadrícula. </p>
+<p>Puede colocar elementos en una <strong>ubicación precisa en la cuadrícula usando números de línea, nombres o apuntando a un área de la cuadrícula</strong>. Hay un algoritmo para controlar la ubicación de los elementos que no tienen una posición explícita en la cuadrícula. </p>
 
 <h4 class="category-description" id="">Creación de pistas adicionales para contener contenido</h4>
-<p>La especificación también se ocupa del contenido agregado fuera de una cuadrícula declarada, que agrega filas y columnas adicionales cuando sea necesario. Se incluyen características como agregar "tantas columnas que caben en un contenedor".</p>
+<p>La especificación también se ocupa del contenido agregado fuera de una cuadrícula declarada, que agrega filas y columnas adicionales cuando sea necesario. <strong>Se incluyen características para agregar "tantas columnas que caben en un contenedor"</strong>.</p>
 
 <h4 class="category-description" id="">Control de alineación</h4>
-<p>La cuadrícula contiene características de alineación para que podamos controlar cómo se alinean los elementos una vez ubicados en un área de la cuadrícula, y cómo se alinea toda la cuadrícula.</p>
+<p>La cuadrícula <strong>contiene características de alineación</strong> para que podamos controlar cómo se alinean los elementos una vez ubicados en un área de la cuadrícula, y cómo se alinea toda la cuadrícula.</p>
 
 <h4 class="category-description" id="">Control de contenido superpuesto</h4>
-<p>Se puede colocar más de un elemento en una celda o área de la cuadrícula, pueden superponerse parcialmente entre sí. Esta estratificación se puede controlar con la propiedad del índice z.</p>
+<p><strong>Se puede colocar más de un elemento en una celda o área de la cuadrícula, pueden superponerse parcialmente entre sí</strong>. Esta estratificación se puede controlar con la propiedad del índice z.</p>
 <p>Grid es una poderosa especificación y cuando se combina con otras partes de CSS como flexbox, puede ayudarte a crear diseños que antes eran imposibles de construir en CSS.</p>
 <p><strong>Todo comienza creando una cuadrícula en su contenedor. </strong></p>
 
@@ -640,6 +640,25 @@ body {
 
 
 
+
+
+
+<h3 class="category-title" id="diseno-web">Contenedor de cuadrícula
+            <!-- Fragment Identifier -->
+            <a class="fragment-identifier js-fragment-identifier fragment-identifier-scroll" href="#simple-highlight">
+                <i class="fa fa-link"></i>
+            </a>
+            <!-- End of Fragment Identifier -->
+</h3>
+
+<p>Al crear un contenedor de cuadrícula declarando <code>display: grid</code> o <code>display: inline-grid</code> <strong>todos los hijos directos de ese elemento se convertirán en elementos de la cuadrícula</strong>.</p>
+
+<p>En el siguiente ejemplo, hay un div que contiene un contenedor y dentro cinco elementos secundarios.</p>
+
+<p data-height="265" data-theme-id="0" data-slug-hash="rJmYEB" data-default-tab="html,result" data-user="franciscomarinas" data-embed-version="2" data-pen-title="Contenedor cuadrícula" class="codepen">See the Pen <a href="https://codepen.io/franciscomarinas/pen/rJmYEB/">Contenedor cuadrícula</a> by Francisco (<a href="https://codepen.io/franciscomarinas">@franciscomarinas</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+<p>Todos los hijos directos ahora son elementos de la cuadrícula. En un navegador web, no verá ninguna diferencia en cómo se muestran estos elementos antes de convertirlos en una cuadrícula, ya que la cuadrícula ha creado una regilla de columna única para los elementos.</p>
 
 
 
