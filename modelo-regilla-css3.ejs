@@ -166,6 +166,8 @@
 
 <p data-height="265" data-theme-id="0" data-slug-hash="rJmYEB" data-default-tab="html,result" data-user="franciscomarinas" data-embed-version="2" data-pen-title="Contenedor cuadrícula" class="codepen">See the Pen <a href="https://codepen.io/franciscomarinas/pen/rJmYEB/">Contenedor cuadrícula</a> by Francisco (<a href="https://codepen.io/franciscomarinas">@franciscomarinas</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                
+ <hr><!-- ----------------------------------------------------------------- -->   
 
 <p>Todos los hijos directos ahora son elementos de la cuadrícula. En un navegador web, no verá ninguna diferencia en cómo se muestran estos elementos antes de convertirlos en una cuadrícula, ya que la cuadrícula ha creado una regilla de columna única para los elementos.</p>
 
@@ -222,8 +224,10 @@
 
 <p data-height="265" data-theme-id="0" data-slug-hash="bLWaLJ" data-default-tab="css,result" data-user="franciscomarinas" data-embed-version="2" data-pen-title="Pistas de cuadrícula" class="codepen">See the Pen <a href="https://codepen.io/franciscomarinas/pen/bLWaLJ/">Pistas de cuadrícula</a> by Francisco (<a href="https://codepen.io/franciscomarinas">@franciscomarinas</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                
+ <hr><!-- ----------------------------------------------------------------- -->   
 
- <p>La propiedad <code>grid-gap</code> para crear una separación entre columnas y filas de 10px. Esta propiedad es una abreviatura para <code>grid-column-gap</code> y <code>grid-row-gap</code> para que pueda establecer estos valores individualmente.</p>
+ <p>La propiedad <code>grid-gap</code> se utiliza para crear una separación entre columnas y filas de 10px. Esta propiedad es una abreviatura para <code>grid-column-gap</code> y <code>grid-row-gap</code> que establece estos valores individualmente.</p>
          
          <!-- Code Highlight Attached -->
 						<div class="code-highlight-attached">
@@ -413,7 +417,9 @@ body {
     display:               grid;
     grid-template-columns: 100px 100px 100px;
   
-    grid-template-rows:    100px 100px 100px;
+    grid-template-rows:    100px 
+                           100px 
+                           100px;
   
     grid-gap:              10px;
     background-color:      #fff;
@@ -494,7 +500,10 @@ body {
     grid-template-columns: 1fr 2fr 3fr 100px;
   
     height:                100vh;
-    grid-template-rows:    1fr 2fr 3fr 100px;
+    grid-template-rows:    1fr 
+                           2fr 
+                           3fr 
+                           100px;
   
     grid-gap:              10px;
     background-color:      #fff;
