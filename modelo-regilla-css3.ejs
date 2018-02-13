@@ -321,14 +321,69 @@ body {
 
 
  <hr><!-- ----------------------------------------------------------------- -->        
+             
+<h3 class="category-title" id="diseno-web">Unidad fr
+            <!-- Fragment Identifier -->
+            <a class="fragment-identifier js-fragment-identifier fragment-identifier-scroll" href="#simple-highlight">
+                <i class="fa fa-link"></i>
+            </a>
+            <!-- End of Fragment Identifier -->
+</h3>
+
               
          <p>La unidad <code>fr</code> representa una fracción del espacio libre disponible.</p>
          
          <p>La unidad fr (o &lt;flex&gt;) se define como una fracción del espacio disponible. La cuota de cada columna o fila del espacio libre se puede calcular como: 
-         <br><code> &lt;flex&gt; * &lt;espacio libre&gt; / &lt;suma de todos los factores flex&gt; de la columna o de la fila </code>
-         <br>Eso es de acuerdo con el W3C.</p>
+         <br><code> &lt;flex&gt; * &lt;espacio libre&gt; / &lt;suma de todos los factores flex&gt; de la columna o de la fila</code>.</p>
          
-         <p>Es más fácil pensar en términos de agregar todas las unidades <code>fr</code> que utiliza a lo largo de un eje y luego dividir la cantidad de espacio libre que se asignará entre los elementos que utilizan estas unidades. Se podría tener un elemento con 3fr ocupando tres veces la cantidad de espacio que un hermano con 1fr asignado. Si sólo se definieran estos dos elementos con la unidad fr en ese eje, el espacio disponible total se calcularía dividiéndolo en cuatro, con tres partes iguales asignadas al primer elemento y la parte igual restante asignada al segundo.</p>
+         <p>Se podría tener un elemento con 3fr ocupando tres veces la cantidad de espacio que un hermano con 1fr asignado.</p>
+         
+         <p>El siguiente ejemplocrea tes columnas iguales ocupando todo el espacio disponible:</p>
+         
+                  <!-- Code Highlight Attached -->
+						<div class="code-highlight-attached">
+							<div class="code-highlight code-highlight-with-label" data-label="HTML">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-markup js-code">
+&lt;div class="contenedor"&gt;
+  &lt;div class="celda">1&lt;/div&gt;
+  &lt;div class="celda">2&lt;/div&gt;
+  &lt;div class="celda">3&lt;/div&gt;
+  &lt;div class="celda">4&lt;/div&gt;
+  &lt;div class="celda">5&lt;/div&gt;
+&lt;/div&gt;
+</code></pre> </div>
+							<div class="code-highlight code-highlight-with-label" data-label="CSS">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-css js-code">
+/* Reset.css incluido */
+
+.contenedor {
+  display:               grid;
+  grid-template-columns: 1fr 1fr 1fr;;
+}
+
+.celda {
+  background:            #abcdef;
+  height:                2em;
+  margin:                .2em;
+  color:                 #fff;;
+}
+</code></pre></div>
+
+						</div>
+						<!-- End of Code Highlight Attached -->
+        
+<p data-height="265" data-theme-id="0" data-slug-hash="BYdwde" data-default-tab="css,result" data-user="franciscomarinas" data-embed-version="2" data-pen-title="Unidad fr" class="codepen">See the Pen <a href="https://codepen.io/franciscomarinas/pen/BYdwde/">Unidad fr</a> by Francisco (<a href="https://codepen.io/franciscomarinas">@franciscomarinas</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>        
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
          
          <!-- Code Highlight Attached -->
 						<div class="code-highlight-attached">
