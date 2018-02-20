@@ -186,7 +186,7 @@
 							<!-- Page Info -->
 							<div class="page-info page-info-simple">
 								<h1 class="page-title">CSS Grid Layout</h1>
-								<h2 class="page-description">CSS4 como tal no existe. A partir de CSS3 el estándar para hojas de estilo en cascada se divide en módulos, cada uno con su número de versión. Dentro de estos nuevos módulos CSS4 nos encontramos con Grid Layout. No sustituye a Flexbox, si no que lo complementa y es una alternativa para el mismo problema.</h2>
+								<h2 class="page-description">CSS4 como tal no existe. A partir de CSS3 el estándar para hojas de estilo en cascada se divide en módulos, cada uno con su número de versión. Dentro de estos nuevos módulos CSS nos encontramos con Grid Layout. No sustituye a Flexbox, si no que lo complementa y es una alternativa para el mismo problema.</h2>
 							</div>
 							<!-- End Page Info -->
 						</div>
@@ -254,17 +254,15 @@
 </h3>
 <h4 class="category-description" id="">Definiendo una cuadrícula</h4>
          
-<p>El módulo <strong>CSS de Regilla</strong> introduce un sistema de <strong>cuadrícula bidimensional</strong> en CSS. Las cuadrículas se pueden usar para diseñar áreas de página  o elementos de interfaz de usuario.</p>
-
-<p>El modelo de cuadrícula CSS se caracteriza por dividir una página en regiones principales y definir la relación en términos de tamaño, posición y capa. </p>
-
-
-
-
-
+<p> Introduce un sistema de <strong>cuadrícula bidimensional</strong> y define la relación en términos de:. </p>
+<ul>
+    <li>tamaño</li>
+    <li>posición y</li>
+    <li>capa</li>
+</ul>
 
 
-
+            
 <h3 class="category-title" id="diseno-web">¿Qué es una cuadrícula? 
             <!-- Fragment Identifier -->
             <a class="fragment-identifier js-fragment-identifier fragment-identifier-scroll" href="#simple-highlight">
@@ -273,7 +271,7 @@
             <!-- End of Fragment Identifier -->
 </h3>
 
-<p>Una cuadrícula es un conjunto de intersección de líneas horizontales y verticales que definen un conjunto de columnas y filas (pistas). Los elementos se pueden colocar en la cuadrícula, respetando estas líneas de columna y fila. El diseño de la cuadrícula CSS tiene las siguientes características: </p>
+<p>Conjunto de intersección de líneas horizontales y verticales que definen filas y columnas (pistas). Los elementos se pueden colocar en la cuadrícula, respetando esas columnas y filas. El diseño de la cuadrícula CSS tiene las siguientes características: </p>
 
 <h4 class="category-description" id="">Tamaño de pista fijo y flexible</h4>
 <p>El tamaño de pista se puede establecer en <strong>tamaño fijo</strong> con <strong>px</strong> o <strong>tamaños flexibles</strong> utilizando <strong>%</strong> o la unidad <strong>fr (flex)</strong>.</p>
@@ -281,14 +279,14 @@
 <h4 class="category-description" id="">Colocación del elemento</h4>
 <p>Puede colocar elementos en una <strong>ubicación precisa en la cuadrícula usando números de línea, nombres o apuntando a un área de la cuadrícula</strong>. Hay un algoritmo para controlar la ubicación de los elementos que no tienen una posición explícita en la cuadrícula. </p>
 
-<h4 class="category-description" id="">Creación de pistas adicionales para contener contenido</h4>
-<p>La especificación también se ocupa del contenido agregado fuera de una cuadrícula declarada, que agrega filas y columnas adicionales cuando sea necesario. <strong>Se incluyen características para agregar "tantas columnas que caben en un contenedor"</strong>.</p>
+<h4 class="category-description" id="">Creación de pistas adicionales para el contenido</h4>
+<p>La especificación también se ocupa del contenido agregado fuera de una cuadrícula declarada, que agrega filas y columnas adicionales cuando sea necesario. <strong>Se incluyen características para agregar "tantas columnas como las que caben en un contenedor"</strong>.</p>
 
 <h4 class="category-description" id="">Control de alineación</h4>
-<p>La cuadrícula <strong>contiene características de alineación</strong> para que podamos controlar cómo se alinean los elementos una vez ubicados en un área de la cuadrícula, y cómo se alinea toda la cuadrícula.</p>
+<p>La cuadrícula <strong>contiene características de alineación</strong> para controlar cómo se alinean los elementos una vez ubicados en un área de la cuadrícula, y cómo se alinea toda la cuadrícula.</p>
 
 <h4 class="category-description" id="">Control de contenido superpuesto</h4>
-<p><strong>Se puede colocar más de un elemento en una celda o área de la cuadrícula, pueden superponerse parcialmente entre sí</strong>. Esta estratificación se puede controlar con la propiedad del índice z.</p>
+<p><strong>Se puede colocar más de un elemento en una celda o área de la cuadrícula, pueden superponerse parcialmente entre sí</strong>. Esta estratificación se puede controlar con la propiedad <code>z-index</code>.</p>
 <p>Grid es una poderosa especificación y cuando se combina con otras partes de CSS como flexbox, puede ayudarte a crear diseños que antes eran imposibles de construir en CSS.</p>
 <p><strong>Todo comienza creando una cuadrícula en su contenedor. </strong></p>
 
