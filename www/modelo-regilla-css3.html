@@ -698,7 +698,8 @@ body {
          
          
          
-         <p><code>grid-template-rows:    1fr 2fr 3fr 300px;</code></p>
+         <p><code>grid-template-columns: 1fr 2fr 3fr 100px;</code></p>      
+         <p><code>grid-template-rows:    1fr 2fr 3fr 100px;</code></p> 
          
          <!-- Code Highlight Attached -->
 						<div class="code-highlight-attached">
@@ -762,6 +763,87 @@ body {
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 
+<hr><!-- ----------------------------------------------------------------- -->        
+<h3 class="category-title" id="diseno-web">repeat()
+            <!-- Fragment Identifier -->
+            <a class="fragment-identifier js-fragment-identifier fragment-identifier-scroll" href="#simple-highlight">
+                <i class="fa fa-link"></i>
+            </a>
+            <!-- End of Fragment Identifier -->
+</h3>         
+         
+         <p>Las cuadrículas grandes con muchas pistas pueden usar la notación <code>repeat ()</code> para repetir una o todas las secciones de la lista de pistas. Por ejemplo, la definición de la grilla:</p>
+         <p><code>grid-template-columns:    100px 100px 100px;</code></p>
+         <p><code>@media(max-width:350px){ grid-template-columns:    1fr;}</code></p>
+         
+         <!-- Code Highlight Attached -->
+						<div class="code-highlight-attached">
+							<div class="code-highlight code-highlight-with-label" data-label="CSS">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-css js-code">
+.contenedor {
+  display:               grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+</code></pre></div>
+
+						</div>
+						<!-- End of Code Highlight Attached -->
+         <p>Puede ser escrito como:</p>
+         
+         <!-- Code Highlight Attached -->
+						<div class="code-highlight-attached">
+							<div class="code-highlight code-highlight-with-label" data-label="CSS">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-css js-code">
+.contenedor {
+  display:               grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+</code></pre></div>
+
+						</div>
+						<!-- End of Code Highlight Attached -->
+        
+        <p>En el siguiente ejemplo, es una cuadrícula con una pista inicial de 20 píxeles, luego una sección repetitiva de 6 pistas de  1fr y luego una pista final de 20 píxeles.</p>
+         
+         <!-- Code Highlight Attached -->
+						<div class="code-highlight-attached">
+							<div class="code-highlight code-highlight-with-label" data-label="CSS">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-css js-code">
+.contenedor {
+  display: grid;
+  grid-template-columns: 20px repeat(6, 1fr) 20px;
+}
+</code></pre></div>
+
+						</div>
+						<!-- End of Code Highlight Attached -->
+         <p>En este sigiente ejemplo, la regilla constará de 10 pistas. Este patrón se repetirá cinco veces: una pista de 1 fr, y luego una pista de 2 fr. </p>
+         <!-- Code Highlight Attached -->
+						<div class="code-highlight-attached">
+							<div class="code-highlight code-highlight-with-label" data-label="CSS">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-css js-code">
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr 2fr);
+}
+</code></pre></div>
+
+						</div>
+						<!-- End of Code Highlight Attached -->
+        
+        
+         
+<p data-height="400" data-theme-id="0" data-slug-hash="oBQbRz" data-default-tab="result" data-user="franciscomarinas" data-embed-version="2" data-pen-title="grid-template-rows" class="codepen">See the Pen <a href="http://codepen.io/franciscomarinas/pen/oBQbRz/">grid-template-rows</a> by Francisco (<a href="http://codepen.io/franciscomarinas">@franciscomarinas</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+
+
+
+
+
+
+
+ <hr><!-- ----------------------------------------------------------------- --> 
 
 
 
